@@ -7,6 +7,7 @@
 #include <vector>
 
 #include "readFile.h"
+#include "MultMat.h"
 
 using namespace std;
 
@@ -24,6 +25,7 @@ int main() {
     readFile.loadFromFile(data);
     readFile.show(data);
 
+    /*MultMat
     Matrice M1(lire_matrice()), M2(lire_matrice());
 
     if (M1[0].size() != M2.size())
@@ -31,7 +33,7 @@ int main() {
     else {
         cout << "Résultat :" << endl;
         affiche_matrice(multiplication(M1, M2));
-    }
+    }*/
 
     return 0;
 }

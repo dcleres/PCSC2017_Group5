@@ -25,6 +25,12 @@ AbstractNumericalApproximation.h
 /Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
 
 /Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.cpp
+vector
+-
+MultMat.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.h
+
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.h
 iostream
 -
 vector
@@ -37,6 +43,8 @@ vector
 -
 readFile.h
 /Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
+MultMat.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.h
 
 /Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.cpp
 stdexcept
