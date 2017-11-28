@@ -22,6 +22,7 @@ public:
     ///@method
     std::string getFilename();
 
+
 private:
     ///@variable
     std::string mFilename;
