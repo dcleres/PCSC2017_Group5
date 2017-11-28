@@ -1,42 +1,10 @@
-//
-// Created by pcsc on 11/28/17.
-//
-
-#include <iostream>
 #include <vector>
+#include "MultMat.h"
+
 using namespace std;
 
-// Définition d'un type synonyme (alias)
-
-/* remarquez que par rapport à la version C++98         *
- * on a le droit d'écrire:  vector < vector<double>>    *
- * au lieu de vector < vector<double> > (plus besoin de *
- * séparer les deux symboles > par un espace )          */
-typedef vector < vector<double>> Matrice;
-
-
-class MultMat
-Matrice  lire_matrice();
-void  affiche_matrice(const Matrice& M);
-Matrice  multiplication(const Matrice& M1, const Matrice& M2);
-
 // ----------------------------------------------------------------------
-int main()
-{
-    Matrice M1(lire_matrice()), M2(lire_matrice());
-
-    if (M1[0].size() != M2.size())
-        cout << "Multiplication de matrices impossible !" << endl;
-    else {
-        cout << "Résultat :" << endl;
-        affiche_matrice(multiplication(M1, M2));
-    }
-
-    return 0;
-}
-
-// ----------------------------------------------------------------------
-Matrice  lire_matrice()
+Matrice MultMat::lire_matrice()
 {
     cout << "Saisie d'une matrice :" << endl;
 
@@ -64,7 +32,7 @@ Matrice  lire_matrice()
 }
 
 // ----------------------------------------------------------------------
-Matrice  multiplication(const Matrice& M1,
+Matrice  MultMat::multiplication(const Matrice& M1,
                         const Matrice& M2)
 {
     Matrice prod(M1.size(), vector<double>(M2[0].size()));
@@ -82,7 +50,7 @@ Matrice  multiplication(const Matrice& M1,
  * size dans des variables locales (pour éviter de ré-invoquer la fonction *
  * plusieurs fois)*/
 // ----------------------------------------------------------------------
-void  affiche_matrice(const Matrice& M)
+void  MultMat::affiche_matrice(const Matrice& M)
 {
     // On aurait aussi pu utiliser auto dans les boucles
     // des autres fonctions
@@ -93,3 +61,8 @@ void  affiche_matrice(const Matrice& M)
         cout << endl;
     }
 }
+
+MultMat::MultMat(Matrice const& mat1, Matrice const& mat2)
+        : mMatrix_1(mat1)
+        , mMatrix_2(mat2)
+{}

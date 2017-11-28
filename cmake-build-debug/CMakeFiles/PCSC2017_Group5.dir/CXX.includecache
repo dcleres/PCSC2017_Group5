@@ -6,33 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/pcsc/PCSC2017_Group5/AbstractNumericalApproximation.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.cpp
 iostream
 -
 AbstractNumericalApproximation.h
-/home/pcsc/PCSC2017_Group5/AbstractNumericalApproximation.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/PCSC2017_Group5/AbstractNumericalApproximation.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
 readFile.h
-/home/pcsc/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 
-/home/pcsc/PCSC2017_Group5/LeastSquares.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.cpp
 LeastSquares.h
-/home/pcsc/PCSC2017_Group5/LeastSquares.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.h
 
-/home/pcsc/PCSC2017_Group5/LeastSquares.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.h
 AbstractNumericalApproximation.h
-/home/pcsc/PCSC2017_Group5/AbstractNumericalApproximation.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/PCSC2017_Group5/main.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.cpp
+iostream
+-
+vector
+-
+
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/main.cpp
 iostream
 -
 vector
 -
 readFile.h
-/home/pcsc/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 
-/home/pcsc/PCSC2017_Group5/readFile.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.cpp
 stdexcept
 -
 iostream
@@ -40,9 +46,9 @@ iostream
 fstream
 -
 readFile.h
-/home/pcsc/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 
-/home/pcsc/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 string
 -
 fstream
