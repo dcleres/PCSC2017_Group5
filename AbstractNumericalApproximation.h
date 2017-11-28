@@ -13,21 +13,24 @@
  * This is a pure virtual class
  */
 
-#include <string>
-#include <fstream>
 #include readFile.h;
 using namespace std;
 
 
-class AbstratcNumericalApproximation {
+class AbstractNumericalApproximation {
 
+public:
     //Virtual Method that we will implement in the sub-class
     //It return a vector of double, the weight we found after apply the function
     //It takes Data as a parameter, a structure made of two vector of double and one vector of Gender (Gender is a enum type)
-    virtual vector<double> approximationFunction(Data) = 0;
+    virtual vector<double> approximationFunction(Data data) = 0;
 
     //Function that allows us to print the weight return by the approximation function
-    virtual void printWeight (vector<double>);
+    void printWeight (vector<double> weight);
+
+private:
+
+
 
 };
 
