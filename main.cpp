@@ -24,5 +24,14 @@ int main() {
     readFile.loadFromFile(data);
     readFile.show(data);
 
+    Matrice M1(lire_matrice()), M2(lire_matrice());
+
+    if (M1[0].size() != M2.size())
+        cout << "Multiplication de matrices impossible !" << endl;
+    else {
+        cout << "Résultat :" << endl;
+        affiche_matrice(multiplication(M1, M2));
+    }
+
     return 0;
 }

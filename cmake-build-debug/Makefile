@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.2.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.2.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/davidcleres/CLionProjects/PCSC2017_Group5
+CMAKE_SOURCE_DIR = /home/pcsc/PCSC2017_Group5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pcsc/PCSC2017_Group5/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2017.2.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2017.2.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pcsc/PCSC2017_Group5/cmake-build-debug/CMakeFiles /home/pcsc/PCSC2017_Group5/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pcsc/PCSC2017_Group5/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,19 +122,6 @@ PCSC2017_Group5: cmake_check_build_system
 PCSC2017_Group5/fast:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/build
 .PHONY : PCSC2017_Group5/fast
-
-#=============================================================================
-# Target rules for targets named doc
-
-# Build rule for target.
-doc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doc
-.PHONY : doc
-
-# fast build rule for target.
-doc/fast:
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-.PHONY : doc/fast
 
 AbstractNumericalApproximation.o: AbstractNumericalApproximation.cpp.o
 
@@ -189,6 +176,33 @@ LeastSquares.s: LeastSquares.cpp.s
 LeastSquares.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.s
 .PHONY : LeastSquares.cpp.s
+
+MultMat.o: MultMat.cpp.o
+
+.PHONY : MultMat.o
+
+# target to build an object file
+MultMat.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o
+.PHONY : MultMat.cpp.o
+
+MultMat.i: MultMat.cpp.i
+
+.PHONY : MultMat.i
+
+# target to preprocess a source file
+MultMat.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.i
+.PHONY : MultMat.cpp.i
+
+MultMat.s: MultMat.cpp.s
+
+.PHONY : MultMat.s
+
+# target to generate assembly for a file
+MultMat.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s
+.PHONY : MultMat.cpp.s
 
 main.o: main.cpp.o
 
@@ -253,13 +267,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... PCSC2017_Group5"
-	@echo "... doc"
 	@echo "... AbstractNumericalApproximation.o"
 	@echo "... AbstractNumericalApproximation.i"
 	@echo "... AbstractNumericalApproximation.s"
 	@echo "... LeastSquares.o"
 	@echo "... LeastSquares.i"
 	@echo "... LeastSquares.s"
+	@echo "... MultMat.o"
+	@echo "... MultMat.i"
+	@echo "... MultMat.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
