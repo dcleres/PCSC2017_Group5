@@ -12,7 +12,6 @@ using namespace std;
 void ReadFile::loadFromFile(Data& data)
 {
     std::cerr << "Reloading world from file <" << mFilename << ">" << std::endl;
-    std::string content("");
     std::ifstream in (mFilename);
 
     if (!in)

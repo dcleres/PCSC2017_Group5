@@ -136,6 +136,60 @@ doc/fast:
 	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
 .PHONY : doc/fast
 
+AbstractNumericalApproximation.o: AbstractNumericalApproximation.cpp.o
+
+.PHONY : AbstractNumericalApproximation.o
+
+# target to build an object file
+AbstractNumericalApproximation.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
+.PHONY : AbstractNumericalApproximation.cpp.o
+
+AbstractNumericalApproximation.i: AbstractNumericalApproximation.cpp.i
+
+.PHONY : AbstractNumericalApproximation.i
+
+# target to preprocess a source file
+AbstractNumericalApproximation.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i
+.PHONY : AbstractNumericalApproximation.cpp.i
+
+AbstractNumericalApproximation.s: AbstractNumericalApproximation.cpp.s
+
+.PHONY : AbstractNumericalApproximation.s
+
+# target to generate assembly for a file
+AbstractNumericalApproximation.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
+.PHONY : AbstractNumericalApproximation.cpp.s
+
+LeastSquares.o: LeastSquares.cpp.o
+
+.PHONY : LeastSquares.o
+
+# target to build an object file
+LeastSquares.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o
+.PHONY : LeastSquares.cpp.o
+
+LeastSquares.i: LeastSquares.cpp.i
+
+.PHONY : LeastSquares.i
+
+# target to preprocess a source file
+LeastSquares.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.i
+.PHONY : LeastSquares.cpp.i
+
+LeastSquares.s: LeastSquares.cpp.s
+
+.PHONY : LeastSquares.s
+
+# target to generate assembly for a file
+LeastSquares.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.s
+.PHONY : LeastSquares.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -200,6 +254,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... PCSC2017_Group5"
 	@echo "... doc"
+	@echo "... AbstractNumericalApproximation.o"
+	@echo "... AbstractNumericalApproximation.i"
+	@echo "... AbstractNumericalApproximation.s"
+	@echo "... LeastSquares.o"
+	@echo "... LeastSquares.i"
+	@echo "... LeastSquares.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

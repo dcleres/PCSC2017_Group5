@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-
 CMakeFiles/PCSC2017_Group5.dir/all:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/depend
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target PCSC2017_Group5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target PCSC2017_Group5"
 .PHONY : CMakeFiles/PCSC2017_Group5.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/PCSC2017_Group5.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PCSC2017_Group5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PCSC2017_Group5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/PCSC2017_Group5.dir/rule
@@ -103,7 +103,7 @@ clean: CMakeFiles/PCSC2017_Group5.dir/clean
 CMakeFiles/doc.dir/all:
 	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/depend
 	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=4 "Built target doc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=6 "Built target doc"
 .PHONY : CMakeFiles/doc.dir/all
 
 # Include target in all.

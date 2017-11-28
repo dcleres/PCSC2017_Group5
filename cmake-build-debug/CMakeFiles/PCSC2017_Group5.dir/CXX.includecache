@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.cpp
+iostream
+-
+AbstractNumericalApproximation.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
+
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
+readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
+
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.cpp
+LeastSquares.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.h
+
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.h
+AbstractNumericalApproximation.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
+
 /Users/davidcleres/CLionProjects/PCSC2017_Group5/main.cpp
 iostream
 -

@@ -3,7 +3,7 @@ project(PCSC2017_Group5)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES main.cpp super_cool_class.h readFile.h readFile.cpp)
+set(SOURCE_FILES main.cpp super_cool_class.h readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp LeastSquares.cpp LeastSquares.h)
 
 find_package(Doxygen)
 option(BUILD_DOCUMENTATION "Create and install the HTML based API
@@ -31,4 +31,4 @@ if(BUILD_DOCUMENTATION)
 
 endif()
 
-add_executable(PCSC2017_Group5 ${SOURCE_FILES} super_cool_class.h readFile.h readFile.cpp)
+add_executable(PCSC2017_Group5 ${SOURCE_FILES} super_cool_class.h readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp LeastSquares.cpp LeastSquares.h)
