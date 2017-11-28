@@ -9,9 +9,7 @@
 /Users/davidcleres/CLionProjects/PCSC2017_Group5/main.cpp
 iostream
 -
-sstream
--
-fstream
+vector
 -
 readFile.h
 /Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
@@ -30,5 +28,7 @@ readFile.h
 string
 -
 fstream
+-
+vector
 -
 

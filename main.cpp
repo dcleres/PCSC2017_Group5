@@ -1,6 +1,9 @@
+/**
+ * \file main.cpp
+ * \brief This is the function to call to run the script of the project
+ */
+
 #include <iostream>
-#include <sstream>
-#include <fstream>
 #include <vector>
 
 #include "readFile.h"
@@ -16,7 +19,10 @@ int main() {
     vector<double> heights;
     vector<Gender> genders;
 
-    std::cout << << std::endl;
+    Data data = {genders, heights, weights};
+
+    readFile.loadFromFile(data);
+    readFile.show(data);
 
     return 0;
 }

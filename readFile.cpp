@@ -5,13 +5,12 @@
 #include <stdexcept>
 #include <iostream>
 #include <fstream>
-#include "readFile.h
+#include "readFile.h"
 
 using namespace std;
 
 void ReadFile::loadFromFile(Data& data)
 {
-    //TO DO: Include the fact that we use DATA
     std::cerr << "Reloading world from file <" << mFilename << ">" << std::endl;
     std::string content("");
     std::ifstream in (mFilename);
@@ -19,11 +18,25 @@ void ReadFile::loadFromFile(Data& data)
     if (!in)
         throw std::runtime_error("Couldn't open file <" + mFilename + ">");
 
+    string firstline("");
+    getline(in, firstline);
+    cout << firstline << endl;
     while (!in.eof())
     {
-        std::string buffer;
-        getline(in, buffer);
-        content += buffer + "\n";
+        std::string bufferGender;
+        double bufferWeight;
+        double bufferHeight;
+
+        in >> bufferGender;
+        in >> bufferHeight;
+        in >> bufferWeight;
+
+        if (bufferGender == "Male")
+            data.genders.push_back(MALE);
+        else data.genders.push_back(FEMALE);
+
+        data.heights.push_back(bufferHeight);
+        data.weights.push_back(bufferWeight);
     }
 
     if (!in.eof())
@@ -43,17 +56,17 @@ std::string ReadFile::getFilename() {
     return mFilename;
 }
 
-std::string show(Data& data) {
+void ReadFile::show(Data& data) {
     for (size_t i(0); i < data.heights.size(); i++) {
         if (data.genders[i] == MALE) {
             std::cout << "Male\t";
         }
-        else 
+        else
         {
             std::cout << "Female\t";
         }
-        cout << "Height: " +  data.heights[i] + "\t";
-        cout << "Weight:" + data.weights[i] << endl;
+        cout << "Height: " << data.heights[i] << "\t";
+        cout << "Weight:" << data.weights[i] << endl;
     }
 }
 
