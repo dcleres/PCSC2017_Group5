@@ -6,10 +6,10 @@
 #define PCSC2017_GROUP5_LEASTSQUARES_H
 
 /**
- * \file AbstractNumericalApproximation.h
- * \brief This is the virtual class we will use to implement all the approximations functions
- * \class AbstractNumericalApproximation
- * This is a pure virtual class
+ * \file LeastSquares.h
+ * \brief This is redefinition of the virtual class to implement LeastSquares functions
+ * \class Subclass of AbstractNumericalApproximation
+ * This is how we can approximate data
  */
 using namespace std;
 #include "AbstractNumericalApproximation.h"
