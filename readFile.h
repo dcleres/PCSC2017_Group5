@@ -10,6 +10,15 @@
 
 #include <string>
 #include <fstream>
+#include <vector>
+
+enum Gender {MALE, FEMALE};
+
+struct Data {
+    std::vector<Gender> genders;
+    std::vector<double> heights;
+    std::vector<double> weights;
+};
 
 class ReadFile
 {
@@ -18,7 +27,7 @@ public:
     ///@constructor
     ReadFile (std::string const& filename);
     ///@method
-    std::string loadFromFile();
+    void loadFromFile(Data & data);
     ///@method
     std::string getFilename();
 
