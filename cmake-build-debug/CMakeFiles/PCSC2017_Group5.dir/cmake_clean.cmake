@@ -3,6 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
   "PCSC2017_Group5.pdb"
   "PCSC2017_Group5"
 )
