@@ -163,33 +163,6 @@ AbstractNumericalApproximation.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
 .PHONY : AbstractNumericalApproximation.cpp.s
 
-LeastSquares.o: LeastSquares.cpp.o
-
-.PHONY : LeastSquares.o
-
-# target to build an object file
-LeastSquares.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o
-.PHONY : LeastSquares.cpp.o
-
-LeastSquares.i: LeastSquares.cpp.i
-
-.PHONY : LeastSquares.i
-
-# target to preprocess a source file
-LeastSquares.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.i
-.PHONY : LeastSquares.cpp.i
-
-LeastSquares.s: LeastSquares.cpp.s
-
-.PHONY : LeastSquares.s
-
-# target to generate assembly for a file
-LeastSquares.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.s
-.PHONY : LeastSquares.cpp.s
-
 MultMat.o: MultMat.cpp.o
 
 .PHONY : MultMat.o
@@ -284,9 +257,6 @@ help:
 	@echo "... AbstractNumericalApproximation.o"
 	@echo "... AbstractNumericalApproximation.i"
 	@echo "... AbstractNumericalApproximation.s"
-	@echo "... LeastSquares.o"
-	@echo "... LeastSquares.i"
-	@echo "... LeastSquares.s"
 	@echo "... MultMat.o"
 	@echo "... MultMat.i"
 	@echo "... MultMat.s"

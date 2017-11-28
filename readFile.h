@@ -32,7 +32,9 @@ public:
     ///@method
     std::string getFilename();
     ///@method
-    void show(Data& data);
+    void show(Data const& data);
+    ///@method
+    void writeFile(Data const& data);
 
 private:
     ///@variable

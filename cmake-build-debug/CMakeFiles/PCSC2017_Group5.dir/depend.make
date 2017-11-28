@@ -5,11 +5,6 @@ CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../Abstract
 CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../AbstractNumericalApproximation.h
 CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../readFile.h
 
-CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o: ../AbstractNumericalApproximation.h
-CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o: ../LeastSquares.cpp
-CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o: ../LeastSquares.h
-CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o: ../readFile.h
-
 CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: ../MultMat.cpp
 CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: ../MultMat.h
 

@@ -96,12 +96,6 @@
 		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
 		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>

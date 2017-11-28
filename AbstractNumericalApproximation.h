@@ -7,7 +7,8 @@
 #ifndef PCSC2017_GROUP5_ABSTRACTNUMERICALAPPROXIMATION_H
 #define PCSC2017_GROUP5_ABSTRACTNUMERICALAPPROXIMATION_H
 
-#include "readFile.h";
+#include "readFile.h"
+
 using namespace std;
 
 class AbstractNumericalApproximation {
@@ -25,10 +26,5 @@ public:
 private:
 
 };
-
-
-
-
-
 
 #endif //PCSC2017_GROUP5_ABSTRACTNUMERICALAPPROXIMATION_H
