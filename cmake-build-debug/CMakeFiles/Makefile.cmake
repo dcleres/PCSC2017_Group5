@@ -7,39 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-<<<<<<< HEAD
-=======
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeFindCodeBlocks.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeGenericSystem.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeSystemSpecificInformation.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Compiler/AppleClang-C.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Compiler/AppleClang-CXX.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Compiler/Clang.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Compiler/GNU.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/FindDoxygen.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/FindPackageMessage.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/Darwin-AppleClang-C.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/Darwin-AppleClang-CXX.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/Darwin-Clang-C.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/Darwin-Clang-CXX.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/Darwin-Clang.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/Darwin-Initialize.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/Darwin.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Platform/UnixPaths.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/ProcessorCount.cmake"
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
   "../CMakeLists.txt"
   "CMakeFiles/3.8.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
-<<<<<<< HEAD
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake"
@@ -52,15 +23,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Compiler/GNU-C.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Compiler/GNU-CXX.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Compiler/GNU.cmake"
+  "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/FindDoxygen.cmake"
+  "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake"
+  "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/FindPackageMessage.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Platform/Linux-GNU-C.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Platform/Linux-GNU-CXX.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Platform/Linux-GNU.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Platform/Linux.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/Platform/UnixPaths.cmake"
   "/opt/clion-2017.2.2/bin/cmake/share/cmake-3.8/Modules/ProcessorCount.cmake"
-=======
-  "../doc/Doxyfile"
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
   )
 
 # The corresponding makefile is:
@@ -71,10 +42,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-<<<<<<< HEAD
-=======
-  "doxyfile"
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

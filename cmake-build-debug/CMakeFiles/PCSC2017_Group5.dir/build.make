@@ -57,33 +57,9 @@ include CMakeFiles/PCSC2017_Group5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PCSC2017_Group5.dir/flags.make
 
-CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../AbstractNumericalApproximation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.cpp > CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.cpp -o CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
-
-
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/main.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/main.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.i: cmake_force
@@ -105,33 +81,9 @@ CMakeFiles/PCSC2017_Group5.dir/main.cpp.o.provides: CMakeFiles/PCSC2017_Group5.d
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/main.cpp.o
 
 
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: ../MultMat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp > CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp -o CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o
-
-
 CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o: ../readFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/readFile.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.i: cmake_force
@@ -153,65 +105,154 @@ CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o.provides: CMakeFiles/PCSC2017_Grou
 CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o
 
 
-CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: ../LeastSquare.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/LeastSquare.cpp
+CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
+CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../AbstractNumericalApproximation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.cpp
 
-CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/LeastSquare.cpp > CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i
+CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.cpp > CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i
 
-CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/LeastSquare.cpp -o CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
+CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.cpp -o CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
 
-CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires:
+CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires:
 
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires
 
-CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides
+CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides.build
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides
 
-CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
+CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
 
 
-<<<<<<< HEAD
-CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o: ../DivMat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/DivMat.cpp
+CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
+CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: ../MultMat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp
 
-CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/DivMat.cpp > CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.i
+CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp > CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.i
 
-CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/DivMat.cpp -o CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.s
+CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp -o CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s
 
-CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.requires:
+CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires:
 
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.requires
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires
 
-CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.provides
+CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides.build
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides
 
-CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o
+CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o
+
+
+CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
+CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: ../FFT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/FFT.cpp
+
+CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/FFT.cpp > CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i
+
+CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/FFT.cpp -o CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s
+
+CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires:
+
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
+
+CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides.build
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides
+
+CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o
+
+
+CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
+CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: ../DFT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/DFT.cpp
+
+CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/DFT.cpp > CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i
+
+CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/DFT.cpp -o CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s
+
+CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires:
+
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
+
+CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides.build
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides
+
+CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o
+
+
+CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
+CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../FFTtest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/FFTtest.cpp
+
+CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/FFTtest.cpp > CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i
+
+CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/FFTtest.cpp -o CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s
+
+CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires:
+
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires
+
+CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides.build
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides
+
+CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o
+
+
+CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
+CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: ../FFTreal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/FFTreal.cpp
+
+CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Documents/PCSC2017_Group5/FFTreal.cpp > CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i
+
+CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Documents/PCSC2017_Group5/FFTreal.cpp -o CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s
+
+CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires:
+
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires
+
+CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides.build
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides
+
+CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o
 
 
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: ../Lagrange.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o -c /home/pcsc/Documents/PCSC2017_Group5/Lagrange.cpp
-=======
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o: ../MultMat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o -c /Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.cpp
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
 
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.i"
@@ -232,145 +273,33 @@ CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.provides: CMakeFiles/PCSC2017_Grou
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
 
 
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: ../FFT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o -c /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.cpp > CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.cpp -o CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o
-
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: ../DFT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o -c /Users/davidcleres/CLionProjects/PCSC2017_Group5/DFT.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidcleres/CLionProjects/PCSC2017_Group5/DFT.cpp > CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidcleres/CLionProjects/PCSC2017_Group5/DFT.cpp -o CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o
-
-
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../FFTtest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o -c /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTtest.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTtest.cpp > CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTtest.cpp -o CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o
-
-
-CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: ../FFTreal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o -c /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.cpp > CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.cpp -o CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o
-
-
 # Object files for target PCSC2017_Group5
 PCSC2017_Group5_OBJECTS = \
-"CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/main.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o" \
-<<<<<<< HEAD
-"CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
-=======
 "CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
+"CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o" \
+"CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
 
 # External object files for target PCSC2017_Group5
 PCSC2017_Group5_EXTERNAL_OBJECTS =
 
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
-<<<<<<< HEAD
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/main.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/build.make
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable PCSC2017_Group5"
-=======
+PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o
+PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/build.make
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable PCSC2017_Group5"
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable PCSC2017_Group5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PCSC2017_Group5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -378,21 +307,15 @@ CMakeFiles/PCSC2017_Group5.dir/build: PCSC2017_Group5
 
 .PHONY : CMakeFiles/PCSC2017_Group5.dir/build
 
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires
-<<<<<<< HEAD
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/main.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.requires
-=======
+CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
+CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.requires
 
 .PHONY : CMakeFiles/PCSC2017_Group5.dir/requires
 

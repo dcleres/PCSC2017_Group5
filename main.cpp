@@ -9,6 +9,7 @@
 #include "readFile.h"
 #include "MultMat.h"
 #include "FFT.h"
+#include "Lagrange.h"
 
 
 typedef complex<double> cx;
@@ -72,7 +73,10 @@ int main() {
         cout << "Résultat :" << endl;
         affiche_matrice(multiplication(M1, M2));
     }*/
-
-
+    Lagrange lagrange;
+    vector<vector<double>> point = lagrange.solve_lagrange(data,2);
+    for (int i=0; i<point.size();++i){
+        cout <<point[i][0]<<"    "<<point[i][1]<<endl;
+    }
     return 0;
 }

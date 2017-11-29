@@ -15,8 +15,6 @@
 
 using namespace std;
 
-
-
 /**
 * Lagrane_coeffs generate the polynomials coefficients of the lagrange interpolation polynomial
 * for the given points
@@ -30,17 +28,17 @@ function at the points given on standard input.
 **/
 class Lagrange {
 
+
 public:
-    vector<double>* lagrange_coeffs(const vector<point_t> points);
+    //Lagrange return directly some points
+    vector<vector<double>> solve_lagrange(Data data, int degre) ;
 
-    void print_lagrange_coef(const vector<point_t> points);
+    double getmax(vector<double>x);
+    double getmin(vector<double>x);
 
-    double poly_eval(const vector<double> coeffs, double point);
+    virtual ~lagrange();
 
 private:
-
-
 };
-
 
 #endif //PCSC2017_GROUP5_LAGRANGE_H

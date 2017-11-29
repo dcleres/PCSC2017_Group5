@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 /opt/clion-2017.2.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pcsc/Documents/PCSC2017_Group5
-=======
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/davidcleres/CLionProjects/PCSC2017_Group5
-Doxygen build started.
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
+-- Could NOT find Doxygen (missing:  DOXYGEN_EXECUTABLE) 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug

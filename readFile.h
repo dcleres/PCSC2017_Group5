@@ -25,6 +25,7 @@ typedef struct {
     double y;
 } point_t;
 
+
 class ReadFile
 {
 

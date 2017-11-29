@@ -150,88 +150,6 @@ AbstractNumericalApproximation.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
 .PHONY : AbstractNumericalApproximation.cpp.s
 
-<<<<<<< HEAD
-DivMat.o: DivMat.cpp.o
-
-.PHONY : DivMat.o
-
-# target to build an object file
-DivMat.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o
-.PHONY : DivMat.cpp.o
-
-DivMat.i: DivMat.cpp.i
-
-.PHONY : DivMat.i
-
-# target to preprocess a source file
-DivMat.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.i
-.PHONY : DivMat.cpp.i
-
-DivMat.s: DivMat.cpp.s
-
-.PHONY : DivMat.s
-
-# target to generate assembly for a file
-DivMat.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.s
-.PHONY : DivMat.cpp.s
-
-Lagrange.o: Lagrange.cpp.o
-
-.PHONY : Lagrange.o
-
-# target to build an object file
-Lagrange.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
-.PHONY : Lagrange.cpp.o
-
-Lagrange.i: Lagrange.cpp.i
-
-.PHONY : Lagrange.i
-
-# target to preprocess a source file
-Lagrange.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.i
-.PHONY : Lagrange.cpp.i
-
-Lagrange.s: Lagrange.cpp.s
-
-.PHONY : Lagrange.s
-
-# target to generate assembly for a file
-Lagrange.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.s
-.PHONY : Lagrange.cpp.s
-
-LeastSquare.o: LeastSquare.cpp.o
-
-.PHONY : LeastSquare.o
-
-# target to build an object file
-LeastSquare.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
-.PHONY : LeastSquare.cpp.o
-
-LeastSquare.i: LeastSquare.cpp.i
-
-.PHONY : LeastSquare.i
-
-# target to preprocess a source file
-LeastSquare.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i
-.PHONY : LeastSquare.cpp.i
-
-LeastSquare.s: LeastSquare.cpp.s
-
-.PHONY : LeastSquare.s
-
-# target to generate assembly for a file
-LeastSquare.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
-.PHONY : LeastSquare.cpp.s
-=======
 DFT.o: DFT.cpp.o
 
 .PHONY : DFT.o
@@ -339,7 +257,33 @@ FFTtest.s: FFTtest.cpp.s
 FFTtest.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s
 .PHONY : FFTtest.cpp.s
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
+
+Lagrange.o: Lagrange.cpp.o
+
+.PHONY : Lagrange.o
+
+# target to build an object file
+Lagrange.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
+.PHONY : Lagrange.cpp.o
+
+Lagrange.i: Lagrange.cpp.i
+
+.PHONY : Lagrange.i
+
+# target to preprocess a source file
+Lagrange.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.i
+.PHONY : Lagrange.cpp.i
+
+Lagrange.s: Lagrange.cpp.s
+
+.PHONY : Lagrange.s
+
+# target to generate assembly for a file
+Lagrange.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.s
+.PHONY : Lagrange.cpp.s
 
 MultMat.o: MultMat.cpp.o
 
@@ -434,17 +378,6 @@ help:
 	@echo "... AbstractNumericalApproximation.o"
 	@echo "... AbstractNumericalApproximation.i"
 	@echo "... AbstractNumericalApproximation.s"
-<<<<<<< HEAD
-	@echo "... DivMat.o"
-	@echo "... DivMat.i"
-	@echo "... DivMat.s"
-	@echo "... Lagrange.o"
-	@echo "... Lagrange.i"
-	@echo "... Lagrange.s"
-	@echo "... LeastSquare.o"
-	@echo "... LeastSquare.i"
-	@echo "... LeastSquare.s"
-=======
 	@echo "... DFT.o"
 	@echo "... DFT.i"
 	@echo "... DFT.s"
@@ -457,7 +390,9 @@ help:
 	@echo "... FFTtest.o"
 	@echo "... FFTtest.i"
 	@echo "... FFTtest.s"
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
+	@echo "... Lagrange.o"
+	@echo "... Lagrange.i"
+	@echo "... Lagrange.s"
 	@echo "... MultMat.o"
 	@echo "... MultMat.i"
 	@echo "... MultMat.s"
