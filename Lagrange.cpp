@@ -16,6 +16,8 @@
 
 
 //ATTENTION: cette valeur n est valable que pour un degré 2. Comment fair epour un degré 3?
+//pour un dgre N je pense qu il faut rajouter une somme, c est a dire une boucle for pour chaque yi*Li ou i va de 0 a N
+//je mettrai un boucle for sur toute la fonction et j'ajouterais nos polynome mais ca me parait grave bizarre.
 
 using namespace std ;
 
@@ -26,8 +28,6 @@ vector<vector<double>> Lagrange::solve_lagrange(Data data,int degre)
 {
     int number_pts = data.heights.size();
 
-    vector<double> x(number_pts); //abscisse
-    vector<double> y(number_pts); //ordonné
     vector<double> w(number_pts); //X qui nous permet de tracer la courbe
     vector<double> b(number_pts); //factoriel de xi-xj
 
@@ -57,7 +57,7 @@ vector<vector<double>> Lagrange::solve_lagrange(Data data,int degre)
             L[m][n]=1;
             for(int i=0;i<number_pts ;i++) {
                 if(n!=i) {
-                    L[m][n]*= w[m]-x[i];
+                    L[m][n]*= w[m]-data.heights[i];
                 }
                 if(n==i) {
                     L[m][n]=L[m][n]*1;
@@ -69,7 +69,7 @@ vector<vector<double>> Lagrange::solve_lagrange(Data data,int degre)
     //We calculate the lagrage polynome for each point m
     for(int m=0;m <p+1;m++) {
         for(int n=0;n<number_pts ;n++) {
-            L[m][n]=L[m][n]*(y[n]/b[n]);
+            L[m][n]=L[m][n]*(data.weights[n]/b[n]);
         }
     }
 

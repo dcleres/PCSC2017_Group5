@@ -285,6 +285,33 @@ Lagrange.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.s
 .PHONY : Lagrange.cpp.s
 
+LeastSquare.o: LeastSquare.cpp.o
+
+.PHONY : LeastSquare.o
+
+# target to build an object file
+LeastSquare.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
+.PHONY : LeastSquare.cpp.o
+
+LeastSquare.i: LeastSquare.cpp.i
+
+.PHONY : LeastSquare.i
+
+# target to preprocess a source file
+LeastSquare.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i
+.PHONY : LeastSquare.cpp.i
+
+LeastSquare.s: LeastSquare.cpp.s
+
+.PHONY : LeastSquare.s
+
+# target to generate assembly for a file
+LeastSquare.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
+.PHONY : LeastSquare.cpp.s
+
 MultMat.o: MultMat.cpp.o
 
 .PHONY : MultMat.o
@@ -393,6 +420,9 @@ help:
 	@echo "... Lagrange.o"
 	@echo "... Lagrange.i"
 	@echo "... Lagrange.s"
+	@echo "... LeastSquare.o"
+	@echo "... LeastSquare.i"
+	@echo "... LeastSquare.s"
 	@echo "... MultMat.o"
 	@echo "... MultMat.i"
 	@echo "... MultMat.s"

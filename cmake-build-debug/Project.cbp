@@ -117,6 +117,12 @@
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/Lagrange.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/LeastSquare.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/LeastSquare.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>

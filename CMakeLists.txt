@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES main.cpp super_cool_class.h readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp  MultMat.h MultMat.cpp FFT.cpp FFT.h DFT.cpp DFT.h FFTtest.cpp FFTreal.cpp FFTreal.h Lagrange.cpp Lagrange.h)
+set(SOURCE_FILES main.cpp super_cool_class.h readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp  MultMat.h MultMat.cpp FFT.cpp FFT.h DFT.cpp DFT.h FFTtest.cpp FFTreal.cpp FFTreal.h Lagrange.cpp Lagrange.h LeastSquare.cpp LeastSquare.h)
 
 find_package(Doxygen)
 option(BUILD_DOCUMENTATION "Create and install the HTML based API

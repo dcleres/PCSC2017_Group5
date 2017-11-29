@@ -10,12 +10,12 @@
 using namespace std;
 #include "AbstractNumericalApproximation.h"
 
-class LeastSquares {
+class LeastSquare {
 
 public:
-    virtual vector<double> approximationFunction(Data const& data, unsigned int degre);
-    vector<double> mldivide ();
-
+    //virtual vector<double> approximationFunction(Data const& data, unsigned int degre);
+    //vector<double> mldivide ();
+    void solve_least_square(Data data,int degree);
 private:
 
 };
