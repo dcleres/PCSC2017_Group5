@@ -339,6 +339,33 @@ MultMat.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s
 .PHONY : MultMat.cpp.s
 
+Polynomial.o: Polynomial.cpp.o
+
+.PHONY : Polynomial.o
+
+# target to build an object file
+Polynomial.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o
+.PHONY : Polynomial.cpp.o
+
+Polynomial.i: Polynomial.cpp.i
+
+.PHONY : Polynomial.i
+
+# target to preprocess a source file
+Polynomial.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.i
+.PHONY : Polynomial.cpp.i
+
+Polynomial.s: Polynomial.cpp.s
+
+.PHONY : Polynomial.s
+
+# target to generate assembly for a file
+Polynomial.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.s
+.PHONY : Polynomial.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -426,6 +453,9 @@ help:
 	@echo "... MultMat.o"
 	@echo "... MultMat.i"
 	@echo "... MultMat.s"
+	@echo "... Polynomial.o"
+	@echo "... Polynomial.i"
+	@echo "... Polynomial.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

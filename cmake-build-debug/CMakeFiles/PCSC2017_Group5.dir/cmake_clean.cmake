@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
   "PCSC2017_Group5.pdb"
   "PCSC2017_Group5"
 )
