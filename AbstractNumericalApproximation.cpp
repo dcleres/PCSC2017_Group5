@@ -2,10 +2,10 @@
 // Created by nicol on 28.11.2017.
 //
 
-using namespace std;
-
 #include <iostream>
 #include "AbstractNumericalApproximation.h"
+
+using namespace std;
 
 void AbstractNumericalApproximation::printWeight (vector<double> const& weight){
     cout << "The weight found by the approximation function are :"<< endl;

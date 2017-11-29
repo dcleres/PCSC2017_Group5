@@ -150,6 +150,7 @@ AbstractNumericalApproximation.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
 .PHONY : AbstractNumericalApproximation.cpp.s
 
+<<<<<<< HEAD
 DivMat.o: DivMat.cpp.o
 
 .PHONY : DivMat.o
@@ -230,6 +231,115 @@ LeastSquare.s: LeastSquare.cpp.s
 LeastSquare.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
 .PHONY : LeastSquare.cpp.s
+=======
+DFT.o: DFT.cpp.o
+
+.PHONY : DFT.o
+
+# target to build an object file
+DFT.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o
+.PHONY : DFT.cpp.o
+
+DFT.i: DFT.cpp.i
+
+.PHONY : DFT.i
+
+# target to preprocess a source file
+DFT.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i
+.PHONY : DFT.cpp.i
+
+DFT.s: DFT.cpp.s
+
+.PHONY : DFT.s
+
+# target to generate assembly for a file
+DFT.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s
+.PHONY : DFT.cpp.s
+
+FFT.o: FFT.cpp.o
+
+.PHONY : FFT.o
+
+# target to build an object file
+FFT.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o
+.PHONY : FFT.cpp.o
+
+FFT.i: FFT.cpp.i
+
+.PHONY : FFT.i
+
+# target to preprocess a source file
+FFT.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i
+.PHONY : FFT.cpp.i
+
+FFT.s: FFT.cpp.s
+
+.PHONY : FFT.s
+
+# target to generate assembly for a file
+FFT.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s
+.PHONY : FFT.cpp.s
+
+FFTreal.o: FFTreal.cpp.o
+
+.PHONY : FFTreal.o
+
+# target to build an object file
+FFTreal.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o
+.PHONY : FFTreal.cpp.o
+
+FFTreal.i: FFTreal.cpp.i
+
+.PHONY : FFTreal.i
+
+# target to preprocess a source file
+FFTreal.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i
+.PHONY : FFTreal.cpp.i
+
+FFTreal.s: FFTreal.cpp.s
+
+.PHONY : FFTreal.s
+
+# target to generate assembly for a file
+FFTreal.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s
+.PHONY : FFTreal.cpp.s
+
+FFTtest.o: FFTtest.cpp.o
+
+.PHONY : FFTtest.o
+
+# target to build an object file
+FFTtest.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o
+.PHONY : FFTtest.cpp.o
+
+FFTtest.i: FFTtest.cpp.i
+
+.PHONY : FFTtest.i
+
+# target to preprocess a source file
+FFTtest.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i
+.PHONY : FFTtest.cpp.i
+
+FFTtest.s: FFTtest.cpp.s
+
+.PHONY : FFTtest.s
+
+# target to generate assembly for a file
+FFTtest.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s
+.PHONY : FFTtest.cpp.s
+>>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
 
 MultMat.o: MultMat.cpp.o
 
@@ -324,6 +434,7 @@ help:
 	@echo "... AbstractNumericalApproximation.o"
 	@echo "... AbstractNumericalApproximation.i"
 	@echo "... AbstractNumericalApproximation.s"
+<<<<<<< HEAD
 	@echo "... DivMat.o"
 	@echo "... DivMat.i"
 	@echo "... DivMat.s"
@@ -333,6 +444,20 @@ help:
 	@echo "... LeastSquare.o"
 	@echo "... LeastSquare.i"
 	@echo "... LeastSquare.s"
+=======
+	@echo "... DFT.o"
+	@echo "... DFT.i"
+	@echo "... DFT.s"
+	@echo "... FFT.o"
+	@echo "... FFT.i"
+	@echo "... FFT.s"
+	@echo "... FFTreal.o"
+	@echo "... FFTreal.i"
+	@echo "... FFTreal.s"
+	@echo "... FFTtest.o"
+	@echo "... FFTtest.i"
+	@echo "... FFTtest.s"
+>>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
 	@echo "... MultMat.o"
 	@echo "... MultMat.i"
 	@echo "... MultMat.s"

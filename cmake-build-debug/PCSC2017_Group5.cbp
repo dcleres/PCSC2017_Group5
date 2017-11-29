@@ -90,10 +90,32 @@
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/DivMat.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/DivMat.h">
+=======
+		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/DFT.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/DFT.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTtest.cpp">
+>>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/Lagrange.cpp">

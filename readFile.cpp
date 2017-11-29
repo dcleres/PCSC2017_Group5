@@ -62,7 +62,7 @@ std::string ReadFile::getFilename() {
     return mFilename;
 }
 
-void ReadFile::show(Data& data) {
+void ReadFile::show(Data const& data) {
     for (size_t i(0); i < data.heights.size(); i++) {
         if (data.genders[i] == MALE) {
             std::cout << "Male\t";
@@ -76,6 +76,23 @@ void ReadFile::show(Data& data) {
     }
 }
 
+void ReadFile::writeFile(Data const& data ) {
+    ofstream myfile;
+    myfile.open ("output.txt");
 
+    for (size_t i(0); i < data.genders.size(); i++)
+    {
+        if (data.genders[i] == MALE) {
+            myfile << "Male\t";
+        }
+        else
+        {
+            myfile<< "Female\t";
+        }
+        myfile << data.heights[i];
+        myfile << data.weights[i];
+    }
 
+    myfile.close();
+}
 
