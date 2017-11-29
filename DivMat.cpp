@@ -1,3 +1,6 @@
+//
+// Created by pcsc on 11/28/17.
+//
 #include <vector>
 #include "MultMat.h"
 
@@ -32,8 +35,8 @@ Matrice MultMat::lire_matrice()
 }
 
 // ----------------------------------------------------------------------
-Matrice  MultMat::division(const Matrice& M1,
-                        const Matrice& M2)
+Matrice  MultMat::multiplication(const Matrice& M1,
+                                 const Matrice& M2)
 {
     Matrice prod(M1.size(), vector<double>(M2[0].size()));
 
@@ -41,7 +44,7 @@ Matrice  MultMat::division(const Matrice& M1,
         for (size_t j(0); j < M2[0].size(); ++j) {
             prod[i][j] = 0.0;
             for (size_t k(0); k < M2.size(); k++)
-                prod[i][j] += M1[i][k] / M2[k][j];
+                prod[i][j] += M1[i][k] * M2[k][j];
         }
 
     return prod;

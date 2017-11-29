@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PCSC2017_Group5.dir/main.cpp.o"
-  "CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o"
-  "CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/main.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
   "PCSC2017_Group5.pdb"
   "PCSC2017_Group5"
 )

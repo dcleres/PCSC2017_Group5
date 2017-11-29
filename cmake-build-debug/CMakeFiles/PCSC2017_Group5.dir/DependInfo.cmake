@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.cpp" "/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o"
-  "/Users/davidcleres/CLionProjects/PCSC2017_Group5/LeastSquares.cpp" "/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o"
-  "/Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.cpp" "/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o"
-  "/Users/davidcleres/CLionProjects/PCSC2017_Group5/main.cpp" "/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/main.cpp.o"
-  "/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.cpp" "/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
+  "/home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.cpp" "/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o"
+  "/home/pcsc/Documents/PCSC2017_Group5/DivMat.cpp" "/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o"
+  "/home/pcsc/Documents/PCSC2017_Group5/Lagrange.cpp" "/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
+  "/home/pcsc/Documents/PCSC2017_Group5/LeastSquare.cpp" "/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
+  "/home/pcsc/Documents/PCSC2017_Group5/MultMat.cpp" "/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o"
+  "/home/pcsc/Documents/PCSC2017_Group5/main.cpp" "/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/main.cpp.o"
+  "/home/pcsc/Documents/PCSC2017_Group5/readFile.cpp" "/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -14,6 +14,8 @@ void ReadFile::loadFromFile(Data& data)
     std::cerr << "Reloading world from file <" << mFilename << ">" << std::endl;
     std::ifstream in (mFilename);
 
+    vector<point_t> Points;
+
     if (!in)
         throw std::runtime_error("Couldn't open file <" + mFilename + ">");
 
@@ -36,6 +38,11 @@ void ReadFile::loadFromFile(Data& data)
 
         data.heights.push_back(bufferHeight);
         data.weights.push_back(bufferWeight);
+
+        point_t onePoint;
+        onePoint.x=bufferHeight;
+        onePoint.y=bufferWeight;
+        Points.push_back(onePoint);
     }
 
     if (!in.eof())

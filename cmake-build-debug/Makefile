@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.2.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.2.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/davidcleres/CLionProjects/PCSC2017_Group5
+CMAKE_SOURCE_DIR = /home/pcsc/Documents/PCSC2017_Group5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2017.2.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2017.2.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles /home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,19 +123,6 @@ PCSC2017_Group5/fast:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/build
 .PHONY : PCSC2017_Group5/fast
 
-#=============================================================================
-# Target rules for targets named doc
-
-# Build rule for target.
-doc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doc
-.PHONY : doc
-
-# fast build rule for target.
-doc/fast:
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-.PHONY : doc/fast
-
 AbstractNumericalApproximation.o: AbstractNumericalApproximation.cpp.o
 
 .PHONY : AbstractNumericalApproximation.o
@@ -163,32 +150,86 @@ AbstractNumericalApproximation.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
 .PHONY : AbstractNumericalApproximation.cpp.s
 
-LeastSquares.o: LeastSquares.cpp.o
+DivMat.o: DivMat.cpp.o
 
-.PHONY : LeastSquares.o
+.PHONY : DivMat.o
 
 # target to build an object file
-LeastSquares.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.o
-.PHONY : LeastSquares.cpp.o
+DivMat.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.o
+.PHONY : DivMat.cpp.o
 
-LeastSquares.i: LeastSquares.cpp.i
+DivMat.i: DivMat.cpp.i
 
-.PHONY : LeastSquares.i
+.PHONY : DivMat.i
 
 # target to preprocess a source file
-LeastSquares.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.i
-.PHONY : LeastSquares.cpp.i
+DivMat.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.i
+.PHONY : DivMat.cpp.i
 
-LeastSquares.s: LeastSquares.cpp.s
+DivMat.s: DivMat.cpp.s
 
-.PHONY : LeastSquares.s
+.PHONY : DivMat.s
 
 # target to generate assembly for a file
-LeastSquares.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquares.cpp.s
-.PHONY : LeastSquares.cpp.s
+DivMat.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DivMat.cpp.s
+.PHONY : DivMat.cpp.s
+
+Lagrange.o: Lagrange.cpp.o
+
+.PHONY : Lagrange.o
+
+# target to build an object file
+Lagrange.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
+.PHONY : Lagrange.cpp.o
+
+Lagrange.i: Lagrange.cpp.i
+
+.PHONY : Lagrange.i
+
+# target to preprocess a source file
+Lagrange.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.i
+.PHONY : Lagrange.cpp.i
+
+Lagrange.s: Lagrange.cpp.s
+
+.PHONY : Lagrange.s
+
+# target to generate assembly for a file
+Lagrange.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.s
+.PHONY : Lagrange.cpp.s
+
+LeastSquare.o: LeastSquare.cpp.o
+
+.PHONY : LeastSquare.o
+
+# target to build an object file
+LeastSquare.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
+.PHONY : LeastSquare.cpp.o
+
+LeastSquare.i: LeastSquare.cpp.i
+
+.PHONY : LeastSquare.i
+
+# target to preprocess a source file
+LeastSquare.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i
+.PHONY : LeastSquare.cpp.i
+
+LeastSquare.s: LeastSquare.cpp.s
+
+.PHONY : LeastSquare.s
+
+# target to generate assembly for a file
+LeastSquare.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
+.PHONY : LeastSquare.cpp.s
 
 MultMat.o: MultMat.cpp.o
 
@@ -280,13 +321,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... PCSC2017_Group5"
-	@echo "... doc"
 	@echo "... AbstractNumericalApproximation.o"
 	@echo "... AbstractNumericalApproximation.i"
 	@echo "... AbstractNumericalApproximation.s"
-	@echo "... LeastSquares.o"
-	@echo "... LeastSquares.i"
-	@echo "... LeastSquares.s"
+	@echo "... DivMat.o"
+	@echo "... DivMat.i"
+	@echo "... DivMat.s"
+	@echo "... Lagrange.o"
+	@echo "... Lagrange.i"
+	@echo "... Lagrange.s"
+	@echo "... LeastSquare.o"
+	@echo "... LeastSquare.i"
+	@echo "... LeastSquare.s"
 	@echo "... MultMat.o"
 	@echo "... MultMat.i"
 	@echo "... MultMat.s"
