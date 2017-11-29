@@ -23,6 +23,13 @@ public:
     ///@method Function that allows us to print the weight return by the approximation function
     void printWeight (vector<double> const& weight);
 
+
+    void AbstractNumericalApproximation::GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point);
+    void AbstractNumericalApproximation::Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point);
+    void Solve(vector<vector<double>> A, vector<double>b, int t, vector<double> x);
+
+
+    ~AbstractNumericalApproximation();
 private:
 
 };

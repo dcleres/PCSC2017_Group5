@@ -14,7 +14,7 @@ void Polynomial::solve(Data data,int degree)
 {
     int number_point=data.heights.size();
     vector<double>b(number_point);
-    vector<vector<double>>B(number_point,vector<double>(number_point));
+    vector<vector<double>>A(number_point,vector<double>(number_point));
 
     if(number_point!=degree+1) {
         cerr << "ERROR: The number of points must be equal to the degree of the polynome plus 1 !!!" << endl ;
@@ -23,13 +23,13 @@ void Polynomial::solve(Data data,int degree)
 
     for(int i=0;i<number_point;i++) {
         for(int j=0;j<number_point;j++) {
-            B[i][j] = pow(data.heights[i],j) ;
+            A[i][j] = pow(data.heights[i],j) ;
         }
         b[i] = data.weights[i] ;
     }
 
-    GaussianElimination(B,b,number_point) ;
-    Solve(B,b,number_point,data.heights[0]);
+    GaussianElimination(A,b,number_point) ;
+    Solve(A,b,number_point,data.heights[0]);
 
 }
 
@@ -42,15 +42,15 @@ void Polynomial::solve(Data data)
 {
     int number_point=data.heights.size();
     vector<double>b(number_point);
-    vector<vector<double>>B(number_point,vector<double>(number_point));
+    vector<vector<double>>A(number_point,vector<double>(number_point));
 
     for(int i=0;i<number_point;i++) {
         for(int j=0;j<number_point;j++) {
-            B[i][j] = pow(data.heights[i],j) ;
+            A[i][j] = pow(data.heights[i],j) ;
         }
         b[i] = data.weights[i] ;
     }
 
-    GaussianElimination(B,b,number_point) ;
-    Solve(B,b,number_point,data.heights);
+    GaussianElimination(A,b,number_point) ;
+    Solve(A,b,number_point,data.heights);
 }
