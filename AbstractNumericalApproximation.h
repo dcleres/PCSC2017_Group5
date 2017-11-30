@@ -24,8 +24,8 @@ public:
     void printWeight (vector<double> const& weight);
 
 
-    void AbstractNumericalApproximation::GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point);
-    void AbstractNumericalApproximation::Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point);
+    void GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point);
+    void Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point);
     void Solve(vector<vector<double>> A, vector<double>b, int t, vector<double> x);
 
 

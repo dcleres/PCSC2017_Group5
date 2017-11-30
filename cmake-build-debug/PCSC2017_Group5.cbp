@@ -39,7 +39,7 @@
 			</Target>
 			<Target title="PCSC2017_Group5">
 				<Option output="/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/PCSC2017_Group5" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug"/>
+				<Option working_dir=""/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -62,7 +62,7 @@
 			</Target>
 			<Target title="PCSC2017_Group5/fast">
 				<Option output="/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug/PCSC2017_Group5" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/pcsc/Documents/PCSC2017_Group5/cmake-build-debug"/>
+				<Option working_dir=""/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -90,32 +90,25 @@
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/AbstractNumericalApproximation.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-<<<<<<< HEAD
-		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/DivMat.cpp">
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/DFT.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/DivMat.h">
-=======
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/DFT.cpp">
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/DFT.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/DFT.h">
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/FFT.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.cpp">
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/FFT.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.h">
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/FFTreal.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.cpp">
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/FFTreal.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTtest.cpp">
->>>>>>> 6f1ddc4e99e0c7a9e1d4fa96c8d8cc1cd6301fcc
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/FFTtest.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/Lagrange.cpp">
@@ -134,6 +127,18 @@
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/MultMat.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/PieceWise_Continue_Polynomial.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/Polynomial.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/Polynomial.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/main.cpp">

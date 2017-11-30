@@ -339,6 +339,33 @@ MultMat.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.s
 .PHONY : MultMat.cpp.s
 
+PieceWise_Continue_Polynomial.o: PieceWise_Continue_Polynomial.cpp.o
+
+.PHONY : PieceWise_Continue_Polynomial.o
+
+# target to build an object file
+PieceWise_Continue_Polynomial.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o
+.PHONY : PieceWise_Continue_Polynomial.cpp.o
+
+PieceWise_Continue_Polynomial.i: PieceWise_Continue_Polynomial.cpp.i
+
+.PHONY : PieceWise_Continue_Polynomial.i
+
+# target to preprocess a source file
+PieceWise_Continue_Polynomial.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.i
+.PHONY : PieceWise_Continue_Polynomial.cpp.i
+
+PieceWise_Continue_Polynomial.s: PieceWise_Continue_Polynomial.cpp.s
+
+.PHONY : PieceWise_Continue_Polynomial.s
+
+# target to generate assembly for a file
+PieceWise_Continue_Polynomial.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.s
+.PHONY : PieceWise_Continue_Polynomial.cpp.s
+
 Polynomial.o: Polynomial.cpp.o
 
 .PHONY : Polynomial.o
@@ -453,6 +480,9 @@ help:
 	@echo "... MultMat.o"
 	@echo "... MultMat.i"
 	@echo "... MultMat.s"
+	@echo "... PieceWise_Continue_Polynomial.o"
+	@echo "... PieceWise_Continue_Polynomial.i"
+	@echo "... PieceWise_Continue_Polynomial.s"
 	@echo "... Polynomial.o"
 	@echo "... Polynomial.i"
 	@echo "... Polynomial.s"

@@ -20,6 +20,26 @@ void AbstractNumericalApproximation::printWeight (vector<double> const& weight){
 
 AbstractNumericalApproximation::~AbstractNumericalApproximation(){}
 
+/// Swap lines to always have the biggest value at the top, less numerical errors
+void AbstractNumericalApproximation::Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point)
+{
+    double max = fabs(A[k][k]); //return the absolute value
+    int Imax = k;
+    for (int i = k+1; i<number_point; ++i) {
+        double val = fabs(A[i][k]);
+        if (val > max) {
+            max = val;
+            Imax = i;
+        }
+    }
+    vector<double>temp1 = A[k];// Echange les lignes de la matrice
+    A[k] = A[Imax];
+    A[Imax] = temp1;
+    double temp2 = b[k]; // Echange les valeurs du vecteur
+    b[k] = b[Imax];
+    b[Imax] = temp2;
+}
+
 /// Do the gaussian elimination to solve the system Ax = b
 void AbstractNumericalApproximation::GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point)
 {
@@ -40,25 +60,7 @@ void AbstractNumericalApproximation::GaussianElimination(vector<vector<double>> 
 
 }
 
-/// Swap lines to always have the biggest value at the top, less numerical errors
-void AbstractNumericalApproximation::Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point)
-{
-    double max = fabs(A[k][k]); //return the absolute value
-    int Imax = k;
-    for (int i = k+1; i<number_point; ++i) {
-        double val = fabs(A[i][k]);
-        if (val > max) {
-            max = val;
-            Imax = i;
-        }
-    }
-    vector<double>temp1 = A[k];// Echange les lignes de la matrice
-    A[k] = A[Imax];
-    A[Imax] = temp1;
-    double temp2 = b[k]; // Echange les valeurs du vecteur
-    b[k] = b[Imax];
-    b[Imax] = temp2;
-}
+
 
 /// Solve the simplified system made by the gaussian elimination
 void AbstractNumericalApproximation::Solve(vector<vector<double>> A, vector<double>b, int t, vector<double> x)

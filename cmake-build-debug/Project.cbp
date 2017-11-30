@@ -129,6 +129,12 @@
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/MultMat.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/PieceWise_Continue_Polynomial.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
 		<Unit filename="/home/pcsc/Documents/PCSC2017_Group5/Polynomial.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
