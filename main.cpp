@@ -3,16 +3,25 @@
  * \brief This is the function to call to run the script of the project
  */
 
+#include <cassert>
+#include <iostream>
+#include <fstream>
+#include <cmath>
+#include <math.h>
+#include <string>
+#include <sstream>
+#include <unistd.h>
+#include <stdlib.h>
+
 #include <iostream>
 #include <vector>
 #include <complex>
+#include <zconf.h>
 #include "readFile.h"
-#include "MultMat.h"
+#include "gnuplot_i.hpp"
 #include "FFT.h"
-#include "Lagrange.h"
 
-
-typedef complex<double> cx;
+complex<double> cx;
 
 using namespace std;
 
@@ -64,6 +73,15 @@ int main() {
     readFile.loadFromFile(data);
     readFile.show(data);
 
+
+    Gnuplot g1 = Gnuplot("lines");
+    g1.set_style("points");
+    g1.plot_xy(weights,heights,"Approximation");
+    sleep(1);
+
+    //g1.plot_xy(ptX,ptY,"Default points"); //Display a second graph
+    sleep(20);
+
     /*MultMat
     Matrice M1(lire_matrice()), M2(lire_matrice());
 
@@ -73,10 +91,6 @@ int main() {
         cout << "Résultat :" << endl;
         affiche_matrice(multiplication(M1, M2));
     }*/
-    Lagrange lagrange;
-    vector<vector<double>> point = lagrange.solve_lagrange(data,2);
-    for (int i=0; i<point.size();++i){
-        cout <<point[i][0]<<"    "<<point[i][1]<<endl;
-    }
+
     return 0;
 }

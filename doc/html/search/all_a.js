@@ -1,8 +1,19 @@
 var searchData=
 [
-  ['readfile',['ReadFile',['../class_read_file.html',1,'ReadFile'],['../class_read_file.html#ae297f0539380fc9b703a1bceda2ce820',1,'ReadFile::ReadFile()']]],
-  ['readfile_2ecpp',['readFile.cpp',['../read_file_8cpp.html',1,'']]],
-  ['readfile_2eh',['readFile.h',['../read_file_8h.html',1,'']]],
-  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['reafile',['Reafile',['../class_reafile.html',1,'']]]
+  ['pcsc2017_5fgroup5',['PCSC2017_Group5',['../md___users_davidcleres__c_lion_projects__p_c_s_c2017__group5__r_e_a_d_m_e.html',1,'']]],
+  ['path_5fmaxnamesz',['PATH_MAXNAMESZ',['../gnuplot__i_8cpp.html#a98724840ca52cabedc31eb7a57aca57b',1,'gnuplot_i.cpp']]],
+  ['piecewise_5fcontinue_5fpolynomial',['PieceWise_Continue_Polynomial',['../class_piece_wise___continue___polynomial.html',1,'']]],
+  ['piecewise_5fcontinue_5fpolynomial_2ecpp',['PieceWise_Continue_Polynomial.cpp',['../_piece_wise___continue___polynomial_8cpp.html',1,'']]],
+  ['piecewise_5fcontinue_5fpolynomial_2eh',['PieceWise_Continue_Polynomial.h',['../_piece_wise___continue___polynomial_8h.html',1,'']]],
+  ['platform_5fid',['PLATFORM_ID',['../_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCXXCompilerId.cpp']]],
+  ['plot_5fequation',['plot_equation',['../class_gnuplot.html#a55e6430f1329bf8a66f155dcacb9d112',1,'Gnuplot']]],
+  ['plot_5fslope',['plot_slope',['../class_gnuplot.html#a80c9d9e6bc3e64db073d9d39d6ec5d5f',1,'Gnuplot']]],
+  ['plot_5fx',['plot_x',['../class_gnuplot.html#ae3b7c28efb53f636431b9655085906be',1,'Gnuplot']]],
+  ['plot_5fxy',['plot_xy',['../class_gnuplot.html#a1e817a58ef3e40ceaeb128c7e6437e8a',1,'Gnuplot']]],
+  ['plots_2em',['plots.m',['../plots_8m.html',1,'']]],
+  ['point_5ft',['point_t',['../structpoint__t.html',1,'']]],
+  ['polynomial',['Polynomial',['../class_polynomial.html',1,'']]],
+  ['polynomial_2ecpp',['Polynomial.cpp',['../_polynomial_8cpp.html',1,'']]],
+  ['polynomial_2eh',['Polynomial.h',['../_polynomial_8h.html',1,'']]],
+  ['printweight',['printWeight',['../class_abstract_numerical_approximation.html#a841c83a7ae9f2146001581f3a7f8444a',1,'AbstractNumericalApproximation']]]
 ];

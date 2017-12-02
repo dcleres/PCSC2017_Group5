@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readfile',['ReadFile',['../class_read_file.html',1,'']]],
-  ['reafile',['Reafile',['../class_reafile.html',1,'']]]
+  ['fft',['FFT',['../class_f_f_t.html',1,'']]],
+  ['fftreal',['FFTreal',['../class_f_f_treal.html',1,'']]]
 ];

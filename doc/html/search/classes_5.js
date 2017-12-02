@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vector',['Vector',['../struct_vector.html',1,'']]]
+  ['lagrange',['Lagrange',['../class_lagrange.html',1,'']]],
+  ['leastsquare',['LeastSquare',['../class_least_square.html',1,'']]]
 ];

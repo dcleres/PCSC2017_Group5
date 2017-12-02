@@ -1,0 +1,89 @@
+\hypertarget{class_f_f_treal}{}\section{F\+F\+Treal Class Reference}
+\label{class_f_f_treal}\index{F\+F\+Treal@{F\+F\+Treal}}
+
+
+{\ttfamily \#include $<$F\+F\+Treal.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_f_f_treal_a16caf75d31c313da4c6c1659497434c2}{transform}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\item 
+void \mbox{\hyperlink{class_f_f_treal_a1db8c322c9e02acf725f5599c8924d0a}{inverse\+Transform}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\item 
+void \mbox{\hyperlink{class_f_f_treal_afa3f0e3c25513ee26c9698b864330df9}{transform\+Radix2}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\item 
+void \mbox{\hyperlink{class_f_f_treal_a05861961bccf522231faf434b806e882}{transform\+Bluestein}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\item 
+void \mbox{\hyperlink{class_f_f_treal_a8c7ae7505d1c80b4471a30585801d64b}{convolve}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, std\+::vector$<$ double $>$ \&out)
+\item 
+void \mbox{\hyperlink{class_f_f_treal_a375983c9725f461611341061dbdcc92f}{convolve}} (const std\+::vector$<$ double $>$ \&xreal, const std\+::vector$<$ double $>$ \&ximag, const std\+::vector$<$ double $>$ \&yreal, const std\+::vector$<$ double $>$ \&yimag, std\+::vector$<$ double $>$ \&outreal, std\+::vector$<$ double $>$ \&outimag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file F\+F\+Treal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_f_f_treal_a8c7ae7505d1c80b4471a30585801d64b}\label{class_f_f_treal_a8c7ae7505d1c80b4471a30585801d64b}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!convolve@{convolve}}
+\index{convolve@{convolve}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{convolve()}{convolve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::convolve (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{std\+::vector$<$ double $>$ \&}]{out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_f_f_treal_a375983c9725f461611341061dbdcc92f}\label{class_f_f_treal_a375983c9725f461611341061dbdcc92f}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!convolve@{convolve}}
+\index{convolve@{convolve}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{convolve()}{convolve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::convolve (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{xreal,  }\item[{const std\+::vector$<$ double $>$ \&}]{ximag,  }\item[{const std\+::vector$<$ double $>$ \&}]{yreal,  }\item[{const std\+::vector$<$ double $>$ \&}]{yimag,  }\item[{std\+::vector$<$ double $>$ \&}]{outreal,  }\item[{std\+::vector$<$ double $>$ \&}]{outimag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_f_f_treal_a1db8c322c9e02acf725f5599c8924d0a}\label{class_f_f_treal_a1db8c322c9e02acf725f5599c8924d0a}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!inverse\+Transform@{inverse\+Transform}}
+\index{inverse\+Transform@{inverse\+Transform}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{inverse\+Transform()}{inverseTransform()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::inverse\+Transform (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_a16caf75d31c313da4c6c1659497434c2}\label{class_f_f_treal_a16caf75d31c313da4c6c1659497434c2}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform@{transform}}
+\index{transform@{transform}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::transform (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_a05861961bccf522231faf434b806e882}\label{class_f_f_treal_a05861961bccf522231faf434b806e882}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform\+Bluestein@{transform\+Bluestein}}
+\index{transform\+Bluestein@{transform\+Bluestein}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform\+Bluestein()}{transformBluestein()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::transform\+Bluestein (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_afa3f0e3c25513ee26c9698b864330df9}\label{class_f_f_treal_afa3f0e3c25513ee26c9698b864330df9}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform\+Radix2@{transform\+Radix2}}
+\index{transform\+Radix2@{transform\+Radix2}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform\+Radix2()}{transformRadix2()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::transform\+Radix2 (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file F\+F\+Treal.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_f_f_treal_8h}{F\+F\+Treal.\+h}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_f_f_treal_8cpp}{F\+F\+Treal.\+cpp}}\end{DoxyCompactItemize}

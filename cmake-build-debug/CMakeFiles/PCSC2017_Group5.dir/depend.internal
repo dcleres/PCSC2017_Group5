@@ -23,13 +23,13 @@ CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o
  /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.h
  /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTtest.cpp
  /Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
-CMakeFiles/PCSC2017_Group5.dir/MultMat.cpp.o
- /Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.cpp
- /Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.h
+CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o
+ /Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.cpp
+ /Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.hpp
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o
  /Users/davidcleres/CLionProjects/PCSC2017_Group5/AbstractNumericalApproximation.h
  /Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.h
- /Users/davidcleres/CLionProjects/PCSC2017_Group5/MultMat.h
+ /Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.hpp
  /Users/davidcleres/CLionProjects/PCSC2017_Group5/main.cpp
  /Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o

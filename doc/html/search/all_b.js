@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['stringify',['STRINGIFY',['../_c_make_c_compiler_id_8c.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY():&#160;CMakeCXXCompilerId.cpp']]],
-  ['stringify_5fhelper',['STRINGIFY_HELPER',['../_c_make_c_compiler_id_8c.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER():&#160;CMakeCXXCompilerId.cpp']]],
-  ['super_5fcool_5fclass_2eh',['super_cool_class.h',['../super__cool__class_8h.html',1,'']]],
-  ['supercoolclass',['SuperCoolClass',['../class_super_cool_class.html',1,'']]],
-  ['supercoolclass2',['SuperCoolClass2',['../class_super_cool_class2.html',1,'']]]
+  ['randgen',['randGen',['../_f_f_ttest_8cpp.html#a00d8683a188d7fe3c81dd1f03df0c52a',1,'FFTtest.cpp']]],
+  ['randomcomplexes',['randomComplexes',['../_f_f_ttest_8cpp.html#a3e03028db21efdef47d0a8833815089f',1,'FFTtest.cpp']]],
+  ['readfile',['ReadFile',['../class_read_file.html',1,'ReadFile'],['../class_read_file.html#ae297f0539380fc9b703a1bceda2ce820',1,'ReadFile::ReadFile()']]],
+  ['readfile_2ecpp',['readFile.cpp',['../read_file_8cpp.html',1,'']]],
+  ['readfile_2eh',['readFile.h',['../read_file_8h.html',1,'']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['reafile',['Reafile',['../class_reafile.html',1,'']]],
+  ['realdft',['realDFT',['../class_d_f_t.html#a92567785c575cc75dc6600bcfc6acbea',1,'DFT']]],
+  ['reset_5fplot',['reset_plot',['../class_gnuplot.html#ad54976652afe30231a850dd31e1ca70f',1,'Gnuplot']]],
+  ['reversebits',['reverseBits',['../_f_f_t_8cpp.html#a0c1b0b595aedb215154e6886be87584c',1,'reverseBits(size_t x, int n):&#160;FFT.cpp'],['../_f_f_treal_8cpp.html#a0c1b0b595aedb215154e6886be87584c',1,'reverseBits(size_t x, int n):&#160;FFTreal.cpp']]]
 ];

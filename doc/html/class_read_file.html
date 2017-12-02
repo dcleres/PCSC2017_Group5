@@ -76,14 +76,18 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae297f0539380fc9b703a1bceda2ce820"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#ae297f0539380fc9b703a1bceda2ce820">ReadFile</a> (std::string const &amp;filename)</td></tr>
 <tr class="separator:ae297f0539380fc9b703a1bceda2ce820"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ca728cd9c884966d53e62ab4de483f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#af5ca728cd9c884966d53e62ab4de483f">loadFromFile</a> ()</td></tr>
-<tr class="separator:af5ca728cd9c884966d53e62ab4de483f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232df426223b84e4dbb3f964ee4c3177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#a232df426223b84e4dbb3f964ee4c3177">loadFromFile</a> (<a class="el" href="struct_data.html">Data</a> &amp;data)</td></tr>
+<tr class="separator:a232df426223b84e4dbb3f964ee4c3177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9835264c9ec95cfdbc1349573402fc01"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#a9835264c9ec95cfdbc1349573402fc01">getFilename</a> ()</td></tr>
 <tr class="separator:a9835264c9ec95cfdbc1349573402fc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efc41b900510ae038dafc23a2563300"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#a5efc41b900510ae038dafc23a2563300">show</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data)</td></tr>
+<tr class="separator:a5efc41b900510ae038dafc23a2563300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11779a3630a2c1d62ab4566abb4034a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#ac11779a3630a2c1d62ab4566abb4034a">writeFile</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data)</td></tr>
+<tr class="separator:ac11779a3630a2c1d62ab4566abb4034a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="read_file_8h_source.html#l00014">14</a> of file <a class="el" href="read_file_8h_source.html">readFile.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="read_file_8h_source.html#l00029">29</a> of file <a class="el" href="read_file_8h_source.html">readFile.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae297f0539380fc9b703a1bceda2ce820"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae297f0539380fc9b703a1bceda2ce820">&#9670;&nbsp;</a></span>ReadFile()</h2>
@@ -103,7 +107,7 @@ Public Member Functions</h2></td></tr>
 
 <p></p>
 
-<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00037">37</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00057">57</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 
 </div>
 </div>
@@ -125,20 +129,21 @@ Public Member Functions</h2></td></tr>
 
 <p></p>
 
-<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00041">41</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00061">61</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af5ca728cd9c884966d53e62ab4de483f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ca728cd9c884966d53e62ab4de483f">&#9670;&nbsp;</a></span>loadFromFile()</h2>
+<a id="a232df426223b84e4dbb3f964ee4c3177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232df426223b84e4dbb3f964ee4c3177">&#9670;&nbsp;</a></span>loadFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ReadFile::loadFromFile </td>
+          <td class="memname">void ReadFile::loadFromFile </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -146,7 +151,51 @@ Public Member Functions</h2></td></tr>
 
 <p></p>
 
-<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00010">10</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00012">12</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5efc41b900510ae038dafc23a2563300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efc41b900510ae038dafc23a2563300">&#9670;&nbsp;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadFile::show </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_data.html">Data</a> const &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+
+<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00065">65</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac11779a3630a2c1d62ab4566abb4034a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11779a3630a2c1d62ab4566abb4034a">&#9670;&nbsp;</a></span>writeFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadFile::writeFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_data.html">Data</a> const &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+
+<p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00079">79</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 
 </div>
 </div>
