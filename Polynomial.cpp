@@ -1,13 +1,13 @@
+//
+// Created by pcsc on 12/2/17.
+//
+
 #include <assert.h>
 #include <cmath>
 #include <iostream>
 #include "readFile.h"
 #include "Polynomial.h"
 
-//
-// Created by pcsc on 11/29/17.
-//
-Polynomial::~polynomial(){}
 
 /// Polynomial approximation of the given points using a single polynome
 void Polynomial::solve(Data data,int degree)
@@ -29,7 +29,7 @@ void Polynomial::solve(Data data,int degree)
     }
 
     GaussianElimination(A,b,number_point) ;
-    Solve(A,b,number_point,data.heights[0]);
+    Solve(A,b,number_point,data.heights);
 
 }
 

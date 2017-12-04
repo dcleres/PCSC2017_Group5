@@ -3,7 +3,7 @@ project(PCSC2017_Group5)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES main.cpp readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp  FFT.cpp FFT.h DFT.cpp DFT.h FFTtest.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp)
+set(SOURCE_FILES main.cpp readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp  FFT.cpp FFT.h DFT.cpp DFT.h FFTtest.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h LeastSquare.cpp LeastSquare.h Polynomial.cpp Polynomial.h PieceWise_Continue_Polynomial.cpp PieceWise_Continue_Polynomial.h PieceWise_NonContinue_Polynomial.cpp PieceWise_NonContinue_Polynomial.h)
 
 find_package(Doxygen)
 option(BUILD_DOCUMENTATION "Create and install the HTML based API
@@ -31,4 +31,4 @@ if(BUILD_DOCUMENTATION)
 
 endif()
 
-add_executable(PCSC2017_Group5 ${SOURCE_FILES} readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp FFT.cpp FFT.h DFT.cpp DFT.h FFTtest.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp)
+add_executable(PCSC2017_Group5 ${SOURCE_FILES} readFile.h readFile.cpp AbstractNumericalApproximation.h AbstractNumericalApproximation.cpp FFT.cpp FFT.h DFT.cpp DFT.h FFTtest.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h LeastSquare.cpp LeastSquare.h Polynomial.cpp PieceWise_Continue_Polynomial.cpp PieceWise_Continue_Polynomial.h PieceWise_NonContinue_Polynomial.cpp PieceWise_NonContinue_Polynomial.h)

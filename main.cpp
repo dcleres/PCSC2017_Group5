@@ -16,7 +16,7 @@
 #include <iostream>
 #include <vector>
 #include <complex>
-#include <zconf.h>
+//#include <zconf.h>
 #include "readFile.h"
 #include "gnuplot_i.hpp"
 #include "FFT.h"
@@ -61,7 +61,7 @@ void FFT(Iter_T a, Iter_T b, int log2n)
 
 int main() {
 
-    std::string fname("/Users/davidcleres/CLionProjects/PCSC2017_Group5/height_weight_genders.txt");
+    std::string fname("/home/pcsc/Music/PCSC2017_Group5/height_weight_genders.txt");
     ReadFile readFile(fname);
 
     vector<double> weights;
