@@ -21,8 +21,9 @@ void AbstractNumericalApproximation::printWeight (vector<double> const& weight){
 AbstractNumericalApproximation::~AbstractNumericalApproximation(){}
 
 /// Swap lines to always have the biggest value at the top, less numerical errors
-void AbstractNumericalApproximation::Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point)
-{
+void AbstractNumericalApproximation::Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point) {
+
+    //A is the xi matrix put it with degree and b is the yi vector
     double max = fabs(A[k][k]); //return the absolute value
     int Imax = k;
     for (int i = k+1; i<number_point; ++i) {
@@ -44,7 +45,7 @@ void AbstractNumericalApproximation::Swap(vector<vector<double>> A, vector<doubl
 void AbstractNumericalApproximation::GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point)
 {
     for (int k = 0; k < number_point; ++k) {
-        Swap(A, b, k, number_point);
+        Swap(A, b, k, number_point); // Swap lines to always have the biggest value at the top, less numerical errors
         for (int i = k+1; i < number_point; ++i) {
             double r = A[i][k] / A[k][k];
             for (int j = k+1; j < number_point; ++j) {
@@ -52,8 +53,7 @@ void AbstractNumericalApproximation::GaussianElimination(vector<vector<double>> 
             }
             b[i] -= r * b[k];
         }
-        for (int i = k+1; i <number_point; ++i)
-        {
+        for (int i = k+1; i <number_point; ++i) {
             A[i][k] = 0;
         }
     }

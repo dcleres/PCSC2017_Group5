@@ -13,7 +13,7 @@ using namespace std;
 class LeastSquare : public AbstractNumericalApproximation {
 
 public:
-    void solve(Data data,int degree, vector<vector<double>> beta);
+    void solve(Data data,int degree);
 private:
 
 };

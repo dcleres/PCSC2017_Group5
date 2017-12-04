@@ -24,12 +24,9 @@ public:
     //Lagrange return directly some points
     vector<vector<double>> solve(Data data, int degre) ;
 
+private:
     double getmax(vector<double>x);
     double getmin(vector<double>x);
-
-
-
-private:
 };
 
 #endif //PCSC2017_GROUP5_LAGRANGE_H

@@ -20,6 +20,7 @@
 #include "readFile.h"
 #include "gnuplot_i.hpp"
 #include "FFT.h"
+#include "Polynomial.h"
 
 complex<double> cx;
 
@@ -78,6 +79,8 @@ int main() {
     g1.set_style("points");
     g1.plot_xy(weights,heights,"Approximation");
     sleep(1);
+
+
 
     //g1.plot_xy(ptX,ptY,"Default points"); //Display a second graph
     sleep(20);

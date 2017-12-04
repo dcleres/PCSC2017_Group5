@@ -14,23 +14,15 @@ using namespace std;
 class AbstractNumericalApproximation {
 
 public:
-    ///\method
-    ///\brief Virtual Method that we will implement in the sub-class
-    ///It return a vector of double, the weight we found after apply the function
-    ///It takes Data as a parameter, a structure made of two vector of double and one vector of Gender (Gender is a enum type)
-    //virtual vector<double> approximationFunction(Data const& data) = 0;
-
     ///@method Function that allows us to print the weight return by the approximation function
     void printWeight (vector<double> const& weight);
-
-
     void GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point);
-    void Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point);
     void Solve(vector<vector<double>> A, vector<double>b, int t, vector<double> x);
 
 
     ~AbstractNumericalApproximation();
 private:
+    void Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point);
 
 };
 
