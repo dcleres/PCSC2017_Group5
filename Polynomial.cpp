@@ -23,19 +23,14 @@ void Polynomial::solve(Data data,int degree)
 
     for(int i=0;i<number_point;i++) {
         for(int j=0;j<number_point;j++) {
-            A[i][j] = pow(data.heights[i],j) ;
+            A[i][j] = pow(data.heights[i],j) ; //We fill the matrix A with each xi at each degree and each xi^j correspond to a case in A
         }
-        b[i] = data.weights[i] ;
     }
 
-    GaussianElimination(A,b,number_point) ;
-    Solve(A,b,number_point,data.heights);
+    GaussianElimination(A,data.weights,number_point) ;
+    Solve(A,data.weights,number_point,data.heights);
 
 }
-
-
-
-//ATTENTION JE VOIS PAS VRAIEMENT LA DIFF ENTRE LE DEUX ...
 
 /// Approximation of some points using a single polynome (used for Piece-Wise No-Continious)
 void Polynomial::solve(Data data)
@@ -46,11 +41,10 @@ void Polynomial::solve(Data data)
 
     for(int i=0;i<number_point;i++) {
         for(int j=0;j<number_point;j++) {
-            A[i][j] = pow(data.heights[i],j) ;
+            A[i][j] = pow(data.heights[i],j) ;  //We fill the matrix A with each xi at each degree and each xi^j correspond to a case in A. A is a square matrix
         }
-        b[i] = data.weights[i] ;
     }
 
-    GaussianElimination(A,b,number_point) ;
-    Solve(A,b,number_point,data.heights);
+    GaussianElimination(A,data.weights,number_point) ;
+    Solve(A,data.weights,number_point,data.heights); //Solve is in the file AbstractNumericalApproximation
 }

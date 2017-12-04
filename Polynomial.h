@@ -14,10 +14,10 @@ class Polynomial : public AbstractNumericalApproximation {
 
 public:
 
-    // Approximation polynomiale des points par la mÃ©thode de lagrange (ressort les coefs de lagrange)
+    // Approximation polynomial des points par la methode de lagrange (ressort les coefs de lagrange)
     void solve(Data data, int degree);
 
-    // overwritten pour PWNC
+    // overwritten pour PieceWiseNonContinue
     void solve(Data data);
 };
 
