@@ -6,33 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.cpp
 iostream
 -
 cmath
 -
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Music/PCSC2017_Group5/DFT.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/DFT.cpp
 DFT.h
-/home/pcsc/Music/PCSC2017_Group5/DFT.h
+/home/pcsc/Desktop/PCSC2017_Group5/DFT.h
 iostream
 -
 
-/home/pcsc/Music/PCSC2017_Group5/DFT.h
+/home/pcsc/Desktop/PCSC2017_Group5/DFT.h
 complex.h
 -
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/Music/PCSC2017_Group5/FFT.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/FFT.cpp
 FFT.h
-/home/pcsc/Music/PCSC2017_Group5/FFT.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
 algorithm
 -
 cmath
@@ -44,17 +44,17 @@ cstdint
 complex
 -
 FFT.h
-/home/pcsc/Music/PCSC2017_Group5/FFT.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
 
-/home/pcsc/Music/PCSC2017_Group5/FFT.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
 complex
 -
 vector
 -
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/Music/PCSC2017_Group5/FFTreal.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.cpp
 cmath
 -
 cstddef
@@ -62,13 +62,13 @@ cstddef
 cstdint
 -
 FFTreal.h
-/home/pcsc/Music/PCSC2017_Group5/FFTreal.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
 
-/home/pcsc/Music/PCSC2017_Group5/FFTreal.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
 vector
 -
 
-/home/pcsc/Music/PCSC2017_Group5/FFTtest.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp
 algorithm
 -
 cmath
@@ -86,9 +86,9 @@ random
 vector
 -
 FFT.h
-/home/pcsc/Music/PCSC2017_Group5/FFT.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
 
-/home/pcsc/Music/PCSC2017_Group5/Lagrange.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.cpp
 cassert
 -
 iostream
@@ -108,11 +108,11 @@ unistd.h
 stdlib.h
 -
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 Lagrange.h
-/home/pcsc/Music/PCSC2017_Group5/Lagrange.h
+/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
 
-/home/pcsc/Music/PCSC2017_Group5/Lagrange.h
+/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
 iostream
 -
 vector
@@ -120,23 +120,23 @@ vector
 algorithm
 -
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/Music/PCSC2017_Group5/LeastSquare.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp
 cmath
 -
 LeastSquare.h
-/home/pcsc/Music/PCSC2017_Group5/LeastSquare.h
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
 Polynomial.h
-/home/pcsc/Music/PCSC2017_Group5/Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
 
-/home/pcsc/Music/PCSC2017_Group5/LeastSquare.h
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/Music/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp
 iostream
 -
 cassert
@@ -144,11 +144,11 @@ cassert
 cmath
 -
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 PieceWise_Continue_Polynomial.h
-/home/pcsc/Music/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
 
-/home/pcsc/Music/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
 iostream
 -
 cassert
@@ -156,25 +156,25 @@ cassert
 cmath
 -
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/Music/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.cpp
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 Polynomial.h
-/home/pcsc/Music/PCSC2017_Group5/Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
 PieceWise_NonContinue_Polynomial.h
-/home/pcsc/Music/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.h
 
-/home/pcsc/Music/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.h
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 Polynomial.h
-/home/pcsc/Music/PCSC2017_Group5/Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
 
-/home/pcsc/Music/PCSC2017_Group5/Polynomial.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp
 assert.h
 -
 cmath
@@ -182,21 +182,21 @@ cmath
 iostream
 -
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 Polynomial.h
-/home/pcsc/Music/PCSC2017_Group5/Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
 
-/home/pcsc/Music/PCSC2017_Group5/Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
 array
 -
 AbstractNumericalApproximation.h
-/home/pcsc/Music/PCSC2017_Group5/AbstractNumericalApproximation.h
+/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h
 
-/home/pcsc/Music/PCSC2017_Group5/gnuplot_i.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.cpp
 gnuplot_i.hpp
-/home/pcsc/Music/PCSC2017_Group5/gnuplot_i.hpp
+/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
 
-/home/pcsc/Music/PCSC2017_Group5/gnuplot_i.hpp
+/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
 stdarg.h
 -
 unistd.h
@@ -222,7 +222,7 @@ vector
 stdexcept
 -
 
-/home/pcsc/Music/PCSC2017_Group5/main.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/main.cpp
 cassert
 -
 iostream
@@ -248,23 +248,27 @@ vector
 complex
 -
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 gnuplot_i.hpp
-/home/pcsc/Music/PCSC2017_Group5/gnuplot_i.hpp
+/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
 FFT.h
-/home/pcsc/Music/PCSC2017_Group5/FFT.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
+Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
 
-/home/pcsc/Music/PCSC2017_Group5/readFile.cpp
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.cpp
 stdexcept
 -
 iostream
 -
 fstream
 -
+cassert
+-
 readFile.h
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Music/PCSC2017_Group5/readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 string
 -
 fstream

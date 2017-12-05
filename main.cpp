@@ -62,28 +62,27 @@ void FFT(Iter_T a, Iter_T b, int log2n)
 
 int main() {
 
-    std::string fname("/home/pcsc/Music/PCSC2017_Group5/height_weight_genders.txt");
+    std::string fname("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
     ReadFile readFile(fname);
 
-    vector<double> weights;
-    vector<double> heights;
-    vector<Gender> genders;
-
-    Data data = {genders, heights, weights};
+    vector<double> xs;
+    vector<double> ys;
+    Data data = {xs, ys};
 
     readFile.loadFromFile(data);
     readFile.show(data);
 
-
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(weights,heights,"Approximation");
+    g1.plot_xy(data.weights, data.heights,"Approximation");
     sleep(1);
 
-
-
-    //g1.plot_xy(ptX,ptY,"Default points"); //Display a second graph
+    int taille = 10;
+    vector<double> ptX(taille); // points given by the user
+    vector<double> ptY(taille);
+    g1.plot_xy(data.weights,data.heights,"Default points");
     sleep(20);
+
 
     /*MultMat
     Matrice M1(lire_matrice()), M2(lire_matrice());

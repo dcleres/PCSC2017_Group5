@@ -15,11 +15,12 @@
 enum Gender {MALE, FEMALE};
 
 ///\struct
-struct Data {
-    std::vector<Gender> genders;
+struct Data
+{
     std::vector<double> heights;
     std::vector<double> weights;
 };
+
 typedef struct {
     double x;
     double y;
