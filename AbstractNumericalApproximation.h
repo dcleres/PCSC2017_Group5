@@ -16,13 +16,14 @@ class AbstractNumericalApproximation {
 public:
     ///@method Function that allows us to print the weight return by the approximation function
     void printWeight (vector<double> const& weight);
-    void GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point);
-    void Solve(vector<vector<double>> A, vector<double>b, int t, vector<double> x);
+    vector<vector<double>> GaussianElimination(vector<vector<double>> A, vector<double> b,int number_point);
+    vector<double> Solve(vector<vector<double>> A, vector<double>b, int t, vector<double> x);
 
 
     ~AbstractNumericalApproximation();
 private:
-    void Swap(vector<vector<double>> A, vector<double> b, const int k,int number_point);
+    vector<double> Swapb(vector<vector<double>>& A, vector<double>& b, const int k,int number_point) ;
+    vector<vector<double>> SwapA(vector<vector<double>>& A, const int k,int number_point);
 
 };
 

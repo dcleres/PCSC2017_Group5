@@ -5,7 +5,7 @@
 using namespace std;
 
 // Approximation of the given points using the Least-Square algorithm
-void LeastSquare::solve(Data data,int degree)
+vector<double> LeastSquare::solve(Data data,int degree)
 {
 
     int number_point = data.heights.size() ;
@@ -38,8 +38,8 @@ void LeastSquare::solve(Data data,int degree)
     }
 
     Polynomial leastsquare;
-    leastsquare.GaussianElimination(A,q,degree+1) ; //on fait appel a la methode d'elimination gaussienne
-    leastsquare.Solve(A,q,degree+1,data.heights); //on resout ce système avec la méthode Solve implémenté dans AbstractNumericalApproximation
+    A=leastsquare.GaussianElimination(A,q,degree+1) ; //on fait appel a la methode d'elimination gaussienne
+    return leastsquare.Solve(A,q,degree+1,data.heights); //on resout ce système avec la méthode Solve implémenté dans AbstractNumericalApproximation
 
 }
 

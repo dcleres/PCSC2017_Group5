@@ -22,7 +22,7 @@ class Lagrange : public AbstractNumericalApproximation{
 
 public:
     //Lagrange return directly some points
-    vector<vector<double>> solve(Data data, int degre) ;
+    double solve(Data data, double xi) ;
 
 private:
     double getmax(vector<double>x);

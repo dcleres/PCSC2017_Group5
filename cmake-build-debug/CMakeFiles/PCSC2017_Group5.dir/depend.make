@@ -37,6 +37,7 @@ CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: ../readFile.h
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../AbstractNumericalApproximation.h
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../PieceWise_Continue_Polynomial.cpp
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../PieceWise_Continue_Polynomial.h
+CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../readFile.h
 
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o: ../AbstractNumericalApproximation.h
@@ -55,6 +56,9 @@ CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o: ../gnuplot_i.hpp
 
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../AbstractNumericalApproximation.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../FFT.h
+CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../Lagrange.h
+CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../LeastSquare.h
+CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../PieceWise_Continue_Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../gnuplot_i.hpp
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../main.cpp

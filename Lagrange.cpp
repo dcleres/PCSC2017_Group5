@@ -22,9 +22,32 @@
 using namespace std ;
 
 /// Polynomial approximation by the Lagrange algorithm
-vector<vector<double>> Lagrange::solve(Data data,int degre) {
+double Lagrange::solve(Data data,double xi) {
 
-    int number_pts = data.heights.size();
+    // function to interpolate the given data points using Lagrange's formula
+// xi corresponds to the new data point whose value is to be obtained
+// n represents the number of known data points
+    int n= data.heights.size();
+    double result = 0; // Initialize result
+
+    for (int i=0; i<n; i++)
+    {
+        // Compute individual terms of above formula
+        double term = data.weights[i];
+        for (int j=0;j<n;j++)
+        {
+            if (j!=i)
+                term = term*(xi - data.heights[j])/double(data.heights[i] - data.heights[j]);
+        }
+
+        // Add current term to result
+        result += term;
+    }
+
+    return result;
+
+
+   /* int number_pts = data.heights.size();
 
     vector<double> w(number_pts); //X qui nous permet de tracer la courbe
     vector<double> b(number_pts); //factoriel de xi-xj
@@ -81,7 +104,7 @@ vector<vector<double>> Lagrange::solve(Data data,int degre) {
         }
     }
 
-    return point;
+    return point;*/
 }
 
 //method that return the max of th value in the vector given in argument

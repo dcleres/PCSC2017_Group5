@@ -21,8 +21,9 @@
 #include "gnuplot_i.hpp"
 #include "FFT.h"
 #include "Polynomial.h"
-
-complex<double> cx;
+#include "Lagrange.h"
+#include "LeastSquare.h"
+#include "PieceWise_Continue_Polynomial.h"
 
 using namespace std;
 
@@ -72,27 +73,70 @@ int main() {
     readFile.loadFromFile(data);
     readFile.show(data);
 
+    // Lagrange :
+    //Lagrange lagrange;
+    //vector<vector<double>> points = lagrange.solve(data, 3);
+    //cout << "coucou"<<endl;
+    //vector <double> x (points.size());
+    //vector<double> y (points.size());
+    //plot the approximation
+    //for (int i=0; i<points.size();++i){
+        //for (int j=0; i<points[0].size();++j){
+
+      //      x[i]=points[i][0];
+        //    y[i]=points[i][1];
+        //}
+   // }
+
+    //Least Squares
+    Polynomial poly;
+    int degree = 3;
+    vector <double> a (poly.solve(data, degree));
+    vector<double>x(21);
+    vector<double>y(21);
+    for (int i=0;i<(degree+1);i++){
+
+        cout<<" + ("<<a[i]<<")"<<"x^"<<i<<endl;
+    }
+
+    for (int d=0; d<21;++d){
+        x[d]= (1+ 0.1*d);
+    }
+    for (int j=0; j<20;++j) {
+        for (int i = 0; i <(degree+1); i++) {
+            y[j]+=pow(x[j],i)*a[i];
+        }
+    }
+
+    Lagrange lagrange;
+    vector<double>x2(31);
+    vector<double>y2(31);
+    for (int d=0; d<31;++d){
+        x2[d]= (1+ 0.1*d);
+    }
+    for (int j=0; j<30;++j) {
+        y2[j]=lagrange.solve(data,x2[j]);
+    }
+
+    PieceWise_Continue_Polynomial piece;
+    vector<double>y3(piece.solve(data,1,2,x2));
+
+
+    //on doit plotter data_copy ou on a changé les valeurs des x associé aux y.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(data.weights, data.heights,"Approximation");
-    sleep(1);
+    g1.plot_xy(x2,y3,"Approximation");
+    sleep(10);
 
-    int taille = 10;
-    vector<double> ptX(taille); // points given by the user
-    vector<double> ptY(taille);
-    g1.plot_xy(data.weights,data.heights,"Default points");
+    //int taille = 10;
+   // vector<double> ptX(taille); // points given by the user
+    //vector<double> ptY(taille);
+    g1.plot_xy(data.heights,data.weights,"Default points");
     sleep(20);
 
 
-    /*MultMat
-    Matrice M1(lire_matrice()), M2(lire_matrice());
 
-    if (M1[0].size() != M2.size())
-        cout << "Multiplication de matrices impossible !" << endl;
-    else {
-        cout << "Résultat :" << endl;
-        affiche_matrice(multiplication(M1, M2));
-    }*/
+
 
     return 0;
 }

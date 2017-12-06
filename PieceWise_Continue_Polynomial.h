@@ -16,7 +16,7 @@ class PieceWise_Continue_Polynomial : public AbstractNumericalApproximation {
 
 public:
 
-    void solve(Data data, int degree, vector<vector<double>>Intervale,vector<vector<double>>coefs_poly);
+    vector<double> solve(Data data, int degree, int Intervale,vector<double>x_plot);
 
 private:
 
