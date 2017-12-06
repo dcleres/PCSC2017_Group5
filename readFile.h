@@ -34,7 +34,7 @@ public:
     ///@constructor
     ReadFile (std::string const& filename);
     ///@method
-    void loadFromFile(Data & data);
+    void loadFromFile(Data& data);
     ///@method
     std::string getFilename();
     ///@method

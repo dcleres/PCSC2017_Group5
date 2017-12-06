@@ -134,9 +134,5 @@ int main() {
     g1.plot_xy(data.heights,data.weights,"Default points");
     sleep(20);
 
-
-
-
-
     return 0;
 }
