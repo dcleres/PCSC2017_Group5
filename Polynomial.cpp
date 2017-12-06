@@ -122,7 +122,7 @@ vector<double> Polynomial::solve(vector<double> const& data,vector<double> const
             }//make the elements below the pivot elements equal to zero or elimnate the variables
         }
     }
-    for (int i(n-1);i >= 0;i--)   //back-substitution we had to keep i as an int otherwise we have a problem at the loop temrination
+    for (int i(n-1); i >= 0; i--)   //back-substitution we had to keep i as an int otherwise we have a problem at the loop temrination
     {                        //x is an array whose values correspond to the values of x,y,z..
         a[i]=B[i][n];                //make the variable to be calculated equal to the rhs of the last equation
         for (size_t j(0); j < n;j++)
