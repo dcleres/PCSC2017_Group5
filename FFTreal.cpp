@@ -1,11 +1,11 @@
 #include <cmath>
 #include <cstddef>
 #include <cstdint>
+#include <utility>
 #include "FFTreal.h"
 
 using std::size_t;
 using std::vector;
-
 
 // Private function prototypes
 static size_t reverseBits(size_t x, int n);
@@ -22,11 +22,9 @@ void FFTreal::transform(vector<double> &real, vector<double> &imag) {
         transformBluestein(real, imag);
 }
 
-
 void FFTreal::inverseTransform(vector<double> &real, vector<double> &imag) {
     transform(imag, real);
 }
-
 
 void FFTreal::transformRadix2(vector<double> &real, vector<double> &imag) {
     // Length variables
@@ -42,7 +40,8 @@ void FFTreal::transformRadix2(vector<double> &real, vector<double> &imag) {
     // Trignometric tables
     vector<double> cosTable(n / 2);
     vector<double> sinTable(n / 2);
-    for (size_t i = 0; i < n / 2; i++) {
+    for (size_t i = 0; i < n / 2; i++)
+    {
         cosTable[i] = std::cos(2 * M_PI * i / n);
         sinTable[i] = std::sin(2 * M_PI * i / n);
     }
@@ -75,7 +74,6 @@ void FFTreal::transformRadix2(vector<double> &real, vector<double> &imag) {
             break;
     }
 }
-
 
 void FFTreal::transformBluestein(vector<double> &real, vector<double> &imag) {
     // Find a power-of-2 convolution length m such that m >= n * 2 + 1
@@ -125,7 +123,6 @@ void FFTreal::transformBluestein(vector<double> &real, vector<double> &imag) {
     }
 }
 
-
 void FFTreal::convolve(const vector<double> &x, const vector<double> &y, vector<double> &out) {
     size_t n = x.size();
     if (n != y.size() || n != out.size())
@@ -133,7 +130,6 @@ void FFTreal::convolve(const vector<double> &x, const vector<double> &y, vector<
     vector<double> outimag(n);
     convolve(x, vector<double>(n), y, vector<double>(n), out, outimag);
 }
-
 
 void FFTreal::convolve(
         const vector<double> &xreal, const vector<double> &ximag,
@@ -165,11 +161,9 @@ void FFTreal::convolve(
     }
 }
 
-
 static size_t reverseBits(size_t x, int n) {
     size_t result = 0;
     for (int i = 0; i < n; i++, x >>= 1)
         result = (result << 1) | (x & 1U);
     return result;
 }
-

@@ -1,13 +1,13 @@
-//
-// Created by pcsc on 12/2/17.
-//
+/**
+ * \file Polynomial.cpp
+ * \brief This is the function to call to run the script of the project
+ */
 
 #include <assert.h>
 #include <cmath>
 #include <iostream>
 #include "readFile.h"
 #include "Polynomial.h"
-
 
 /// Polynomial approximation of the given points using a single polynome
 vector<double> Polynomial::solve(Data const& data,size_t const& degree)

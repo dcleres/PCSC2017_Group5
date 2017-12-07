@@ -7,16 +7,10 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
-#include <math.h>
-#include <string>
 #include <sstream>
 #include <unistd.h>
-#include <stdlib.h>
-
-#include <iostream>
 #include <vector>
 #include <complex>
-//#include <zconf.h>
 #include "readFile.h"
 #include "gnuplot_i.hpp"
 #include "FFT.h"
@@ -24,8 +18,13 @@
 #include "Lagrange.h"
 #include "LeastSquare.h"
 #include "PieceWise_Continue_Polynomial.h"
+#include "FFTreal.h"
 
 using namespace std;
+
+double f1(double x) { return x*x;             }
+double f2(double x) { return sqrt(exp(x));    }
+double f3(double x) { return log(1.0+sin(x)); }
 
 int main() {
 
@@ -39,6 +38,9 @@ int main() {
     readFile.loadFromFile(data);
     readFile.show(data);
 
+    Data data_original = data;
+
+    /*
     //Least Squares
     Polynomial poly;
     int degree = 3;
@@ -75,15 +77,33 @@ int main() {
     }
 
     PieceWise_Continue_Polynomial piece;
-    vector<double>y3(piece.solve(data,1,2,x2));
+    vector<double>y3(piece.solve(data,1,2,x2));*/
 
-    //on doit plotter data_copy ou on a changé les valeurs des x associé aux y.
+    FFTreal fft;
+    fft.transform(data.heights, data.weights);
+    for (auto element : data.weights)
+    {
+        cout << element << endl;
+    }
+    data.heights = data_original.heights;
+    fft.inverseTransform(data.heights, data.weights);
+    cout << "WORD" << endl;
+    /*for (auto& element : data.weights)
+    {
+        element /= 10; //(2*M_PI); //F = 1/(2*PI) * F-¹
+    }*/
+    for (auto element : data.heights)
+    {
+        cout << element << endl;
+    }
+
+    //on doit plotter data_copy où on a changé les valeurs des x associée aux y.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(x2,y3,"Approximation");
-    sleep(10);
+    g1.plot_xy(data_original.heights,data.weights,"Approximation");
+    sleep(2);
 
-    g1.plot_xy(data.heights,data.weights,"Default points");
+    g1.plot_xy(data_original.heights,data_original.weights,"Default points");
     sleep(20);
 
     return 0;

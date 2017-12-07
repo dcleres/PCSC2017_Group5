@@ -1,6 +1,7 @@
-//
-// Created by pcsc on 11/29/17.
-//
+/**
+ * \file Polynomial.h
+ * \brief This is the function to call to run the script of the project
+ */
 
 #ifndef PROJECT_POLYNOMIAL_H
 #define PROJECT_POLYNOMIAL_H

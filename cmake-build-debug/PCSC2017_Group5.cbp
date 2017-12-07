@@ -111,6 +111,12 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FourierApproximation.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FourierApproximation.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
