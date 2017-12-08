@@ -69,6 +69,7 @@ int main() {
         y2[j] = lagrange.solve(data,x2[j]);
     }
 
+
     PieceWise_Continue_Polynomial piece;
     vector<double>y3(piece.solve(data,1,2,x2));*/
 

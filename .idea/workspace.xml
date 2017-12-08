@@ -33,8 +33,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68402d16-93d7-4e5d-8930-cd1c3f08e5ac" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/FourierApproximation.cpp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/FourierApproximation.h" afterPath="" />
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/PCSC2017_Group5" afterPath="$PROJECT_DIR$/cmake-build-debug/PCSC2017_Group5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
@@ -53,6 +58,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/PCSC2017_Group5.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/PCSC2017_Group5.cbp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data.dat" afterPath="$PROJECT_DIR$/data/data.dat" />
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -65,8 +71,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="data.dat" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/data.dat">
+=======
+      <file leaf-file-name="Polynomial.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Polynomial.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="952">
+              <caret line="61" column="74" lean-forward="false" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
+=======
+            <state relative-caret-position="421">
+              <caret line="135" column="13" lean-forward="false" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FFT.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FFT.h">
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
@@ -100,11 +126,27 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="FFTreal.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FFTreal.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="121" column="41" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+=======
+      <file leaf-file-name="FourierApproximation.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FourierApproximation.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
               <folding>
                 <element signature="e#99#115#0" expanded="true" />
               </folding>
@@ -115,15 +157,45 @@
       <file leaf-file-name="FFTreal.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FFTreal.h">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="646">
               <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="374">
+              <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+=======
+            <state relative-caret-position="170">
+              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="DFT.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DFT.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lagrange.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lagrange.h">
+=======
+      <file leaf-file-name="Polynomial.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Polynomial.h">
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="541">
               <caret line="33" column="435" lean-forward="false" selection-start-line="33" selection-start-column="435" selection-end-line="33" selection-end-column="435" />
@@ -303,14 +375,26 @@
       <workItem from="1512379466819" duration="3630000" />
       <workItem from="1512430950639" duration="4142000" />
       <workItem from="1512460965854" duration="24861000" />
+<<<<<<< HEAD
       <workItem from="1512515827578" duration="4472000" />
       <workItem from="1512662165675" duration="3323000" />
       <workItem from="1512738606679" duration="14110000" />
+=======
+      <workItem from="1512515827578" duration="5927000" />
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="93336000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="53190000" />
+=======
+    <option name="totallyTimeSpent" value="65869000" />
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
@@ -352,6 +436,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/AbstractNumericalApproximation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeastSquares.cpp" />
+    <entry file="file://$PROJECT_DIR$/LeastSquares.h" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readFile.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="190" lean-forward="false" selection-start-line="33" selection-start-column="190" selection-end-line="33" selection-end-column="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
     <entry file="file://$PROJECT_DIR$/readFile.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -529,10 +656,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Polynomial.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+=======
     <entry file="file://$PROJECT_DIR$/Lagrange.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -540,6 +674,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="18" column="82" lean-forward="false" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
+=======
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+          <folding />
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
         </state>
       </provider>
     </entry>
@@ -550,6 +688,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/PieceWise_Continue_Polynomial.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="82" lean-forward="false" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
+=======
     <entry file="file://$PROJECT_DIR$/readFile.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -562,11 +706,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+<<<<<<< HEAD
+=======
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+          <folding />
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Polynomial.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="952">
+          <caret line="61" column="74" lean-forward="false" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
+=======
         <state relative-caret-position="421">
           <caret line="135" column="13" lean-forward="false" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
         </state>
@@ -595,17 +748,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FFT.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
           <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+=======
+        <state relative-caret-position="113">
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="541">
           <caret line="33" column="435" lean-forward="false" selection-start-line="33" selection-start-column="435" selection-end-line="33" selection-end-column="435" />
           <folding />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="585">
+          <caret line="121" column="41" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+=======
+        <state relative-caret-position="-1009">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="e#99#117#0" expanded="true" />
+          </folding>
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
         </state>
       </provider>
     </entry>
@@ -653,14 +824,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="136">
           <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+=======
+        <state relative-caret-position="255">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+>>>>>>> a5e671f053cb172d9e0698ab77184a3609d2008d
+>>>>>>> 98e6546f2267ba2a4f9195fa7dfff77066dc8f1f
           <folding>
             <element signature="e#741#1558#0" expanded="false" />
             <element signature="e#2488#2570#0" expanded="false" />
             <element signature="e#2576#2881#0" expanded="false" />
             <element signature="e#2967#3465#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lagrange.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DFT.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
