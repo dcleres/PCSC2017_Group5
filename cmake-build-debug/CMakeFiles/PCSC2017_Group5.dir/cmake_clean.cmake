@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o"
   "PCSC2017_Group5.pdb"
   "PCSC2017_Group5"
 )

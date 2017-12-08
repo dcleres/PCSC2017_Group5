@@ -61,6 +61,8 @@ cstddef
 -
 cstdint
 -
+utility
+-
 FFTreal.h
 /home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
 
@@ -233,17 +235,9 @@ fstream
 -
 cmath
 -
-math.h
--
-string
--
 sstream
 -
 unistd.h
--
-stdlib.h
--
-iostream
 -
 vector
 -
@@ -263,6 +257,8 @@ LeastSquare.h
 /home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
 PieceWise_Continue_Polynomial.h
 /home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
+FFTreal.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
 
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.cpp
 stdexcept
