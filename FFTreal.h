@@ -47,6 +47,12 @@ public:
             const std::vector<double> &xreal, const std::vector<double> &ximag,
             const std::vector<double> &yreal, const std::vector<double> &yimag,
             std::vector<double> &outreal, std::vector<double> &outimag);
+
+    void transformCoefs(const std::vector<double> &real, std::vector<double> &an, std::vector<double> &bn,
+                        const size_t &period);
+
+    std::vector<double> transformApproximation(std::vector<double> const& an, std::vector<double> const& bn, const size_t &period,
+                                std::vector<double> &real);
 };
 
 
