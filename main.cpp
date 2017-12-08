@@ -16,7 +16,6 @@
 #include <iostream>
 #include <vector>
 #include <complex>
-#include <zconf.h>
 #include "readFile.h"
 #include "gnuplot_i.hpp"
 #include "FFT.h"
