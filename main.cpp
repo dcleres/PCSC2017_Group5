@@ -119,7 +119,7 @@ int main() {
     }
 
     PieceWise_Continue_Polynomial piece;
-    vector<double>y3(piece.solve(data,1,2,x2));
+    vector<double>y3(piece.solve(data,1,4,x2));
 
 
     //on doit plotter data_copy ou on a changé les valeurs des x associé aux y.
