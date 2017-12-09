@@ -55,7 +55,7 @@ int main() {
     Data data = {xs, ys};
 
     readFile.loadFromFile(data);
-    readFile.show(data);
+    //readFile.show(data); //SHOWS THE IMPORTED DATA
 
     //Makes a copy of the input data since it is taken by reference in the rest of the program
     Data data_original = data;
@@ -71,9 +71,6 @@ int main() {
     //////////////////////////////////PieceWise Lagrange////////////////////////////////////////////////////
     //graph.make_graph_piece_wise_lagrange(data,10);
 
-
-
-
     int choice;
     cout << "Welcome to David Cleres and Nicolas Lesimple data approximation tool. YOu have the choice between using three";
     cout << " different approximation method which are:" << endl;
@@ -86,7 +83,6 @@ int main() {
     cout << "Please select your approximation method by typing a number between 1 and 5" << endl;
     cout << "your choice is: " << flush;
     cin >> choice;
-
 
     ApproxiamtionMethod usersApproxChoice;
 
@@ -129,6 +125,7 @@ int main() {
             cout << "FOURIER" << endl;
             graph.make_graph_FFT(data,data_original);
         }   break;
+
         case PIECEWISELEASTSQUARE: {
             cout << "PIECEWISE LEAST SQUARE" << endl;
             cout << "Choose the degree of approximation you want. It must be an integer :  " <<flush;
@@ -137,6 +134,7 @@ int main() {
             cin>>intervalle;
             graph.make_graph_piece_wise_least_squares(data,degree,intervalle);
         }   break;
+
         case PIECEWISELAGRANGE: {
             cout << "PIECEWISE LAGRANGE" << endl;
             cout << "Choose the number of interval for your approximation you want. It must be an even integer :  " <<flush;
@@ -145,6 +143,5 @@ int main() {
         }   break;
 
     }
-
     return 0;
 }

@@ -187,6 +187,8 @@ Lagrange.h
 /home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
 Graph.h
 /home/pcsc/Desktop/PCSC2017_Group5/Graph.h
+FFTreal.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
 
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.cpp
 stdexcept

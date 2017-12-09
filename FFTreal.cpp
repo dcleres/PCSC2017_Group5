@@ -23,6 +23,11 @@ void FFTreal::transform(vector<double> &real, vector<double> &imag) {
     if (n == 0)
         return;
     else if ((n & (n - 1)) == 0)  // Is power of 2
+        /*n & (n - 1) unset the lower set bit of n
+          in binary: XXX10000 -> XXX00000
+          So (n & (n - 1)) == 0 for 0 and all powers of 2.
+          n & (n - 1) == 0:
+          n & (n - 1) == 0 is equivalent to n & ((n - 1) == 0) (due to precedence of operator) and so n == 1.*/
         transformRadix2(real, imag);
     else  // More complicated algorithm for arbitrary sizes
         transformBluestein(real, imag);
