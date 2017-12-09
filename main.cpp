@@ -78,10 +78,11 @@ int main() {
 
 
     PieceWise_Continue_Polynomial piece;
-    vector<double>y3(piece.solve(data,1,2,x2));*/
+    vector<double>y3(piece.solve_least_square(data,1,2,x2));*/
 
 
-    FFTreal fft;
+
+   /* FFTreal fft;
     fft.transform(data.heights, data.weights);
     for (auto element : data.weights)
     {
@@ -89,15 +90,18 @@ int main() {
     }
     data.heights = data_original.heights;
     fft.inverseTransform(data.heights, data.weights);
-    cout << "WORD" << endl;
+    cout << "WORD" << endl;/*
     /*for (auto& element : data.weights)
     {
         element /= 10; //(2*M_PI); //F = 1/(2*PI) * F-¹
-    }*/
+    }
     for (auto element : data.heights)
     {
         cout << element << endl;
-    }
+    }*/
+    PieceWise_Continue_Polynomial piece;
+    vector<double>y3(piece.solve_lagrange(data,4));
+    vector<double>x3(9*data.heights.size());
 
     //on doit plotter data_copy où on a changé les valeurs des x associée aux y.
     Gnuplot g1 = Gnuplot("lines");

@@ -23,6 +23,7 @@ class Lagrange : public AbstractNumericalApproximation{
 public:
     //Lagrange return directly some points
     double solve(Data data, double xi) ;
+    double solve(vector<double> const& data_x,vector<double> const& data_y,double xi)
 
 private:
     double getmax(vector<double>x);
