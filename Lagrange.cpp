@@ -128,3 +128,27 @@ double Lagrange :: getmin(vector<double>x) {
     }
     return min;
 }
+
+/// Polynomial approximation by the Lagrange algorithm
+double Lagrange::solve(vector<double> const& data_x,vector<double> const& data_y,double xi) {
+
+    // function to interpolate the given data points using Lagrange's formula
+// xi corresponds to the new data point whose value is to be obtained
+// n represents the number of known data points
+    int n = data_x.size();
+    double result = 0; // Initialize result
+
+    for (int i = 0; i < n; i++) {
+        // Compute individual terms of above formula
+        double term = data_y[i];
+        for (int j = 0; j < n; j++) {
+            if (j != i)
+                term = term * (xi - data_x[j]) / double(data_x[i] - data_x[j]);
+        }
+
+        // Add current term to result
+        result += term;
+    }
+
+    return result;
+}

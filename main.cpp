@@ -127,12 +127,19 @@ int main() {
             for (size_t d(0); d < 31; ++d) {
                 x2[d] = (1 + 0.1 * d);
             }
+
+            //POURQUOI PAS 31 ?
             for (size_t j(0); j < 30; ++j) {
                 y2[j] = lagrange.solve(data, x2[j]);
             }
 
+            //PieceWise_Continue_Polynomial piece;
+            //vector<double>y3(piece.solve_least_square(data,1,2,x2));
+
             PieceWise_Continue_Polynomial piece;
-            vector<double> y3(piece.solve(data, 1, 2, x2));
+            vector<double>y3(piece.solve_lagrange(data,4));
+            vector<double>x3(9*data.heights.size());
+
         } break;
 
         case FOURIER: {

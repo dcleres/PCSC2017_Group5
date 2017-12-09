@@ -22,6 +22,7 @@ CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: ../Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: ../readFile.h
 
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../AbstractNumericalApproximation.h
+CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../Lagrange.h
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../PieceWise_Continue_Polynomial.cpp
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../PieceWise_Continue_Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../Polynomial.h
