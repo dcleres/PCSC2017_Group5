@@ -75,12 +75,13 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae67730df0a2e45a87c9cb244fe03ad6b"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomial.html#ae67730df0a2e45a87c9cb244fe03ad6b">solve</a> (vector&lt; double &gt; const &amp;data, vector&lt; double &gt; const &amp;data_y, size_t const &amp;degree)</td></tr>
-<tr class="memdesc:ae67730df0a2e45a87c9cb244fe03ad6b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_polynomial.html">Polynomial</a> approximation of the given points using a single polynome.  <a href="#ae67730df0a2e45a87c9cb244fe03ad6b">More...</a><br /></td></tr>
+<tr class="memdesc:ae67730df0a2e45a87c9cb244fe03ad6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve the linear equation  <a href="#ae67730df0a2e45a87c9cb244fe03ad6b">More...</a><br /></td></tr>
 <tr class="separator:ae67730df0a2e45a87c9cb244fe03ad6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_polynomial_8h_source.html#l00013">13</a> of file <a class="el" href="_polynomial_8h_source.html">Polynomial.h</a>.</p>
+<div class="textblock"><p>(Note, this needs exactly one </p>
+
+<p class="definition">Definition at line <a class="el" href="_polynomial_8h_source.html#l00032">32</a> of file <a class="el" href="_polynomial_8h_source.html">Polynomial.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae67730df0a2e45a87c9cb244fe03ad6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae67730df0a2e45a87c9cb244fe03ad6b">&#9670;&nbsp;</a></span>solve()</h2>
@@ -114,7 +115,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_polynomial.html">Polynomial</a> approximation of the given points using a single polynome. </p>
+<p>solve the linear equation </p>
+<p><a class="el" href="class_polynomial.html">Polynomial</a> approximation of the given points using a single polynome.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>is a vector with the values of approximate (x-axis) </td></tr>
+    <tr><td class="paramname">degree</td><td>is the degree of the polynome </td></tr>
+    <tr><td class="paramname">data_y</td><td>is a vector with the values of approximate (y-axis) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_polynomial_8cpp_source.html#l00012">12</a> of file <a class="el" href="_polynomial_8cpp_source.html">Polynomial.cpp</a>.</p>
 

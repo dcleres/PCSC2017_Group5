@@ -70,18 +70,22 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This is redefinition of the virtual class to implement <a class="el" href="class_lagrange.html" title="This is redefinition of the virtual class to implement Lagrange functionsThis is how we can calculate...">Lagrange</a> functionsThis is how we can calculate the approximation of the data using <a class="el" href="class_lagrange.html" title="This is redefinition of the virtual class to implement Lagrange functionsThis is how we can calculate...">Lagrange</a> Polynome.  
+ <a href="class_lagrange.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_lagrange_8h_source.html">Lagrange.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9040a01112a83bbefb0f1bef1d7983bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lagrange.html#a9040a01112a83bbefb0f1bef1d7983bb">solve</a> (vector&lt; double &gt; const &amp;data_x, vector&lt; double &gt; const &amp;data_y, double xi)</td></tr>
-<tr class="memdesc:a9040a01112a83bbefb0f1bef1d7983bb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_polynomial.html">Polynomial</a> approximation by the <a class="el" href="class_lagrange.html">Lagrange</a> algorithm.  <a href="#a9040a01112a83bbefb0f1bef1d7983bb">More...</a><br /></td></tr>
+<tr class="memdesc:a9040a01112a83bbefb0f1bef1d7983bb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_lagrange.html" title="This is redefinition of the virtual class to implement Lagrange functionsThis is how we can calculate...">Lagrange</a> return directly the point corresponding to the argument xi.  <a href="#a9040a01112a83bbefb0f1bef1d7983bb">More...</a><br /></td></tr>
 <tr class="separator:a9040a01112a83bbefb0f1bef1d7983bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is how we can calculate the approximation of the data using <a class="el" href="class_lagrange.html">Lagrange</a> Polynome </p>
+<div class="textblock"><p>This is redefinition of the virtual class to implement <a class="el" href="class_lagrange.html" title="This is redefinition of the virtual class to implement Lagrange functionsThis is how we can calculate...">Lagrange</a> functions</p>
+<p>This is how we can calculate the approximation of the data using <a class="el" href="class_lagrange.html" title="This is redefinition of the virtual class to implement Lagrange functionsThis is how we can calculate...">Lagrange</a> Polynome. </p>
 
-<p class="definition">Definition at line <a class="el" href="_lagrange_8h_source.html#l00019">19</a> of file <a class="el" href="_lagrange_8h_source.html">Lagrange.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lagrange_8h_source.html#l00040">40</a> of file <a class="el" href="_lagrange_8h_source.html">Lagrange.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9040a01112a83bbefb0f1bef1d7983bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9040a01112a83bbefb0f1bef1d7983bb">&#9670;&nbsp;</a></span>solve()</h2>
@@ -115,7 +119,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_polynomial.html">Polynomial</a> approximation by the <a class="el" href="class_lagrange.html">Lagrange</a> algorithm. </p>
+<p><a class="el" href="class_lagrange.html" title="This is redefinition of the virtual class to implement Lagrange functionsThis is how we can calculate...">Lagrange</a> return directly the point corresponding to the argument xi. </p>
+<p><a class="el" href="class_polynomial.html">Polynomial</a> approximation by the <a class="el" href="class_lagrange.html" title="This is redefinition of the virtual class to implement Lagrange functionsThis is how we can calculate...">Lagrange</a> algorithm.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_x</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">data_y</td><td>is a vector with the values read from the data.dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. </td></tr>
+    <tr><td class="paramname">xi</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_lagrange_8cpp_source.html#l00009">9</a> of file <a class="el" href="_lagrange_8cpp_source.html">Lagrange.cpp</a>.</p>
 

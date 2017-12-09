@@ -90,13 +90,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4de7bd5074f188b470392920df1c7ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plots the graph for the lagrange regression.  <a href="#a4de7bd5074f188b470392920df1c7ada">More...</a><br /></td></tr>
 <tr class="separator:a4de7bd5074f188b470392920df1c7ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5326be30b090c2ba956d0e0211895fcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a5326be30b090c2ba956d0e0211895fcd">make_graph_FFT</a> (<a class="el" href="struct_data.html">Data</a> data_original)</td></tr>
-<tr class="memdesc:a5326be30b090c2ba956d0e0211895fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function.  <a href="#a5326be30b090c2ba956d0e0211895fcd">More...</a><br /></td></tr>
+<tr class="memdesc:a5326be30b090c2ba956d0e0211895fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plots the graph for fourier approximation.  <a href="#a5326be30b090c2ba956d0e0211895fcd">More...</a><br /></td></tr>
 <tr class="separator:a5326be30b090c2ba956d0e0211895fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>(Note, this needs exactly one </p>
 
-<p class="definition">Definition at line <a class="el" href="_graph_8h_source.html#l00028">28</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_graph_8h_source.html#l00029">29</a> of file <a class="el" href="_graph_8h_source.html">Graph.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac2cc4f7971589f9674f4fbf3b7dc200c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2cc4f7971589f9674f4fbf3b7dc200c">&#9670;&nbsp;</a></span>Graph()</h2>
@@ -151,11 +151,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. </p>
+<p>Plots the graph for fourier approximation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">real</td><td>is a vector with the values read from the data.dat file </td></tr>
-    <tr><td class="paramname">imag</td><td>is a vector with the values read from the data.dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. </td></tr>
+    <tr><td class="paramname">data_original</td><td>is the data as it is in the file </td></tr>
   </table>
   </dd>
 </dl>

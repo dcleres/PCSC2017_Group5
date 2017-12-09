@@ -18,13 +18,13 @@ void \mbox{\hyperlink{class_graph_a00bb733092d1c97735b6fbc767a8cedf}{make\+\_\+g
 void \mbox{\hyperlink{class_graph_a4de7bd5074f188b470392920df1c7ada}{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange}} (int const \&intervalle)
 \begin{DoxyCompactList}\small\item\em Plots the graph for the lagrange regression. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_graph_a5326be30b090c2ba956d0e0211895fcd}{make\+\_\+graph\+\_\+\+F\+FT}} (\mbox{\hyperlink{struct_data}{Data}} data\+\_\+original)
-\begin{DoxyCompactList}\small\item\em Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Plots the graph for fourier approximation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 (Note, this needs exactly one 
 
-Definition at line 28 of file Graph.\+h.
+Definition at line 29 of file Graph.\+h.
 
 
 
@@ -59,13 +59,11 @@ Definition at line 10 of file Graph.\+cpp.
 
 
 
-Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. 
+Plots the graph for fourier approximation. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em real} & is a vector with the values read from the data.\+dat file \\
-\hline
-{\em imag} & is a vector with the values read from the data.\+dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. \\
+{\em data\+\_\+original} & is the data as it is in the file \\
 \hline
 \end{DoxyParams}
 
