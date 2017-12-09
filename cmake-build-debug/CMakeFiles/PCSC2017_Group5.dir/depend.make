@@ -55,7 +55,6 @@ CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o: ../gnuplot_i.cpp
 CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o: ../gnuplot_i.hpp
 
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../AbstractNumericalApproximation.h
-CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../FFT.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../FFTreal.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../Lagrange.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../LeastSquare.h

@@ -66,29 +66,38 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_abstract_numerical_approximation-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AbstractNumericalApproximation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">AbstractNumericalApproximation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_abstract_numerical_approximation_8h_source.html">AbstractNumericalApproximation.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for AbstractNumericalApproximation:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="class_abstract_numerical_approximation.png" usemap="#AbstractNumericalApproximation_map" alt=""/>
+  <map id="AbstractNumericalApproximation_map" name="AbstractNumericalApproximation_map">
+<area href="class_lagrange.html" alt="Lagrange" shape="rect" coords="0,56,219,80"/>
+<area href="class_least_square.html" alt="LeastSquare" shape="rect" coords="229,56,448,80"/>
+<area href="class_piece_wise___continue___polynomial.html" alt="PieceWise_Continue_Polynomial" shape="rect" coords="458,56,677,80"/>
+<area href="class_polynomial.html" alt="Polynomial" shape="rect" coords="687,56,906,80"/>
+<area href="class_piece_wise___non_continue___polynomial.html" alt="PieceWise_NonContinue_Polynomial" shape="rect" coords="687,112,906,136"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaf647fb522cf0d424d31a67230e19a62"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#aaf647fb522cf0d424d31a67230e19a62">approximationFunction</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data)=0</td></tr>
-<tr class="memdesc:aaf647fb522cf0d424d31a67230e19a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Method that we will implement in the sub-class It return a vector of double, the weight we found after apply the function It takes <a class="el" href="struct_data.html">Data</a> as a parameter, a structure made of two vector of double and one vector of Gender (Gender is a enum type)  <a href="#aaf647fb522cf0d424d31a67230e19a62">More...</a><br /></td></tr>
-<tr class="separator:aaf647fb522cf0d424d31a67230e19a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841c83a7ae9f2146001581f3a7f8444a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#a841c83a7ae9f2146001581f3a7f8444a">printWeight</a> (vector&lt; double &gt; const &amp;weight)</td></tr>
 <tr class="memdesc:a841c83a7ae9f2146001581f3a7f8444a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that allows us to print the weight return by the approximation function  <a href="#a841c83a7ae9f2146001581f3a7f8444a">More...</a><br /></td></tr>
 <tr class="separator:a841c83a7ae9f2146001581f3a7f8444a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e92dead9d1cc73d2e4e8c9eed2b7437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#a0e92dead9d1cc73d2e4e8c9eed2b7437">GaussianElimination</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt; b, int number_point)</td></tr>
-<tr class="memdesc:a0e92dead9d1cc73d2e4e8c9eed2b7437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the gaussian elimination to solve the system Ax = b.  <a href="#a0e92dead9d1cc73d2e4e8c9eed2b7437">More...</a><br /></td></tr>
-<tr class="separator:a0e92dead9d1cc73d2e4e8c9eed2b7437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3b93192d2decefc61151c2be292701"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#add3b93192d2decefc61151c2be292701">Swap</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt; b, const int k, int number_point)</td></tr>
-<tr class="memdesc:add3b93192d2decefc61151c2be292701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap lines to always have the biggest value at the top, less numerical errors.  <a href="#add3b93192d2decefc61151c2be292701">More...</a><br /></td></tr>
-<tr class="separator:add3b93192d2decefc61151c2be292701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbbdee2940b7181abd9d8e968dea8927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#adbbdee2940b7181abd9d8e968dea8927">Solve</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt;b, int t, vector&lt; double &gt; x)</td></tr>
-<tr class="memdesc:adbbdee2940b7181abd9d8e968dea8927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the simplified system made by the gaussian elimination.  <a href="#adbbdee2940b7181abd9d8e968dea8927">More...</a><br /></td></tr>
-<tr class="separator:adbbdee2940b7181abd9d8e968dea8927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed569247300dcb9eb54c6117903d2583"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#aed569247300dcb9eb54c6117903d2583">GaussianElimination</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt; b, int number_point)</td></tr>
+<tr class="memdesc:aed569247300dcb9eb54c6117903d2583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the gaussian elimination to solve the system Ax = b.  <a href="#aed569247300dcb9eb54c6117903d2583">More...</a><br /></td></tr>
+<tr class="separator:aed569247300dcb9eb54c6117903d2583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccba1cb27301df86f2adbfa5e6525a5"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#abccba1cb27301df86f2adbfa5e6525a5">Solve</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt;b, int t, vector&lt; double &gt; x)</td></tr>
+<tr class="memdesc:abccba1cb27301df86f2adbfa5e6525a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the simplified system made by the gaussian elimination.  <a href="#abccba1cb27301df86f2adbfa5e6525a5">More...</a><br /></td></tr>
+<tr class="separator:abccba1cb27301df86f2adbfa5e6525a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a358054cadc54f5d0c7891505da040783"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#a358054cadc54f5d0c7891505da040783">~AbstractNumericalApproximation</a> ()</td></tr>
 <tr class="separator:a358054cadc54f5d0c7891505da040783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -116,42 +125,14 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaf647fb522cf0d424d31a67230e19a62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf647fb522cf0d424d31a67230e19a62">&#9670;&nbsp;</a></span>approximationFunction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual vector&lt;double&gt; AbstractNumericalApproximation::approximationFunction </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_data.html">Data</a> const &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Virtual Method that we will implement in the sub-class It return a vector of double, the weight we found after apply the function It takes <a class="el" href="struct_data.html">Data</a> as a parameter, a structure made of two vector of double and one vector of Gender (Gender is a enum type) </p>
-
-</div>
-</div>
-<a id="a0e92dead9d1cc73d2e4e8c9eed2b7437"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e92dead9d1cc73d2e4e8c9eed2b7437">&#9670;&nbsp;</a></span>GaussianElimination()</h2>
+<a id="aed569247300dcb9eb54c6117903d2583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed569247300dcb9eb54c6117903d2583">&#9670;&nbsp;</a></span>GaussianElimination()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AbstractNumericalApproximation::GaussianElimination </td>
+          <td class="memname">vector&lt; vector&lt; double &gt; &gt; AbstractNumericalApproximation::GaussianElimination </td>
           <td>(</td>
           <td class="paramtype">vector&lt; vector&lt; double &gt;&gt;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
@@ -178,7 +159,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Do the gaussian elimination to solve the system Ax = b. </p>
 
-<p class="definition">Definition at line <a class="el" href="_abstract_numerical_approximation_8cpp_source.html#l00044">44</a> of file <a class="el" href="_abstract_numerical_approximation_8cpp_source.html">AbstractNumericalApproximation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_abstract_numerical_approximation_8cpp_source.html#l00067">67</a> of file <a class="el" href="_abstract_numerical_approximation_8cpp_source.html">AbstractNumericalApproximation.cpp</a>.</p>
 
 </div>
 </div>
@@ -204,14 +185,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adbbdee2940b7181abd9d8e968dea8927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbbdee2940b7181abd9d8e968dea8927">&#9670;&nbsp;</a></span>Solve()</h2>
+<a id="abccba1cb27301df86f2adbfa5e6525a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abccba1cb27301df86f2adbfa5e6525a5">&#9670;&nbsp;</a></span>Solve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AbstractNumericalApproximation::Solve </td>
+          <td class="memname">vector&lt; double &gt; AbstractNumericalApproximation::Solve </td>
           <td>(</td>
           <td class="paramtype">vector&lt; vector&lt; double &gt;&gt;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
@@ -244,51 +225,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Solve the simplified system made by the gaussian elimination. </p>
 
-<p class="definition">Definition at line <a class="el" href="_abstract_numerical_approximation_8cpp_source.html#l00066">66</a> of file <a class="el" href="_abstract_numerical_approximation_8cpp_source.html">AbstractNumericalApproximation.cpp</a>.</p>
-
-</div>
-</div>
-<a id="add3b93192d2decefc61151c2be292701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add3b93192d2decefc61151c2be292701">&#9670;&nbsp;</a></span>Swap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AbstractNumericalApproximation::Swap </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; vector&lt; double &gt;&gt;&#160;</td>
-          <td class="paramname"><em>A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vector&lt; double &gt;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>number_point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Swap lines to always have the biggest value at the top, less numerical errors. </p>
-
-<p class="definition">Definition at line <a class="el" href="_abstract_numerical_approximation_8cpp_source.html#l00024">24</a> of file <a class="el" href="_abstract_numerical_approximation_8cpp_source.html">AbstractNumericalApproximation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_abstract_numerical_approximation_8cpp_source.html#l00090">90</a> of file <a class="el" href="_abstract_numerical_approximation_8cpp_source.html">AbstractNumericalApproximation.cpp</a>.</p>
 
 </div>
 </div>

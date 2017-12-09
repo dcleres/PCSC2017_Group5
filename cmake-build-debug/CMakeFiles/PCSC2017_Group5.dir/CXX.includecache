@@ -63,6 +63,8 @@ cstdint
 -
 utility
 -
+iostream
+-
 FFTreal.h
 /home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
 
@@ -247,8 +249,6 @@ readFile.h
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 gnuplot_i.hpp
 /home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
-FFT.h
-/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
 Polynomial.h
 /home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
 Lagrange.h

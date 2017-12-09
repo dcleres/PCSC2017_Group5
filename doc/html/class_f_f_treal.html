@@ -75,21 +75,34 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a16caf75d31c313da4c6c1659497434c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#a16caf75d31c313da4c6c1659497434c2">transform</a> (std::vector&lt; double &gt; &amp;real, std::vector&lt; double &gt; &amp;imag)</td></tr>
+<tr class="memdesc:a16caf75d31c313da4c6c1659497434c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function.  <a href="#a16caf75d31c313da4c6c1659497434c2">More...</a><br /></td></tr>
 <tr class="separator:a16caf75d31c313da4c6c1659497434c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db8c322c9e02acf725f5599c8924d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#a1db8c322c9e02acf725f5599c8924d0a">inverseTransform</a> (std::vector&lt; double &gt; &amp;real, std::vector&lt; double &gt; &amp;imag)</td></tr>
+<tr class="memdesc:a1db8c322c9e02acf725f5599c8924d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the inverse discrete Fourier transform (IDFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. This transform does not perform scaling, so the inverse is not a true inverse.  <a href="#a1db8c322c9e02acf725f5599c8924d0a">More...</a><br /></td></tr>
 <tr class="separator:a1db8c322c9e02acf725f5599c8924d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa3f0e3c25513ee26c9698b864330df9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#afa3f0e3c25513ee26c9698b864330df9">transformRadix2</a> (std::vector&lt; double &gt; &amp;real, std::vector&lt; double &gt; &amp;imag)</td></tr>
+<tr class="memdesc:afa3f0e3c25513ee26c9698b864330df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector's length must be a power of 2. Uses the Cooley-Tukey decimation-in-time radix-2 algorithm.  <a href="#afa3f0e3c25513ee26c9698b864330df9">More...</a><br /></td></tr>
 <tr class="separator:afa3f0e3c25513ee26c9698b864330df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05861961bccf522231faf434b806e882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#a05861961bccf522231faf434b806e882">transformBluestein</a> (std::vector&lt; double &gt; &amp;real, std::vector&lt; double &gt; &amp;imag)</td></tr>
+<tr class="memdesc:a05861961bccf522231faf434b806e882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This requires the convolution function, which in turn requires the radix-2 FFT function. Uses Bluestein's chirp z-transform algorithm.  <a href="#a05861961bccf522231faf434b806e882">More...</a><br /></td></tr>
 <tr class="separator:a05861961bccf522231faf434b806e882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7ae7505d1c80b4471a30585801d64b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#a8c7ae7505d1c80b4471a30585801d64b">convolve</a> (const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, std::vector&lt; double &gt; &amp;out)</td></tr>
+<tr class="memdesc:a8c7ae7505d1c80b4471a30585801d64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the circular convolution of the given real vectors. Each vector's length must be the same.  <a href="#a8c7ae7505d1c80b4471a30585801d64b">More...</a><br /></td></tr>
 <tr class="separator:a8c7ae7505d1c80b4471a30585801d64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a375983c9725f461611341061dbdcc92f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#a375983c9725f461611341061dbdcc92f">convolve</a> (const std::vector&lt; double &gt; &amp;xreal, const std::vector&lt; double &gt; &amp;ximag, const std::vector&lt; double &gt; &amp;yreal, const std::vector&lt; double &gt; &amp;yimag, std::vector&lt; double &gt; &amp;outreal, std::vector&lt; double &gt; &amp;outimag)</td></tr>
+<tr class="memdesc:a375983c9725f461611341061dbdcc92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the circular convolution of the given complex vectors. Each vector's length must be the same.  <a href="#a375983c9725f461611341061dbdcc92f">More...</a><br /></td></tr>
 <tr class="separator:a375983c9725f461611341061dbdcc92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15989e652f7e5f0e5045ee5d5232d065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#a15989e652f7e5f0e5045ee5d5232d065">transformCoefs</a> (const std::vector&lt; double &gt; &amp;real, std::vector&lt; double &gt; &amp;an, std::vector&lt; double &gt; &amp;bn, const size_t &amp;period)</td></tr>
+<tr class="memdesc:a15989e652f7e5f0e5045ee5d5232d065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the fourier coefficients.  <a href="#a15989e652f7e5f0e5045ee5d5232d065">More...</a><br /></td></tr>
+<tr class="separator:a15989e652f7e5f0e5045ee5d5232d065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae276d75134969bd4a036f3e9e9136dec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_f_treal.html#ae276d75134969bd4a036f3e9e9136dec">transformApproximation</a> (std::vector&lt; double &gt; const &amp;an, std::vector&lt; double &gt; const &amp;bn, const size_t &amp;period, std::vector&lt; double &gt; &amp;real)</td></tr>
+<tr class="memdesc:ae276d75134969bd4a036f3e9e9136dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the fourier series based on the coeficents calculated in the transformCoef method.  <a href="#ae276d75134969bd4a036f3e9e9136dec">More...</a><br /></td></tr>
+<tr class="separator:ae276d75134969bd4a036f3e9e9136dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_f_f_treal_8h_source.html#l00013">13</a> of file <a class="el" href="_f_f_treal_8h_source.html">FFTreal.h</a>.</p>
+<div class="textblock"><p>(Note, this needs exactly one </p>
+
+<p class="definition">Definition at line <a class="el" href="_f_f_treal_8h_source.html#l00028">28</a> of file <a class="el" href="_f_f_treal_8h_source.html">FFTreal.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8c7ae7505d1c80b4471a30585801d64b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c7ae7505d1c80b4471a30585801d64b">&#9670;&nbsp;</a></span>convolve() <span class="overload">[1/2]</span></h2>
@@ -122,6 +135,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Computes the circular convolution of the given real vectors. Each vector's length must be the same. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>is a vector with the values of the left element to convolve </td></tr>
+    <tr><td class="paramname">y</td><td>is a vector with the values of the right element to convolve </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -175,6 +197,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Computes the circular convolution of the given complex vectors. Each vector's length must be the same. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xreal</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">xreal</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">ximag</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">yimag</td><td>is a vector with the values read from the data.dat file, if we have only real entries then you have to </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1db8c322c9e02acf725f5599c8924d0a"></a>
@@ -203,7 +236,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00026">26</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
+<p>Computes the inverse discrete Fourier transform (IDFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. This transform does not perform scaling, so the inverse is not a true inverse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">real</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">imag</td><td>is a vector with the values read from the data.dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00063">63</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +275,70 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00013">13</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
+<p>Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">real</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">imag</td><td>is a vector with the values read from the data.dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00019">19</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae276d75134969bd4a036f3e9e9136dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae276d75134969bd4a036f3e9e9136dec">&#9670;&nbsp;</a></span>transformApproximation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; double &gt; FFTreal::transformApproximation </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>an</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>bn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>real</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the fourier series based on the coeficents calculated in the transformCoef method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">real</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">an</td><td>is a vector with the values of the an fourier series coefficients </td></tr>
+    <tr><td class="paramname">bn</td><td>is a vector with the values of the bn fourier series coefficients </td></tr>
+    <tr><td class="paramname">period</td><td>represents the period of the chosen periodic funtion </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of doubles containing the approximated data </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00050">50</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
 
 </div>
 </div>
@@ -263,7 +368,69 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00080">80</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
+<p>Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector can have any length. This requires the convolution function, which in turn requires the radix-2 FFT function. Uses Bluestein's chirp z-transform algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">real</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">imag</td><td>is a vector with the values read from the data.dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00116">116</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15989e652f7e5f0e5045ee5d5232d065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15989e652f7e5f0e5045ee5d5232d065">&#9670;&nbsp;</a></span>transformCoefs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTreal::transformCoefs </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>real</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>an</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>period</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the fourier coefficients. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">real</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">an</td><td>is a vector with the values of the an fourier series coefficients </td></tr>
+    <tr><td class="paramname">bn</td><td>is a vector with the values of the bn fourier series coefficients </td></tr>
+    <tr><td class="paramname">period</td><td>represents the period of the chosen periodic funtion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00031">31</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +460,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00031">31</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
+<p>Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector. The vector's length must be a power of 2. Uses the Cooley-Tukey decimation-in-time radix-2 algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">real</td><td>is a vector with the values read from the data.dat file </td></tr>
+    <tr><td class="paramname">imag</td><td>is a vector with the values read from the data.dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_f_treal_8cpp_source.html#l00067">67</a> of file <a class="el" href="_f_f_treal_8cpp_source.html">FFTreal.cpp</a>.</p>
 
 </div>
 </div>

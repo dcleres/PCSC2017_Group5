@@ -129,57 +129,9 @@ CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides: CM
 CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
 
 
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: ../FFT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/FFT.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Desktop/PCSC2017_Group5/FFT.cpp > CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Desktop/PCSC2017_Group5/FFT.cpp -o CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o
-
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: ../DFT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/DFT.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Desktop/PCSC2017_Group5/DFT.cpp > CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Desktop/PCSC2017_Group5/DFT.cpp -o CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o
-
-
 CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../FFTtest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i: cmake_force
@@ -203,7 +155,7 @@ CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.provides.build: CMakeFiles/PCSC2017
 
 CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: ../FFTreal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/FFTreal.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.i: cmake_force
@@ -227,7 +179,7 @@ CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.provides.build: CMakeFiles/PCSC2017
 
 CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o: ../gnuplot_i.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.i: cmake_force
@@ -251,7 +203,7 @@ CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o.provides.build: CMakeFiles/PCSC20
 
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: ../Lagrange.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/Lagrange.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.i: cmake_force
@@ -275,7 +227,7 @@ CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.provides.build: CMakeFiles/PCSC201
 
 CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: ../LeastSquare.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i: cmake_force
@@ -299,7 +251,7 @@ CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides.build: CMakeFiles/PCSC
 
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../Polynomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.i: cmake_force
@@ -323,7 +275,7 @@ CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.provides.build: CMakeFiles/PCSC2
 
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../PieceWise_Continue_Polynomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.i: cmake_force
@@ -347,7 +299,7 @@ CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o.provides.buil
 
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o: ../PieceWise_NonContinue_Polynomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.i: cmake_force
@@ -369,37 +321,11 @@ CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o.provides: 
 CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o
 
 
-CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o: ../FourierApproximation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/FourierApproximation.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Desktop/PCSC2017_Group5/FourierApproximation.cpp > CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Desktop/PCSC2017_Group5/FourierApproximation.cpp -o CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o
-
-
 # Object files for target PCSC2017_Group5
 PCSC2017_Group5_OBJECTS = \
 "CMakeFiles/PCSC2017_Group5.dir/main.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o" \
@@ -407,8 +333,7 @@ PCSC2017_Group5_OBJECTS = \
 "CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o"
+"CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o"
 
 # External object files for target PCSC2017_Group5
 PCSC2017_Group5_EXTERNAL_OBJECTS =
@@ -416,8 +341,6 @@ PCSC2017_Group5_EXTERNAL_OBJECTS =
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/main.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o
@@ -426,10 +349,9 @@ PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/build.make
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable PCSC2017_Group5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable PCSC2017_Group5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PCSC2017_Group5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -440,8 +362,6 @@ CMakeFiles/PCSC2017_Group5.dir/build: PCSC2017_Group5
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/main.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o.requires
@@ -450,7 +370,6 @@ CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/LeastSqu
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o.requires
 
 .PHONY : CMakeFiles/PCSC2017_Group5.dir/requires
 

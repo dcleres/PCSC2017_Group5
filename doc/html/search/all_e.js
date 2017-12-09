@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['val',['val',['../struct_vector.html#adc995472c3e3bd817a76e705f2eddc90',1,'Vector']]],
-  ['var',['var',['../class_super_cool_class.html#a0264bf7dc5bfe0057907102b2b5b767d',1,'SuperCoolClass']]],
-  ['vector',['Vector',['../struct_vector.html',1,'']]]
+  ['weights',['weights',['../struct_data.html#a240f15bb7792f4b6326f760f2a5020cd',1,'Data']]],
+  ['writefile',['writeFile',['../class_read_file.html#ac11779a3630a2c1d62ab4566abb4034a',1,'ReadFile']]]
 ];

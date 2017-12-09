@@ -1,7 +1,13 @@
+/**
+ * \file main.cpp
+ * \brief This is the function to call to run the script of the project
+ */
+
 #include <cmath>
 #include <cstddef>
 #include <cstdint>
 #include <utility>
+#include <iostream>
 #include "FFTreal.h"
 
 using std::size_t;
@@ -20,6 +26,38 @@ void FFTreal::transform(vector<double> &real, vector<double> &imag) {
         transformRadix2(real, imag);
     else  // More complicated algorithm for arbitrary sizes
         transformBluestein(real, imag);
+}
+
+void FFTreal::transformCoefs(vector<double> const& real, vector<double>& an, vector<double>& bn, size_t const& period) {
+
+    size_t N (real.size()); //number of ak et bk computed
+
+    bn[0] = 0.0;
+    for(size_t k(0); k < an.size(); k++) {
+        for (int i(0); i < N; i++) {
+            if (k == 0) {
+                an[k] += 2.0 / N * (real[i]);
+
+            } else {
+                an[k] += 2.0 / N * (real[i]) * cos(2.0 * M_PI * i * k / N);
+                bn[k] += 2.0 / N * (real[i]) *
+                         sin(2.0 * M_PI * i * k / N); //on a un intervalle de N et pas de 2L
+            }
+        }
+    }
+}
+
+vector<double> FFTreal::transformApproximation(vector<double>const& an, vector<double>const& bn, size_t const& period, vector<double>& real) {
+    vector<double> approximation(real.size(), 0.0);
+    size_t N(real.size());
+    for (size_t i(0); i < real.size(); i++) {
+        approximation[i] = an[0];
+        for(size_t k(1); k < an.size(); k++) {
+            approximation[i] += an[k]*cos(2.0*M_PI*i*k/N)+bn[k]*sin(2.0*M_PI*i*k/N);
+        }
+        approximation[i] += an[an.size()-1] * cos(2.0*M_PI*i);
+    }
+    return approximation;
 }
 
 void FFTreal::inverseTransform(vector<double> &real, vector<double> &imag) {
@@ -87,7 +125,7 @@ void FFTreal::transformBluestein(vector<double> &real, vector<double> &imag) {
         m *= 2;
     }
 
-    // Trignometric tables
+    // Trigonometric tables
     vector<double> cosTable(n), sinTable(n);
     for (size_t i = 0; i < n; i++) {
         unsigned long long temp = static_cast<unsigned long long>(i) * i;
@@ -101,18 +139,18 @@ void FFTreal::transformBluestein(vector<double> &real, vector<double> &imag) {
     // Temporary vectors and preprocessing
     vector<double> areal(m), aimag(m);
     for (size_t i = 0; i < n; i++) {
-        areal[i] =  real[i] * cosTable[i] + imag[i] * sinTable[i];
+        areal[i] =  real[i] * cosTable[i] + imag[i] * sinTable[i]; //an
         aimag[i] = -real[i] * sinTable[i] + imag[i] * cosTable[i];
     }
     vector<double> breal(m), bimag(m);
     breal[0] = cosTable[0];
     bimag[0] = sinTable[0];
     for (size_t i = 1; i < n; i++) {
-        breal[i] = breal[m - i] = cosTable[i];
+        breal[i] = breal[m - i] = cosTable[i]; //bn
         bimag[i] = bimag[m - i] = sinTable[i];
     }
 
-    // Convolution
+    // Convolution between a and b is put in c
     vector<double> creal(m), cimag(m);
     convolve(areal, aimag, breal, bimag, creal, cimag);
 

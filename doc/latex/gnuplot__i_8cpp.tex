@@ -1,6 +1,11 @@
 \hypertarget{gnuplot__i_8cpp}{}\section{/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/gnuplot\+\_\+i.cpp File Reference}
 \label{gnuplot__i_8cpp}\index{/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/gnuplot\+\_\+i.\+cpp@{/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/gnuplot\+\_\+i.\+cpp}}
-{\ttfamily \#include \char`\"{}../include/gnuplot\+\_\+i.\+hpp\char`\"{}}\newline
+
+
+This is a direct translation from the C interface written by N. Devillard (which is available from \href{http://ndevilla.free.fr/gnuplot/}{\tt http\+://ndevilla.\+free.\+fr/gnuplot/}). As in the C interface this uses pipes and so wont run on a system that doesn\textquotesingle{}t have P\+O\+S\+IX pipe support.  
+
+
+{\ttfamily \#include \char`\"{}gnuplot\+\_\+i.\+hpp\char`\"{}}\newline
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -13,6 +18,28 @@
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+This is a direct translation from the C interface written by N. Devillard (which is available from \href{http://ndevilla.free.fr/gnuplot/}{\tt http\+://ndevilla.\+free.\+fr/gnuplot/}). As in the C interface this uses pipes and so wont run on a system that doesn\textquotesingle{}t have P\+O\+S\+IX pipe support. 
+
+A C++ interface to gnuplot.
+
+\begin{DoxyAuthor}{Authors}
+Rajarshi Guha
+\end{DoxyAuthor}
+Improvements and optimizations have been added by\+: \begin{DoxyAuthor}{Authors}
+David Cleres \& Nicolas Lesimple
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07/03/03
+\end{DoxyDate}
+A C++ interface to gnuplot.
+
+Rajarshi Guha
+
+Improvements and optimizations have been added by\+: David Cleres \& Nicolas Lesimple
+
+07/03/03 
+
 \subsection{Macro Definition Documentation}
 \mbox{\Hypertarget{gnuplot__i_8cpp_a98724840ca52cabedc31eb7a57aca57b}\label{gnuplot__i_8cpp_a98724840ca52cabedc31eb7a57aca57b}} 
 \index{gnuplot\+\_\+i.\+cpp@{gnuplot\+\_\+i.\+cpp}!P\+A\+T\+H\+\_\+\+M\+A\+X\+N\+A\+M\+E\+SZ@{P\+A\+T\+H\+\_\+\+M\+A\+X\+N\+A\+M\+E\+SZ}}
@@ -20,15 +47,7 @@
 \subsubsection{\texorpdfstring{P\+A\+T\+H\+\_\+\+M\+A\+X\+N\+A\+M\+E\+SZ}{PATH\_MAXNAMESZ}}
 {\footnotesize\ttfamily \#define P\+A\+T\+H\+\_\+\+M\+A\+X\+N\+A\+M\+E\+SZ~4096}
 
-A C++ interface to gnuplot.
 
-This is a direct translation from the C interface written by N. Devillard (which is available from \href{http://ndevilla.free.fr/gnuplot/}{\tt http\+://ndevilla.\+free.\+fr/gnuplot/}).
-
-As in the C interface this uses pipes and so wont run on a system that doesn\textquotesingle{}t have P\+O\+S\+IX pipe support
-
-Rajarshi Guha \href{mailto:rajarshi@presidency.com}{\tt rajarshi@presidency.\+com}
-
-07/03/03 
 
 Definition at line 22 of file gnuplot\+\_\+i.\+cpp.
 
@@ -44,5 +63,5 @@ void stringtok (\begin{DoxyParamCaption}\item[{Container \&}]{container,  }\item
 
 
 
-Definition at line 34 of file gnuplot\+\_\+i.\+cpp.
+Definition at line 28 of file gnuplot\+\_\+i.\+cpp.
 

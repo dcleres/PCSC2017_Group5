@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['affiche_5fmatrice',['affiche_matrice',['../class_div_mat.html#af3502186db9e2cee9e0ab7997be66b31',1,'DivMat::affiche_matrice()'],['../class_mult_mat.html#aa504768889a47b3b0b335639baa64403',1,'MultMat::affiche_matrice()']]],
-  ['approximationfunction',['approximationFunction',['../class_abstract_numerical_approximation.html#aaf647fb522cf0d424d31a67230e19a62',1,'AbstractNumericalApproximation']]]
+  ['cmd',['cmd',['../class_gnuplot.html#a6f299285af0a0ee2cf1722c469aa1a57',1,'Gnuplot']]],
+  ['convolve',['convolve',['../class_f_f_treal.html#a8c7ae7505d1c80b4471a30585801d64b',1,'FFTreal::convolve(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, std::vector&lt; double &gt; &amp;out)'],['../class_f_f_treal.html#a375983c9725f461611341061dbdcc92f',1,'FFTreal::convolve(const std::vector&lt; double &gt; &amp;xreal, const std::vector&lt; double &gt; &amp;ximag, const std::vector&lt; double &gt; &amp;yreal, const std::vector&lt; double &gt; &amp;yimag, std::vector&lt; double &gt; &amp;outreal, std::vector&lt; double &gt; &amp;outimag)']]]
 ];

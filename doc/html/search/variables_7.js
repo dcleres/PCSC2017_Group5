@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weights',['weights',['../struct_data.html#a240f15bb7792f4b6326f760f2a5020cd',1,'Data']]]
+  ['y',['y',['../structpoint__t.html#a8590af4986d0e4ef2b6756946f80438c',1,'point_t']]]
 ];

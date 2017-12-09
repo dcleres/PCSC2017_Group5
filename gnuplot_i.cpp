@@ -1,34 +1,28 @@
 /**
 * A C++ interface to gnuplot.
 *
-* This is a direct translation from the C interface
+* @brief This is a direct translation from the C interface
 * written by N. Devillard (which is available from
-* http://ndevilla.free.fr/gnuplot/).
+* http://ndevilla.free.fr/gnuplot/). As in the C interface
+* this uses pipes and so wont run on a system that doesn't
+* have POSIX pipe support.
 *
-* As in the C interface this uses pipes and so wont
-* run on a system that doesn't have POSIX pipe
-* support
+* @authors Rajarshi Guha
 *
-* Rajarshi Guha
-* <rajarshi@presidency.com>
+* Improvements and optimizations have been added by:
+* @authors David Cleres & Nicolas Lesimple
 *
-* 07/03/03
+* @date 07/03/03
+*
+* \file gnuplot_i.cpp
 *
 */
-
-
 
 #include "gnuplot_i.hpp"
 #define PATH_MAXNAMESZ       4096
 
 using namespace std;
 
-/////////////////////////////
-//
-// A string tokenizer taken from
-// http://www.sunsite.ualberta.ca/Documentation/Gnu/libstdc++-2.90.8/html/21_strings/stringtok_std_h.txt
-//
-/////////////////////////////
 template <typename Container>
 void
 stringtok (Container &container, string const &in,
@@ -62,9 +56,9 @@ stringtok (Container &container, string const &in,
 //
 // Constructors
 //
-Gnuplot::Gnuplot(void)
+Gnuplot::Gnuplot()
 {
-    if (getenv("DISPLAY") == NULL)
+    if (getenv("DISPLAY") == nullptr)
       {
         this->valid = false;
         throw GnuplotException("cannot find DISPLAY variable");
@@ -89,7 +83,7 @@ Gnuplot::Gnuplot(void)
 
 Gnuplot::Gnuplot(const string &style)
 {
-    if (getenv("DISPLAY") == NULL)
+    if (getenv("DISPLAY") == nullptr)
       {
         this->valid = false;
         throw GnuplotException("cannot find DISPLAY variable");
@@ -115,9 +109,9 @@ Gnuplot::Gnuplot(
          const string &title,
          const string &style,
          const string &labelx,  const string &labely,
-         vector<double> x, vector<double> y)
+         vector<double> const& x, vector<double> const& y)
 {
-    if (getenv("DISPLAY") == NULL)
+    if (getenv("DISPLAY") == nullptr)
       {
         this->valid = false;
         throw GnuplotException("cannot find DISPLAY variable");
@@ -139,19 +133,19 @@ Gnuplot::Gnuplot(
     this->valid = true;
 
 
-    if (x.size() == 0 || y.size() == 0)
+    if (x.empty() || y.empty())
         throw GnuplotException("vectors too small");
 
-    if (style == "")
+    if (style.empty())
         this->set_style("lines");
     else
         this->set_style(style);
 
-    if (labelx == "")
+    if (labelx.empty())
         this->set_xlabel("X");
     else
         this->set_xlabel(labelx);
-    if (labely == "")
+    if (labely.empty())
         this->set_ylabel("Y");
     else
         this->set_ylabel(labely);
@@ -166,9 +160,9 @@ Gnuplot::Gnuplot(
          const string &title,
          const string &style,
          const string &labelx,  const string &labely,
-         vector<double> x)
+         vector<double> const& x)
 {
-    if (getenv("DISPLAY") == NULL)
+    if (getenv("DISPLAY") == nullptr)
       {
         this->valid = false;
         throw GnuplotException("cannot find DISPLAY variable");
@@ -193,21 +187,21 @@ Gnuplot::Gnuplot(
     this->valid = true;
 
 
-    if (x.size() == 0)
+    if (x.empty())
         throw GnuplotException("vector too small");
     if (!this->gnucmd)
         throw GnuplotException("Could'nt open connection to gnuplot");
 
-    if (style == "")
+    if (style.empty())
         this->set_style("lines");
     else
         this->set_style(style);
 
-    if (labelx == "")
+    if (labelx.empty())
         this->set_xlabel("X");
     else
         this->set_xlabel(labelx);
-    if (labely == "")
+    if (labely.empty())
         this->set_ylabel("Y");
     else
         this->set_ylabel(labely);
@@ -225,13 +219,12 @@ Gnuplot::~Gnuplot()
 {
     if ((this->to_delete).size() > 0)
       {
-        for (int i = 0; i < this->to_delete.size(); i++)
+        for (size_t i(0); i < this->to_delete.size(); i++)
             remove(this->to_delete[i].c_str());
         to_delete.clear();
       }
     if (pclose(this->gnucmd) == -1)
         cerr << "Problem closing communication to gnuplot" << endl;
-    return;
 }
 
 bool Gnuplot::is_valid(void)
@@ -264,16 +257,15 @@ bool Gnuplot::get_program_path(const string pname)
     return false;
 }
 
-void Gnuplot::reset_plot(void)
+void Gnuplot::reset_plot()
 {       
     if (this->to_delete.size() > 0)
       {
-        for (int i = 0; i < this->to_delete.size(); i++)
+        for (size_t i(0); i < this->to_delete.size(); i++)
             remove(this->to_delete[i].c_str());
         to_delete.clear();
       }
     this->nplots = 0;
-    return;
 }
 
 void Gnuplot::set_style(const string &stylestr)
@@ -303,7 +295,6 @@ void Gnuplot::cmd(const char *cmdstr, ...)
     strcat(local_cmd,"\n");
     fputs(local_cmd,this->gnucmd);
     fflush(this->gnucmd);
-    return;
 }
 
 void Gnuplot::set_ylabel(const string &label)
@@ -312,8 +303,6 @@ void Gnuplot::set_ylabel(const string &label)
 
     cmdstr << "set xlabel \"" << label << "\"";
     this->cmd(cmdstr.str().c_str());
-
-    return;
 }
 
 void Gnuplot::set_xlabel(const string &label)
@@ -322,8 +311,6 @@ void Gnuplot::set_xlabel(const string &label)
 
     cmdstr << "set xlabel \"" << label << "\"";
     this->cmd(cmdstr.str().c_str());
-
-    return;
 }
 
 // 
@@ -346,7 +333,6 @@ void Gnuplot::plot_slope(double a, double b, const string &title)
         cmdstr << "plot " << a << " * x + " << b << " title \"" << stitle.str() << "\" with " << pstyle;
     this->cmd(cmdstr.str().c_str());
     this->nplots++;
-    return;
 }
 
 //
@@ -357,7 +343,7 @@ void Gnuplot::plot_equation(const string &equation, const string &title)
     string titlestr, plotstr;
     ostringstream cmdstr;
 
-    if (title == "")
+    if (title.empty())
         titlestr = "no title";
     else
         titlestr = title;
@@ -370,8 +356,6 @@ void Gnuplot::plot_equation(const string &equation, const string &title)
     cmdstr << plotstr << " " << equation << " " << "title \"" << titlestr << "\" with " << this->pstyle;
     this->cmd(cmdstr.str().c_str());
     this->nplots++;
-
-    return;
 }
 
 void Gnuplot::plot_x(vector<double> d, const string &title)
@@ -408,7 +392,7 @@ void Gnuplot::plot_x(vector<double> d, const string &title)
     //
     // write the data to file
     //
-    for (int i = 0; i < d.size(); i++)
+    for (size_t i(0); i < d.size(); i++)
         tmp << d[i] << endl;
     tmp.flush();    
     tmp.close();
@@ -419,7 +403,7 @@ void Gnuplot::plot_x(vector<double> d, const string &title)
     if (this->nplots > 0)
         cmdstr << "replot ";
     else cmdstr << "plot ";
-    if (title == "")
+    if (title.empty())
         cmdstr << "\"" << name << "\" with " << this->pstyle;
     else
         cmdstr << "\"" << name << "\" title \"" << title << "\" with " << this->pstyle;
@@ -429,8 +413,6 @@ void Gnuplot::plot_x(vector<double> d, const string &title)
     //
     this->cmd(cmdstr.str().c_str());
     this->nplots++;
-
-    return;
 }
     
 void Gnuplot::plot_xy(vector<double> x, vector<double> y, const string &title)
@@ -483,7 +465,7 @@ void Gnuplot::plot_xy(vector<double> x, vector<double> y, const string &title)
     if (this->nplots > 0)
         cmdstr << "replot ";
     else cmdstr << "plot ";
-    if (title == "")
+    if (title.empty())
         cmdstr << "\"" << name << "\" with " << this->pstyle;
     else
         cmdstr << "\"" << name << "\" title \"" << title << "\" with " << this->pstyle;
@@ -493,8 +475,6 @@ void Gnuplot::plot_xy(vector<double> x, vector<double> y, const string &title)
     //
     this->cmd(cmdstr.str().c_str());
     this->nplots++;
-
-    return;
 }
 
 

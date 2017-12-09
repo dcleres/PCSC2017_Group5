@@ -71,65 +71,62 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_polynomial_8h_source.html">Polynomial.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Polynomial:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="class_polynomial.png" usemap="#Polynomial_map" alt=""/>
+  <map id="Polynomial_map" name="Polynomial_map">
+<area href="class_abstract_numerical_approximation.html" alt="AbstractNumericalApproximation" shape="rect" coords="0,0,219,24"/>
+<area href="class_piece_wise___non_continue___polynomial.html" alt="PieceWise_NonContinue_Polynomial" shape="rect" coords="0,112,219,136"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7e654cbc56334a4c36cf8851483d889e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomial.html#a7e654cbc56334a4c36cf8851483d889e">~polynomial</a> ()</td></tr>
-<tr class="separator:a7e654cbc56334a4c36cf8851483d889e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab171b804b169ec3642cf0f86a6ee995b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomial.html#ab171b804b169ec3642cf0f86a6ee995b">solve</a> (<a class="el" href="struct_data.html">Data</a> data, int degree)</td></tr>
-<tr class="memdesc:ab171b804b169ec3642cf0f86a6ee995b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_polynomial.html">Polynomial</a> approximation of the given points using a single polynome.  <a href="#ab171b804b169ec3642cf0f86a6ee995b">More...</a><br /></td></tr>
-<tr class="separator:ab171b804b169ec3642cf0f86a6ee995b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac954ae1f64db7fab5b16ab60fc3f6709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomial.html#ac954ae1f64db7fab5b16ab60fc3f6709">solve</a> (double *x, double **M, int Npts)</td></tr>
-<tr class="separator:ac954ae1f64db7fab5b16ab60fc3f6709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564acf19974e91bcb72d552ee4053691"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomial.html#a564acf19974e91bcb72d552ee4053691">solve</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data, size_t const &amp;degree)</td></tr>
+<tr class="memdesc:a564acf19974e91bcb72d552ee4053691"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_polynomial.html">Polynomial</a> approximation of the given points using a single polynome.  <a href="#a564acf19974e91bcb72d552ee4053691">More...</a><br /></td></tr>
+<tr class="separator:a564acf19974e91bcb72d552ee4053691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae67730df0a2e45a87c9cb244fe03ad6b"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomial.html#ae67730df0a2e45a87c9cb244fe03ad6b">solve</a> (vector&lt; double &gt; const &amp;data, vector&lt; double &gt; const &amp;data_y, size_t const &amp;degree)</td></tr>
+<tr class="memdesc:ae67730df0a2e45a87c9cb244fe03ad6b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_polynomial.html">Polynomial</a> approximation of the given points using a single polynome.  <a href="#ae67730df0a2e45a87c9cb244fe03ad6b">More...</a><br /></td></tr>
+<tr class="separator:ae67730df0a2e45a87c9cb244fe03ad6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15351ca59ae2e3a6a8b8b1ec4e23a924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_polynomial.html#a15351ca59ae2e3a6a8b8b1ec4e23a924">solve</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data)</td></tr>
+<tr class="separator:a15351ca59ae2e3a6a8b8b1ec4e23a924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_abstract_numerical_approximation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_numerical_approximation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_abstract_numerical_approximation.html">AbstractNumericalApproximation</a></td></tr>
+<tr class="memitem:a841c83a7ae9f2146001581f3a7f8444a inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#a841c83a7ae9f2146001581f3a7f8444a">printWeight</a> (vector&lt; double &gt; const &amp;weight)</td></tr>
+<tr class="memdesc:a841c83a7ae9f2146001581f3a7f8444a inherit pub_methods_class_abstract_numerical_approximation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that allows us to print the weight return by the approximation function  <a href="class_abstract_numerical_approximation.html#a841c83a7ae9f2146001581f3a7f8444a">More...</a><br /></td></tr>
+<tr class="separator:a841c83a7ae9f2146001581f3a7f8444a inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed569247300dcb9eb54c6117903d2583 inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#aed569247300dcb9eb54c6117903d2583">GaussianElimination</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt; b, int number_point)</td></tr>
+<tr class="memdesc:aed569247300dcb9eb54c6117903d2583 inherit pub_methods_class_abstract_numerical_approximation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the gaussian elimination to solve the system Ax = b.  <a href="class_abstract_numerical_approximation.html#aed569247300dcb9eb54c6117903d2583">More...</a><br /></td></tr>
+<tr class="separator:aed569247300dcb9eb54c6117903d2583 inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccba1cb27301df86f2adbfa5e6525a5 inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#abccba1cb27301df86f2adbfa5e6525a5">Solve</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt;b, int t, vector&lt; double &gt; x)</td></tr>
+<tr class="memdesc:abccba1cb27301df86f2adbfa5e6525a5 inherit pub_methods_class_abstract_numerical_approximation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the simplified system made by the gaussian elimination.  <a href="class_abstract_numerical_approximation.html#abccba1cb27301df86f2adbfa5e6525a5">More...</a><br /></td></tr>
+<tr class="separator:abccba1cb27301df86f2adbfa5e6525a5 inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358054cadc54f5d0c7891505da040783 inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#a358054cadc54f5d0c7891505da040783">~AbstractNumericalApproximation</a> ()</td></tr>
+<tr class="separator:a358054cadc54f5d0c7891505da040783 inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_polynomial_8h_source.html#l00012">12</a> of file <a class="el" href="_polynomial_8h_source.html">Polynomial.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7e654cbc56334a4c36cf8851483d889e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e654cbc56334a4c36cf8851483d889e">&#9670;&nbsp;</a></span>~polynomial()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Polynomial::~polynomial </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_polynomial_8cpp_source.html#l00010">10</a> of file <a class="el" href="_polynomial_8cpp_source.html">Polynomial.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab171b804b169ec3642cf0f86a6ee995b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab171b804b169ec3642cf0f86a6ee995b">&#9670;&nbsp;</a></span>solve() <span class="overload">[1/2]</span></h2>
+<p class="definition">Definition at line <a class="el" href="_polynomial_8h_source.html#l00014">14</a> of file <a class="el" href="_polynomial_8h_source.html">Polynomial.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a564acf19974e91bcb72d552ee4053691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564acf19974e91bcb72d552ee4053691">&#9670;&nbsp;</a></span>solve() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Polynomial::solve </td>
+          <td class="memname">vector&lt; double &gt; Polynomial::solve </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_data.html">Data</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_data.html">Data</a> const &amp;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t const &amp;&#160;</td>
           <td class="paramname"><em>degree</em>&#160;</td>
         </tr>
         <tr>
@@ -146,8 +143,46 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac954ae1f64db7fab5b16ab60fc3f6709"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac954ae1f64db7fab5b16ab60fc3f6709">&#9670;&nbsp;</a></span>solve() <span class="overload">[2/2]</span></h2>
+<a id="ae67730df0a2e45a87c9cb244fe03ad6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae67730df0a2e45a87c9cb244fe03ad6b">&#9670;&nbsp;</a></span>solve() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; double &gt; Polynomial::solve </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; double &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>data_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t const &amp;&#160;</td>
+          <td class="paramname"><em>degree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_polynomial.html">Polynomial</a> approximation of the given points using a single polynome. </p>
+
+<p class="definition">Definition at line <a class="el" href="_polynomial_8cpp_source.html#l00077">77</a> of file <a class="el" href="_polynomial_8cpp_source.html">Polynomial.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15351ca59ae2e3a6a8b8b1ec4e23a924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15351ca59ae2e3a6a8b8b1ec4e23a924">&#9670;&nbsp;</a></span>solve() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,25 +190,9 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Polynomial::solve </td>
           <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="struct_data.html">Data</a> const &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">double **&#160;</td>
-          <td class="paramname"><em>M</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Npts</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -150,60 +150,6 @@ AbstractNumericalApproximation.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
 .PHONY : AbstractNumericalApproximation.cpp.s
 
-DFT.o: DFT.cpp.o
-
-.PHONY : DFT.o
-
-# target to build an object file
-DFT.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o
-.PHONY : DFT.cpp.o
-
-DFT.i: DFT.cpp.i
-
-.PHONY : DFT.i
-
-# target to preprocess a source file
-DFT.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.i
-.PHONY : DFT.cpp.i
-
-DFT.s: DFT.cpp.s
-
-.PHONY : DFT.s
-
-# target to generate assembly for a file
-DFT.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.s
-.PHONY : DFT.cpp.s
-
-FFT.o: FFT.cpp.o
-
-.PHONY : FFT.o
-
-# target to build an object file
-FFT.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o
-.PHONY : FFT.cpp.o
-
-FFT.i: FFT.cpp.i
-
-.PHONY : FFT.i
-
-# target to preprocess a source file
-FFT.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.i
-.PHONY : FFT.cpp.i
-
-FFT.s: FFT.cpp.s
-
-.PHONY : FFT.s
-
-# target to generate assembly for a file
-FFT.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.s
-.PHONY : FFT.cpp.s
-
 FFTreal.o: FFTreal.cpp.o
 
 .PHONY : FFTreal.o
@@ -257,33 +203,6 @@ FFTtest.s: FFTtest.cpp.s
 FFTtest.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s
 .PHONY : FFTtest.cpp.s
-
-FourierApproximation.o: FourierApproximation.cpp.o
-
-.PHONY : FourierApproximation.o
-
-# target to build an object file
-FourierApproximation.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o
-.PHONY : FourierApproximation.cpp.o
-
-FourierApproximation.i: FourierApproximation.cpp.i
-
-.PHONY : FourierApproximation.i
-
-# target to preprocess a source file
-FourierApproximation.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.i
-.PHONY : FourierApproximation.cpp.i
-
-FourierApproximation.s: FourierApproximation.cpp.s
-
-.PHONY : FourierApproximation.s
-
-# target to generate assembly for a file
-FourierApproximation.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.s
-.PHONY : FourierApproximation.cpp.s
 
 Lagrange.o: Lagrange.cpp.o
 
@@ -513,21 +432,12 @@ help:
 	@echo "... AbstractNumericalApproximation.o"
 	@echo "... AbstractNumericalApproximation.i"
 	@echo "... AbstractNumericalApproximation.s"
-	@echo "... DFT.o"
-	@echo "... DFT.i"
-	@echo "... DFT.s"
-	@echo "... FFT.o"
-	@echo "... FFT.i"
-	@echo "... FFT.s"
 	@echo "... FFTreal.o"
 	@echo "... FFTreal.i"
 	@echo "... FFTreal.s"
 	@echo "... FFTtest.o"
 	@echo "... FFTtest.i"
 	@echo "... FFTtest.s"
-	@echo "... FourierApproximation.o"
-	@echo "... FourierApproximation.i"
-	@echo "... FourierApproximation.s"
 	@echo "... Lagrange.o"
 	@echo "... Lagrange.i"
 	@echo "... Lagrange.s"

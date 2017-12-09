@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gnuplot',['Gnuplot',['../class_gnuplot.html',1,'']]],
-  ['gnuplotexception',['GnuplotException',['../class_gnuplot_exception.html',1,'']]]
+  ['lagrange',['Lagrange',['../class_lagrange.html',1,'']]],
+  ['leastsquare',['LeastSquare',['../class_least_square.html',1,'']]]
 ];

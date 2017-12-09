@@ -5,11 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o"
-  "/home/pcsc/Desktop/PCSC2017_Group5/DFT.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o"
-  "/home/pcsc/Desktop/PCSC2017_Group5/FFT.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o"
-  "/home/pcsc/Desktop/PCSC2017_Group5/FourierApproximation.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/FourierApproximation.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o"
