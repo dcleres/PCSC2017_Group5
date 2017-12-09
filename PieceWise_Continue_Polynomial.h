@@ -1,7 +1,3 @@
-//
-// Created by pcsc on 11/30/17.
-//
-
 #ifndef PROJECT_PIECEWISE_CONTINUE_POLYNOMIAL_H
 #define PROJECT_PIECEWISE_CONTINUE_POLYNOMIAL_H
 
@@ -10,14 +6,15 @@
 #include <cassert>
 #include <cmath>
 #include "readFile.h"
-#include "AbstractNumericalApproximation.h"
 
-class PieceWise_Continue_Polynomial : public AbstractNumericalApproximation {
+using namespace std;
+
+class PieceWise_Continue_Polynomial {
 
 public:
 
     vector<double> solve_least_square(Data data, int degree, int Intervale,vector<double>x_plot);
-    vector<double> solve_lagrange(Data data, int Intervalle) ;
+    vector<double> solve_lagrange(Data& data, int Intervalle, vector<double>x_plot) ;
 
 
 private:

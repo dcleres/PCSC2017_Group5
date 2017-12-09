@@ -84,12 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
@@ -99,16 +93,16 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Graph.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Graph.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp">
@@ -117,10 +111,10 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.cpp">
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Point.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_NonContinue_Polynomial.h">
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Point.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp">

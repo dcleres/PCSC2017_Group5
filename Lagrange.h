@@ -1,7 +1,7 @@
 /**
  * \file Lagrange.h
  * \brief This is redefinition of the virtual class to implement Lagrange functions
- * \class Subclass of AbstractNumericalApproximation
+ * \class Lagrange
  * This is how we can calculate the approximation of the data using Lagrange Polynome
  */
 
@@ -13,21 +13,17 @@
 #include <vector>
 #include <algorithm>
 #include "readFile.h"
-#include "AbstractNumericalApproximation.h"
 
 using namespace std;
 
-class Lagrange : public AbstractNumericalApproximation{
+class Lagrange{
 
 
 public:
-    //Lagrange return directly some points
-    double solve(Data data, double xi) ;
-    double solve(vector<double> const& data_x,vector<double> const& data_y,double xi)
+    //Lagrange return directly some points correspondint to the argument xi
+    double solve(vector<double> const& data_x,vector<double> const& data_y,double xi);
 
 private:
-    double getmax(vector<double>x);
-    double getmin(vector<double>x);
 };
 
 #endif //PCSC2017_GROUP5_LAGRANGE_H

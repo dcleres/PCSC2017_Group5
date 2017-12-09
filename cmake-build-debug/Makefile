@@ -123,33 +123,6 @@ PCSC2017_Group5/fast:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/build
 .PHONY : PCSC2017_Group5/fast
 
-AbstractNumericalApproximation.o: AbstractNumericalApproximation.cpp.o
-
-.PHONY : AbstractNumericalApproximation.o
-
-# target to build an object file
-AbstractNumericalApproximation.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o
-.PHONY : AbstractNumericalApproximation.cpp.o
-
-AbstractNumericalApproximation.i: AbstractNumericalApproximation.cpp.i
-
-.PHONY : AbstractNumericalApproximation.i
-
-# target to preprocess a source file
-AbstractNumericalApproximation.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.i
-.PHONY : AbstractNumericalApproximation.cpp.i
-
-AbstractNumericalApproximation.s: AbstractNumericalApproximation.cpp.s
-
-.PHONY : AbstractNumericalApproximation.s
-
-# target to generate assembly for a file
-AbstractNumericalApproximation.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.s
-.PHONY : AbstractNumericalApproximation.cpp.s
-
 FFTreal.o: FFTreal.cpp.o
 
 .PHONY : FFTreal.o
@@ -204,6 +177,33 @@ FFTtest.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s
 .PHONY : FFTtest.cpp.s
 
+Graph.o: Graph.cpp.o
+
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 Lagrange.o: Lagrange.cpp.o
 
 .PHONY : Lagrange.o
@@ -230,33 +230,6 @@ Lagrange.s: Lagrange.cpp.s
 Lagrange.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.s
 .PHONY : Lagrange.cpp.s
-
-LeastSquare.o: LeastSquare.cpp.o
-
-.PHONY : LeastSquare.o
-
-# target to build an object file
-LeastSquare.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
-.PHONY : LeastSquare.cpp.o
-
-LeastSquare.i: LeastSquare.cpp.i
-
-.PHONY : LeastSquare.i
-
-# target to preprocess a source file
-LeastSquare.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i
-.PHONY : LeastSquare.cpp.i
-
-LeastSquare.s: LeastSquare.cpp.s
-
-.PHONY : LeastSquare.s
-
-# target to generate assembly for a file
-LeastSquare.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
-.PHONY : LeastSquare.cpp.s
 
 PieceWise_Continue_Polynomial.o: PieceWise_Continue_Polynomial.cpp.o
 
@@ -285,32 +258,32 @@ PieceWise_Continue_Polynomial.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.s
 .PHONY : PieceWise_Continue_Polynomial.cpp.s
 
-PieceWise_NonContinue_Polynomial.o: PieceWise_NonContinue_Polynomial.cpp.o
+Point.o: Point.cpp.o
 
-.PHONY : PieceWise_NonContinue_Polynomial.o
+.PHONY : Point.o
 
 # target to build an object file
-PieceWise_NonContinue_Polynomial.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.o
-.PHONY : PieceWise_NonContinue_Polynomial.cpp.o
+Point.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o
+.PHONY : Point.cpp.o
 
-PieceWise_NonContinue_Polynomial.i: PieceWise_NonContinue_Polynomial.cpp.i
+Point.i: Point.cpp.i
 
-.PHONY : PieceWise_NonContinue_Polynomial.i
+.PHONY : Point.i
 
 # target to preprocess a source file
-PieceWise_NonContinue_Polynomial.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.i
-.PHONY : PieceWise_NonContinue_Polynomial.cpp.i
+Point.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Point.cpp.i
+.PHONY : Point.cpp.i
 
-PieceWise_NonContinue_Polynomial.s: PieceWise_NonContinue_Polynomial.cpp.s
+Point.s: Point.cpp.s
 
-.PHONY : PieceWise_NonContinue_Polynomial.s
+.PHONY : Point.s
 
 # target to generate assembly for a file
-PieceWise_NonContinue_Polynomial.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_NonContinue_Polynomial.cpp.s
-.PHONY : PieceWise_NonContinue_Polynomial.cpp.s
+Point.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Point.cpp.s
+.PHONY : Point.cpp.s
 
 Polynomial.o: Polynomial.cpp.o
 
@@ -429,27 +402,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... PCSC2017_Group5"
-	@echo "... AbstractNumericalApproximation.o"
-	@echo "... AbstractNumericalApproximation.i"
-	@echo "... AbstractNumericalApproximation.s"
 	@echo "... FFTreal.o"
 	@echo "... FFTreal.i"
 	@echo "... FFTreal.s"
 	@echo "... FFTtest.o"
 	@echo "... FFTtest.i"
 	@echo "... FFTtest.s"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... Lagrange.o"
 	@echo "... Lagrange.i"
 	@echo "... Lagrange.s"
-	@echo "... LeastSquare.o"
-	@echo "... LeastSquare.i"
-	@echo "... LeastSquare.s"
 	@echo "... PieceWise_Continue_Polynomial.o"
 	@echo "... PieceWise_Continue_Polynomial.i"
 	@echo "... PieceWise_Continue_Polynomial.s"
-	@echo "... PieceWise_NonContinue_Polynomial.o"
-	@echo "... PieceWise_NonContinue_Polynomial.i"
-	@echo "... PieceWise_NonContinue_Polynomial.s"
+	@echo "... Point.o"
+	@echo "... Point.i"
+	@echo "... Point.s"
 	@echo "... Polynomial.o"
 	@echo "... Polynomial.i"
 	@echo "... Polynomial.s"

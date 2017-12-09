@@ -33,16 +33,13 @@
 #include <fstream>
 #include <cmath>
 #include <sstream>
-#include <unistd.h>
 #include <vector>
 #include <complex>
 #include "readFile.h"
 #include "gnuplot_i.hpp"
 #include "Polynomial.h"
 #include "Lagrange.h"
-#include "LeastSquare.h"
-#include "PieceWise_Continue_Polynomial.h"
-#include "FFTreal.h"
+#include "Graph.h"
 
 using namespace std;
 
@@ -59,45 +56,16 @@ int main() {
 
     Data data_original = data;
 
-    /*
-    //Least Squares
-    Polynomial poly;
-    int degree = 3;
-    vector <double> a (poly.solve(data, degree));
-    vector<double>x(21);
-    vector<double>y(21);
-    for (size_t i(0); i < (degree+1);i++){
+    Graph graph(data);
+    ////////////////////////////////////////////Least Square/////////////////////////////////////////////////
+    //graph.make_graph_least_square(data,7);
+    ///////////////////////////////////PieceWise Least Square////////////////////////////////////////////////
+    //graph.make_graph_piece_wise_least_squares(data,2,4);
+    /////////////////////////////////////Lagrange///////////////////////////////////////////////////////////
+    //graph.make_graph_lagrange(data);
+    //////////////////////////////////PieceWise Lagrange////////////////////////////////////////////////////
+    //graph.make_graph_piece_wise_lagrange(data,10);
 
-        cout<< " + ("<<a[i]<<")"<<"x^"<<i<<endl;
-    }
-
-    for (size_t d(0); d <21; ++d)
-    {
-        x[d] = (1 + 0.1*d);
-    }
-    for (size_t j(0); j<20; ++j)
-    {
-        for (size_t i(0); i < (degree+1); i++)
-        {
-            y[j]+=pow(x[j],i)*a[i];
-        }
-    }
-
-    Lagrange lagrange;
-    vector<double>x2(31);
-    vector<double>y2(31);
-    for (size_t d(0); d < 31;++d)
-    {
-        x2[d]= (1+ 0.1*d);
-    }
-    for (size_t j(0); j < 30; ++j)
-    {
-        y2[j] = lagrange.solve(data,x2[j]);
-    }
-
-
-    PieceWise_Continue_Polynomial piece;
-    vector<double>y3(piece.solve_least_square(data,1,2,x2));*/
 
 
 
@@ -118,9 +86,8 @@ int main() {
     {
         cout << element << endl;
     }*/
-    PieceWise_Continue_Polynomial piece;
-    vector<double>y3(piece.solve_lagrange(data,4));
-    vector<double>x3(9*data.heights.size());
+    /*
+
 
     //////////////////////// COMPUTE THE FFT /////////////////////////////////////////////////
     FFTreal fft;
@@ -141,7 +108,7 @@ int main() {
     //we used cos(pi*x which has a period of 2
     fft.transformCoefs(data_original.weights, an, bn, 2);
     vector<double> approx (fft.transformApproximation(an,bn,2,data_original.weights));
-
+*/
     //cout << "WORD" << endl;
     /*for (auto& element : data.weights)
     {
@@ -188,7 +155,7 @@ int main() {
     {
         results[i] = approxFunction (data.heights[i], ans, bns);
     }*/
-
+/*
     for (auto& element : ifft) {
         element /= ifft.size();
     }
@@ -206,5 +173,5 @@ int main() {
     g1.plot_xy(data_original.heights,approx,"Fourier");
     sleep(20);
 
-    return 0;
+    return 0;*/
 }

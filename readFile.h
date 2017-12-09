@@ -21,6 +21,8 @@ struct Data
     std::vector<double> weights;
 };
 
+
+
 typedef struct {
     double x;
     double y;
