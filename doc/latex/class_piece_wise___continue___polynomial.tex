@@ -4,40 +4,42 @@
 
 {\ttfamily \#include $<$Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial.\+h$>$}
 
-Inheritance diagram for Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{class_piece_wise___continue___polynomial}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ double $>$ \mbox{\hyperlink{class_piece_wise___continue___polynomial_a78a6e7994a1a007806da7d0cc8047413}{solve}} (\mbox{\hyperlink{struct_data}{Data}} data, int degree, int Intervale, vector$<$ double $>$x\+\_\+plot)
-\begin{DoxyCompactList}\small\item\em Piece-\/wise polynomial approximation with continuous derivative using polynoms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+vector$<$ double $>$ \mbox{\hyperlink{class_piece_wise___continue___polynomial_ae4e6583489b97d59121f04514521a901}{solve\+\_\+least\+\_\+square}} (\mbox{\hyperlink{struct_data}{Data}} data, int degree, int Intervale, vector$<$ double $>$x\+\_\+plot)
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{class_piece_wise___continue___polynomial_a7fbf288a1307b1853e537d02d4e57da7}{solve\+\_\+lagrange}} (\mbox{\hyperlink{struct_data}{Data}} \&data, int Intervalle, vector$<$ double $>$x\+\_\+plot)
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 15 of file Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial.\+h.
+Definition at line 12 of file Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial.\+h.
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_piece_wise___continue___polynomial_a78a6e7994a1a007806da7d0cc8047413}\label{class_piece_wise___continue___polynomial_a78a6e7994a1a007806da7d0cc8047413}} 
-\index{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial@{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial}!solve@{solve}}
-\index{solve@{solve}!Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial@{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial}}
-\subsubsection{\texorpdfstring{solve()}{solve()}}
-{\footnotesize\ttfamily vector$<$ double $>$ Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial\+::solve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}}}]{data,  }\item[{int}]{degree,  }\item[{int}]{Intervale,  }\item[{vector$<$ double $>$}]{x\+\_\+plot }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_piece_wise___continue___polynomial_a7fbf288a1307b1853e537d02d4e57da7}\label{class_piece_wise___continue___polynomial_a7fbf288a1307b1853e537d02d4e57da7}} 
+\index{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial@{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial}!solve\+\_\+lagrange@{solve\+\_\+lagrange}}
+\index{solve\+\_\+lagrange@{solve\+\_\+lagrange}!Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial@{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial}}
+\subsubsection{\texorpdfstring{solve\+\_\+lagrange()}{solve\_lagrange()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial\+::solve\+\_\+lagrange (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} \&}]{data,  }\item[{int}]{Intervalle,  }\item[{vector$<$ double $>$}]{x\+\_\+plot }\end{DoxyParamCaption})}
 
 
 
-Piece-\/wise polynomial approximation with continuous derivative using polynoms. 
+Definition at line 52 of file Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial.\+cpp.
+
+\mbox{\Hypertarget{class_piece_wise___continue___polynomial_ae4e6583489b97d59121f04514521a901}\label{class_piece_wise___continue___polynomial_ae4e6583489b97d59121f04514521a901}} 
+\index{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial@{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial}!solve\+\_\+least\+\_\+square@{solve\+\_\+least\+\_\+square}}
+\index{solve\+\_\+least\+\_\+square@{solve\+\_\+least\+\_\+square}!Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial@{Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial}}
+\subsubsection{\texorpdfstring{solve\+\_\+least\+\_\+square()}{solve\_least\_square()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial\+::solve\+\_\+least\+\_\+square (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}}}]{data,  }\item[{int}]{degree,  }\item[{int}]{Intervale,  }\item[{vector$<$ double $>$}]{x\+\_\+plot }\end{DoxyParamCaption})}
 
 
 
-Definition at line 17 of file Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial.\+cpp.
+Definition at line 11 of file Piece\+Wise\+\_\+\+Continue\+\_\+\+Polynomial.\+cpp.
 
 
 

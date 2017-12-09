@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gnuplot_5fi_2ecpp',['gnuplot_i.cpp',['../gnuplot__i_8cpp.html',1,'']]],
-  ['gnuplot_5fi_2ehpp',['gnuplot_i.hpp',['../gnuplot__i_8hpp.html',1,'']]]
+  ['lagrange_2ecpp',['Lagrange.cpp',['../_lagrange_8cpp.html',1,'']]],
+  ['lagrange_2eh',['Lagrange.h',['../_lagrange_8h.html',1,'']]]
 ];

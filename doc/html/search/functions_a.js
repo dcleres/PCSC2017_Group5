@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writefile',['writeFile',['../class_read_file.html#ac11779a3630a2c1d62ab4566abb4034a',1,'ReadFile']]]
+  ['_7egnuplot',['~Gnuplot',['../class_gnuplot.html#a78a68f621caa87d1f34324fcd093c7bd',1,'Gnuplot']]]
 ];

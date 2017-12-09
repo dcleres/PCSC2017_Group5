@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['abstractnumericalapproximation',['AbstractNumericalApproximation',['../class_abstract_numerical_approximation.html',1,'']]]
+  ['data',['Data',['../struct_data.html',1,'']]]
 ];

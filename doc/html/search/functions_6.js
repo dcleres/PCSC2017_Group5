@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['plot_5fequation',['plot_equation',['../class_gnuplot.html#a55e6430f1329bf8a66f155dcacb9d112',1,'Gnuplot']]],
-  ['plot_5fslope',['plot_slope',['../class_gnuplot.html#a80c9d9e6bc3e64db073d9d39d6ec5d5f',1,'Gnuplot']]],
-  ['plot_5fx',['plot_x',['../class_gnuplot.html#ae3b7c28efb53f636431b9655085906be',1,'Gnuplot']]],
-  ['plot_5fxy',['plot_xy',['../class_gnuplot.html#a1e817a58ef3e40ceaeb128c7e6437e8a',1,'Gnuplot']]],
-  ['printweight',['printWeight',['../class_abstract_numerical_approximation.html#a841c83a7ae9f2146001581f3a7f8444a',1,'AbstractNumericalApproximation']]]
+  ['readfile',['ReadFile',['../class_read_file.html#ae297f0539380fc9b703a1bceda2ce820',1,'ReadFile']]],
+  ['reset_5fplot',['reset_plot',['../class_gnuplot.html#ad54976652afe30231a850dd31e1ca70f',1,'Gnuplot']]],
+  ['reversebits',['reverseBits',['../_f_f_treal_8cpp.html#a0c1b0b595aedb215154e6886be87584c',1,'FFTreal.cpp']]]
 ];

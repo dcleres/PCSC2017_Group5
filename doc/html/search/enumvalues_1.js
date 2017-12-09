@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['male',['MALE',['../read_file_8h.html#a3667e3c5ec056737c8789615a989324fa6e81fe1ef694726dd6f7246cfb42369f',1,'readFile.h']]]
+  ['lagrange',['LAGRANGE',['../main_8cpp.html#a75112a7564dd804ed13243ea010947a9a3a2686743e1a69768985087ac144a28e',1,'main.cpp']]],
+  ['leastsquares',['LEASTSQUARES',['../main_8cpp.html#a75112a7564dd804ed13243ea010947a9a9bdcd965fe5914e2e6f0352843b6e481',1,'main.cpp']]]
 ];

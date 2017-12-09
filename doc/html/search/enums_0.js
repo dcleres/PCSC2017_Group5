@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gender',['Gender',['../read_file_8h.html#a3667e3c5ec056737c8789615a989324f',1,'readFile.h']]]
+  ['approxiamtionmethod',['ApproxiamtionMethod',['../main_8cpp.html#a75112a7564dd804ed13243ea010947a9',1,'main.cpp']]]
 ];

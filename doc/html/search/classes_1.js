@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data',['Data',['../struct_data.html',1,'']]]
+  ['fftreal',['FFTreal',['../class_f_f_treal.html',1,'']]]
 ];

@@ -4,32 +4,26 @@
 
 {\ttfamily \#include $<$Lagrange.\+h$>$}
 
-Inheritance diagram for Lagrange\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{class_lagrange}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-double \mbox{\hyperlink{class_lagrange_ae594d62255b52ff05d874d9cc887ef34}{solve}} (\mbox{\hyperlink{struct_data}{Data}} data, double xi)
+double \mbox{\hyperlink{class_lagrange_a9040a01112a83bbefb0f1bef1d7983bb}{solve}} (vector$<$ double $>$ const \&data\+\_\+x, vector$<$ double $>$ const \&data\+\_\+y, double xi)
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_polynomial}{Polynomial}} approximation by the \mbox{\hyperlink{class_lagrange}{Lagrange}} algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+This is how we can calculate the approximation of the data using \mbox{\hyperlink{class_lagrange}{Lagrange}} Polynome 
 
-
-Definition at line 20 of file Lagrange.\+h.
+Definition at line 19 of file Lagrange.\+h.
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_lagrange_ae594d62255b52ff05d874d9cc887ef34}\label{class_lagrange_ae594d62255b52ff05d874d9cc887ef34}} 
+\mbox{\Hypertarget{class_lagrange_a9040a01112a83bbefb0f1bef1d7983bb}\label{class_lagrange_a9040a01112a83bbefb0f1bef1d7983bb}} 
 \index{Lagrange@{Lagrange}!solve@{solve}}
 \index{solve@{solve}!Lagrange@{Lagrange}}
 \subsubsection{\texorpdfstring{solve()}{solve()}}
-{\footnotesize\ttfamily double Lagrange\+::solve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}}}]{data,  }\item[{double}]{xi }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily double Lagrange\+::solve (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ const \&}]{data\+\_\+x,  }\item[{vector$<$ double $>$ const \&}]{data\+\_\+y,  }\item[{double}]{xi }\end{DoxyParamCaption})}
 
 
 
@@ -37,7 +31,7 @@ Definition at line 20 of file Lagrange.\+h.
 
 
 
-Definition at line 25 of file Lagrange.\+cpp.
+Definition at line 9 of file Lagrange.\+cpp.
 
 
 
