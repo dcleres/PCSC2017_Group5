@@ -5,23 +5,10 @@ CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../Abstract
 CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../AbstractNumericalApproximation.h
 CMakeFiles/PCSC2017_Group5.dir/AbstractNumericalApproximation.cpp.o: ../readFile.h
 
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: ../AbstractNumericalApproximation.h
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: ../DFT.cpp
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: ../DFT.h
-CMakeFiles/PCSC2017_Group5.dir/DFT.cpp.o: ../readFile.h
-
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: ../AbstractNumericalApproximation.h
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: ../FFT.cpp
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: ../FFT.h
-CMakeFiles/PCSC2017_Group5.dir/FFT.cpp.o: ../readFile.h
-
 CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: ../FFTreal.cpp
 CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: ../FFTreal.h
 
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../AbstractNumericalApproximation.h
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../FFT.h
 CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../FFTtest.cpp
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../readFile.h
 
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: ../AbstractNumericalApproximation.h
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: ../Lagrange.cpp

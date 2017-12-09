@@ -90,18 +90,6 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/AbstractNumericalApproximation.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/DFT.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/DFT.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFT.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFT.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>

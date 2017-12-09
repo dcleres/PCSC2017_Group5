@@ -1,7 +1,7 @@
 //
 // Created by David Cleres on 29.11.17.
 //
-
+/*
 #include <algorithm>
 #include <cmath>
 #include <complex>
@@ -31,10 +31,11 @@ static double maxLogError = -INFINITY;
 
 // Random number generation
 std::default_random_engine randGen((std::random_device())());
-
+*/
 
 /*---- Main and test functions ----*/
 
+/*
 int mainTest() {
     // Test power-of-2 size FFTs
     for (int i = 0; i <= 12; i++)
@@ -96,10 +97,11 @@ static void testConvolution(int n) {
          << "logerr=" << std::setw(5) << std::setprecision(3) << std::setiosflags(std::ios::showpoint)
          << log10RmsErr(refout, actualout) << endl;
 }
-
+*/
 
 /*---- Naive reference computation functions ----*/
 
+/*
 static vector<complex<double> > naiveDft(const vector<complex<double> > &input, bool inverse) {
     int n = static_cast<int>(input.size());
     vector<complex<double> > output;
@@ -128,10 +130,11 @@ static vector<complex<double> > naiveConvolve(
     }
     return outvec;
 }
-
+*/
 
 /*---- Utility functions ----*/
 
+/*
 static double log10RmsErr(const vector<complex<double> > &xvec, const vector<complex<double> > &yvec) {
     int n = static_cast<int>(xvec.size());
     double err = std::pow(10, -99 * 2);
@@ -151,4 +154,4 @@ static vector<complex<double> > randomComplexes(int n) {
     for (int i = 0; i < n; i++)
         result.push_back(complex<double>(valueDist(randGen), valueDist(randGen)));
     return result;
-}
+}*/
