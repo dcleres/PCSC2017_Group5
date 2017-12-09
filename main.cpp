@@ -46,7 +46,8 @@ using namespace std;
 
 enum ApproxiamtionMethod {LEASTSQUARES, FOURIER, LAGRANGE,PIECEWISELEASTSQUARE,PIECEWISELAGRANGE};
 
-int main() {
+int main()
+{
     std::string fname("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
     ReadFile readFile(fname);
 
@@ -59,8 +60,9 @@ int main() {
 
     //Makes a copy of the input data since it is taken by reference in the rest of the program
     Data data_original = data;
-    int degree;
+    size_t degree;
     int intervalle;
+
     Graph graph(data); // use to make all the graph
     ////////////////////////////////////////////Least Square/////////////////////////////////////////////////
     //graph.make_graph_least_square(data,7);
@@ -112,34 +114,34 @@ int main() {
         case LEASTSQUARES: {
             cout << "LEAST SQUARES" << endl;
             cout << "Choose the degree of approximation you want. It must be an integer :  " <<flush;
-            cin>>degree;
-            graph.make_graph_least_square(data,degree);
+            cin>> degree;
+            graph.make_graph_least_square(degree);
         } break;
 
         case LAGRANGE: {
             cout << "LAGRANGE" << endl;
-            graph.make_graph_lagrange(data);
+            graph.make_graph_lagrange();
         } break;
 
         case FOURIER: {
             cout << "FOURIER" << endl;
-            graph.make_graph_FFT(data,data_original);
+            graph.make_graph_FFT(data_original);
         }   break;
 
         case PIECEWISELEASTSQUARE: {
             cout << "PIECEWISE LEAST SQUARE" << endl;
             cout << "Choose the degree of approximation you want. It must be an integer :  " <<flush;
-            cin>>degree;
+            cin>> degree;
             cout << "Choose the number of interval for your approximation you want. It must be an even integer :  " <<flush;
             cin>>intervalle;
-            graph.make_graph_piece_wise_least_squares(data,degree,intervalle);
+            graph.make_graph_piece_wise_least_squares(degree,intervalle);
         }   break;
 
         case PIECEWISELAGRANGE: {
             cout << "PIECEWISE LAGRANGE" << endl;
             cout << "Choose the number of interval for your approximation you want. It must be an even integer :  " <<flush;
             cin>>intervalle;
-            graph.make_graph_piece_wise_lagrange(data,intervalle);
+            graph.make_graph_piece_wise_lagrange(intervalle);
         }   break;
 
     }

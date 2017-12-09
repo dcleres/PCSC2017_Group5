@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.cpp
 cmath
 -
 cstddef
@@ -18,13 +18,13 @@ utility
 iostream
 -
 FFTreal.h
-/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.h
 vector
 -
 
-/home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTtest.cpp
 algorithm
 -
 cmath
@@ -42,39 +42,41 @@ random
 vector
 -
 FFT.h
-/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFT.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Graph.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Graph.cpp
 iostream
 -
 cmath
 -
 Graph.h
-/home/pcsc/Desktop/PCSC2017_Group5/Graph.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Graph.h
 Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Polynomial.h
 gnuplot_i.hpp
-/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.hpp
 PieceWise_Continue_Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
 Lagrange.h
-/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Lagrange.h
+FFTreal.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Graph.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Graph.h
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Lagrange.cpp
 cassert
 -
 iostream
 -
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 Lagrange.h
-/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Lagrange.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Lagrange.h
 iostream
 -
 vector
@@ -82,23 +84,23 @@ vector
 algorithm
 -
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp
 iostream
 -
 cmath
 -
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 PieceWise_Continue_Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
 Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Polynomial.h
 Lagrange.h
-/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Lagrange.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/PieceWise_Continue_Polynomial.h
 iostream
 -
 cassert
@@ -106,37 +108,37 @@ cassert
 cmath
 -
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Point.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Point.cpp
 assert.h
 -
 Point.h
-/home/pcsc/Desktop/PCSC2017_Group5/Point.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Point.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Point.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Point.h
 vector
 -
 
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Polynomial.cpp
 cmath
 -
 iostream
 -
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Polynomial.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Polynomial.h
 array
 -
 
-/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.cpp
 gnuplot_i.hpp
-/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.hpp
 
-/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.hpp
 stdarg.h
 -
 unistd.h
@@ -162,7 +164,7 @@ vector
 stdexcept
 -
 
-/home/pcsc/Desktop/PCSC2017_Group5/main.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/main.cpp
 cassert
 -
 iostream
@@ -178,19 +180,19 @@ vector
 complex
 -
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 gnuplot_i.hpp
-/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/gnuplot_i.hpp
 Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Polynomial.h
 Lagrange.h
-/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Lagrange.h
 Graph.h
-/home/pcsc/Desktop/PCSC2017_Group5/Graph.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/Graph.h
 FFTreal.h
-/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/FFTreal.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.cpp
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.cpp
 stdexcept
 -
 iostream
@@ -200,9 +202,9 @@ fstream
 cassert
 -
 readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/readFile.h
 string
 -
 fstream

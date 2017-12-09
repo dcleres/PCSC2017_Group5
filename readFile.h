@@ -34,7 +34,7 @@ class ReadFile
 
 public:
     ///@constructor
-    ReadFile (std::string const& filename);
+    explicit ReadFile (std::string const& filename);
     ///@method
     void loadFromFile(Data& data);
     ///@method
