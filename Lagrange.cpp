@@ -8,14 +8,12 @@ using namespace std ;
 /// Polynomial approximation by the Lagrange algorithm
 double Lagrange::solve(vector<double> const& data_x,vector<double> const& data_y,double xi) {
 
-
-
-    int n = data_x.size();                                                                  // function to interpolate the given data points using Lagrange's formula
-    double result = 0; // Initialize result                                                 // xi corresponds to the new data point whose value is to be obtained
+size_t n (data_x.size());                                                                  // function to interpolate the given data points using Lagrange's formula
+double result = 0; // Initialize result                                                    // xi corresponds to the new data point whose value is to be obtained
                                                                                             // n represents the number of known data points
-    for (int i = 0; i < n; i++) {
+    for (size_t i(0); i < n; i++) {
         double term = data_y[i];                                                            // Compute individual terms of above formula
-        for (int j = 0; j < n; j++) {
+        for (size_t j = 0; j < n; j++) {
             if (j != i)
                 term = term * (xi - data_x[j]) / double(data_x[i] - data_x[j]);
         }

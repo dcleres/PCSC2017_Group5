@@ -33,19 +33,30 @@ class ReadFile
 {
 
 public:
-    ///@constructor
+    /** \brief Constructor
+     * \param filename is the name and path of the file to open
+     */
     explicit ReadFile (std::string const& filename);
-    ///@method
+
+    /** \brief Reads in the file and save the data in the data variable
+     * \param data is taken by reference to contain all the values in the file
+     */
     void loadFromFile(Data& data);
-    ///@method
+
+    /** \brief gives the name of the file to open
+     */
     std::string getFilename();
-    ///@method
+
+    /** \brief diplay all the read values in the terminal
+     * \param data contains the values to display
+     */
     void show(Data const& data);
-    ///@method
-    void writeFile(Data const& data);
+
+    /** \brief writes in a file
+     * \param data data to write in a file
+     */    void writeFile(Data const& data);
 
 private:
-    ///@variable
     std::string mFilename;
 };
 

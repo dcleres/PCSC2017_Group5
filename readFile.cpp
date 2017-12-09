@@ -36,14 +36,13 @@ void ReadFile::loadFromFile(Data& data)
         data.heights.push_back(bufferHeight);
         data.weights.push_back(bufferWeight);
 
-        point_t onePoint;
+        point_t onePoint{};
         onePoint.x=bufferHeight;
         onePoint.y=bufferWeight;
         Points.push_back(onePoint);
     }
 
-    if (!in.eof())
-    {
+    if (!in.eof()) {
         throw std::runtime_error("Failed to load values from file <" + mFilename + ">");
     }
     else {
@@ -71,8 +70,7 @@ void ReadFile::writeFile(Data const& data) {
     ofstream myfile;
     myfile.open ("output.txt");
 
-    for (size_t i(0); i < data.heights.size(); i++)
-    {
+    for (size_t i(0); i < data.heights.size(); i++) {
         myfile << data.heights[i];
         myfile << data.weights[i];
     }

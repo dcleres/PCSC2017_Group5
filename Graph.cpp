@@ -3,7 +3,7 @@
 #include "Graph.h"
 #include "Polynomial.h"
 #include "gnuplot_i.hpp"
-#include "PieceWise_Continue_Polynomial.h"
+#include "PieceWiseContinuePolynomial.h"
 #include "Lagrange.h"
 #include "FFTreal.h"
 
@@ -64,7 +64,7 @@ void Graph :: make_graph_lagrange() const
     }
 
     ///Plot///
-    PieceWise_Continue_Polynomial piece;
+    PieceWiseContinuePolynomial piece;
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
     g1.plot_xy(x,y,"Approximation");
@@ -81,7 +81,7 @@ void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, int cons
             x[count*10+d] = (((mData.heights[count]-mData.heights[count+1])/ 10) * d) + mData.heights[count];
         }
     }
-    PieceWise_Continue_Polynomial piece;
+    PieceWiseContinuePolynomial piece;
     vector<double>y(piece.solve_least_square(mData, degree, Intervalle,x));                //We apply piece wise least square method.
     ///Plot///
     Gnuplot g1 = Gnuplot("lines");
@@ -101,7 +101,7 @@ void Graph :: make_graph_piece_wise_lagrange(int const& intervalle)
             x[count*10+d] = (((mData.heights[count] - mData.heights[count+1])/ 10) * d) + mData.heights[count];
         }
     }
-    PieceWise_Continue_Polynomial piece;
+    PieceWiseContinuePolynomial piece;
     vector<double>y(piece.solve_lagrange(mData, intervalle, x));                           //We apply piece wise Lagrange method.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");

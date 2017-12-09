@@ -25,6 +25,7 @@
 #include "readFile.h"
 using namespace std;
 
+///@class
 class Graph {
 public:
     /** \brief Constructor of the class graph
@@ -52,13 +53,11 @@ public:
     */
     void make_graph_piece_wise_lagrange(int const& intervalle);
 
-    /** \brief Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector.
-     * The vector can have any length. This is a wrapper function.
-     * \param real is a vector with the values read from the data.dat file
-     * \param imag is a vector with the values read from the data.dat file, if we have only real entries then you have to
-     * specify a vector with the same size as real but filled with zeros.
+    /** \brief Plots the graph for fourier approximation
+     * \param data_original is the data as it is in the file
      */
     void make_graph_FFT(Data data_original);
+
 private:
     Data mData;
 };
