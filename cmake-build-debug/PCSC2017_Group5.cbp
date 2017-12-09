@@ -105,10 +105,10 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.cpp">
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWise_Continue_Polynomial.h">
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Point.cpp">

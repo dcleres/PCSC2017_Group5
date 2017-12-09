@@ -10,7 +10,7 @@ CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../FFTreal.h
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../Graph.cpp
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../Graph.h
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../Lagrange.h
-CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../PieceWise_Continue_Polynomial.h
+CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../PieceWiseContinuePolynomial.h
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../gnuplot_i.hpp
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../readFile.h
@@ -19,11 +19,11 @@ CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: ../Lagrange.cpp
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: ../Lagrange.h
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o: ../readFile.h
 
-CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../Lagrange.h
-CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../PieceWise_Continue_Polynomial.cpp
-CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../PieceWise_Continue_Polynomial.h
-CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../Polynomial.h
-CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o: ../readFile.h
+CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../Lagrange.h
+CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../PieceWiseContinuePolynomial.cpp
+CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../PieceWiseContinuePolynomial.h
+CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../Polynomial.h
+CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../readFile.h
 
 CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o: ../Point.cpp
 CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o: ../Point.h

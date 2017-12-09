@@ -231,32 +231,32 @@ Lagrange.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.s
 .PHONY : Lagrange.cpp.s
 
-PieceWise_Continue_Polynomial.o: PieceWise_Continue_Polynomial.cpp.o
+PieceWiseContinuePolynomial.o: PieceWiseContinuePolynomial.cpp.o
 
-.PHONY : PieceWise_Continue_Polynomial.o
+.PHONY : PieceWiseContinuePolynomial.o
 
 # target to build an object file
-PieceWise_Continue_Polynomial.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.o
-.PHONY : PieceWise_Continue_Polynomial.cpp.o
+PieceWiseContinuePolynomial.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o
+.PHONY : PieceWiseContinuePolynomial.cpp.o
 
-PieceWise_Continue_Polynomial.i: PieceWise_Continue_Polynomial.cpp.i
+PieceWiseContinuePolynomial.i: PieceWiseContinuePolynomial.cpp.i
 
-.PHONY : PieceWise_Continue_Polynomial.i
+.PHONY : PieceWiseContinuePolynomial.i
 
 # target to preprocess a source file
-PieceWise_Continue_Polynomial.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.i
-.PHONY : PieceWise_Continue_Polynomial.cpp.i
+PieceWiseContinuePolynomial.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.i
+.PHONY : PieceWiseContinuePolynomial.cpp.i
 
-PieceWise_Continue_Polynomial.s: PieceWise_Continue_Polynomial.cpp.s
+PieceWiseContinuePolynomial.s: PieceWiseContinuePolynomial.cpp.s
 
-.PHONY : PieceWise_Continue_Polynomial.s
+.PHONY : PieceWiseContinuePolynomial.s
 
 # target to generate assembly for a file
-PieceWise_Continue_Polynomial.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWise_Continue_Polynomial.cpp.s
-.PHONY : PieceWise_Continue_Polynomial.cpp.s
+PieceWiseContinuePolynomial.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.s
+.PHONY : PieceWiseContinuePolynomial.cpp.s
 
 Point.o: Point.cpp.o
 
@@ -414,9 +414,9 @@ help:
 	@echo "... Lagrange.o"
 	@echo "... Lagrange.i"
 	@echo "... Lagrange.s"
-	@echo "... PieceWise_Continue_Polynomial.o"
-	@echo "... PieceWise_Continue_Polynomial.i"
-	@echo "... PieceWise_Continue_Polynomial.s"
+	@echo "... PieceWiseContinuePolynomial.o"
+	@echo "... PieceWiseContinuePolynomial.i"
+	@echo "... PieceWiseContinuePolynomial.s"
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"

@@ -64,7 +64,7 @@ void Graph :: make_graph_lagrange() const
     }
 
     ///Plot///
-    PieceWiseContinuePolynomial piece;
+    PieceWiseContinuePolynomial piece (mData);
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
     g1.plot_xy(x,y,"Approximation");
@@ -81,8 +81,8 @@ void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, int cons
             x[count*10+d] = (((mData.heights[count]-mData.heights[count+1])/ 10) * d) + mData.heights[count];
         }
     }
-    PieceWiseContinuePolynomial piece;
-    vector<double>y(piece.solve_least_square(mData, degree, Intervalle,x));                //We apply piece wise least square method.
+    PieceWiseContinuePolynomial piece (mData);
+    vector<double>y(piece.solve_least_square(degree, Intervalle,x));                //We apply piece wise least square method.
     ///Plot///
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
@@ -101,8 +101,8 @@ void Graph :: make_graph_piece_wise_lagrange(int const& intervalle)
             x[count*10+d] = (((mData.heights[count] - mData.heights[count+1])/ 10) * d) + mData.heights[count];
         }
     }
-    PieceWiseContinuePolynomial piece;
-    vector<double>y(piece.solve_lagrange(mData, intervalle, x));                           //We apply piece wise Lagrange method.
+    PieceWiseContinuePolynomial piece (mData);
+    vector<double>y(piece.solve_lagrange(intervalle, x));                           //We apply piece wise Lagrange method.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
     g1.plot_xy(x,y,"Approximation");
