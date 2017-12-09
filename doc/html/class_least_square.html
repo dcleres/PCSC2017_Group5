@@ -71,25 +71,47 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_least_square_8h_source.html">LeastSquare.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for LeastSquare:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="class_least_square.png" usemap="#LeastSquare_map" alt=""/>
+  <map id="LeastSquare_map" name="LeastSquare_map">
+<area href="class_abstract_numerical_approximation.html" alt="AbstractNumericalApproximation" shape="rect" coords="0,0,196,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a666be9697ecbac69b60a886a30049073"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_square.html#a666be9697ecbac69b60a886a30049073">solve_least_square</a> (<a class="el" href="struct_data.html">Data</a> data, int degree)</td></tr>
-<tr class="memdesc:a666be9697ecbac69b60a886a30049073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximation of the given points using the Least-Square algorithm.  <a href="#a666be9697ecbac69b60a886a30049073">More...</a><br /></td></tr>
-<tr class="separator:a666be9697ecbac69b60a886a30049073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7fa86ea095978386781192d3f44de7"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_square.html#a2b7fa86ea095978386781192d3f44de7">solve</a> (<a class="el" href="struct_data.html">Data</a> data, int degree)</td></tr>
+<tr class="separator:a2b7fa86ea095978386781192d3f44de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_abstract_numerical_approximation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_numerical_approximation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_abstract_numerical_approximation.html">AbstractNumericalApproximation</a></td></tr>
+<tr class="memitem:a841c83a7ae9f2146001581f3a7f8444a inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#a841c83a7ae9f2146001581f3a7f8444a">printWeight</a> (vector&lt; double &gt; const &amp;weight)</td></tr>
+<tr class="memdesc:a841c83a7ae9f2146001581f3a7f8444a inherit pub_methods_class_abstract_numerical_approximation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that allows us to print the weight return by the approximation function  <a href="class_abstract_numerical_approximation.html#a841c83a7ae9f2146001581f3a7f8444a">More...</a><br /></td></tr>
+<tr class="separator:a841c83a7ae9f2146001581f3a7f8444a inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed569247300dcb9eb54c6117903d2583 inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#aed569247300dcb9eb54c6117903d2583">GaussianElimination</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt; b, int number_point)</td></tr>
+<tr class="memdesc:aed569247300dcb9eb54c6117903d2583 inherit pub_methods_class_abstract_numerical_approximation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the gaussian elimination to solve the system Ax = b.  <a href="class_abstract_numerical_approximation.html#aed569247300dcb9eb54c6117903d2583">More...</a><br /></td></tr>
+<tr class="separator:aed569247300dcb9eb54c6117903d2583 inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccba1cb27301df86f2adbfa5e6525a5 inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#abccba1cb27301df86f2adbfa5e6525a5">Solve</a> (vector&lt; vector&lt; double &gt;&gt; A, vector&lt; double &gt;b, int t, vector&lt; double &gt; x)</td></tr>
+<tr class="memdesc:abccba1cb27301df86f2adbfa5e6525a5 inherit pub_methods_class_abstract_numerical_approximation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the simplified system made by the gaussian elimination.  <a href="class_abstract_numerical_approximation.html#abccba1cb27301df86f2adbfa5e6525a5">More...</a><br /></td></tr>
+<tr class="separator:abccba1cb27301df86f2adbfa5e6525a5 inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358054cadc54f5d0c7891505da040783 inherit pub_methods_class_abstract_numerical_approximation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_numerical_approximation.html#a358054cadc54f5d0c7891505da040783">~AbstractNumericalApproximation</a> ()</td></tr>
+<tr class="separator:a358054cadc54f5d0c7891505da040783 inherit pub_methods_class_abstract_numerical_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_least_square_8h_source.html#l00013">13</a> of file <a class="el" href="_least_square_8h_source.html">LeastSquare.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a666be9697ecbac69b60a886a30049073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a666be9697ecbac69b60a886a30049073">&#9670;&nbsp;</a></span>solve_least_square()</h2>
+<a id="a2b7fa86ea095978386781192d3f44de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b7fa86ea095978386781192d3f44de7">&#9670;&nbsp;</a></span>solve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LeastSquare::solve_least_square </td>
+          <td class="memname">vector&lt; double &gt; LeastSquare::solve </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_data.html">Data</a>&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -108,9 +130,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Approximation of the given points using the Least-Square algorithm. </p>
-
-<p class="definition">Definition at line <a class="el" href="_least_square_8cpp_source.html#l00013">13</a> of file <a class="el" href="_least_square_8cpp_source.html">LeastSquare.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_least_square_8cpp_source.html#l00008">8</a> of file <a class="el" href="_least_square_8cpp_source.html">LeastSquare.cpp</a>.</p>
 
 </div>
 </div>

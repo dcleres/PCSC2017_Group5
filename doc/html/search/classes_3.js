@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fft',['FFT',['../class_f_f_t.html',1,'']]],
-  ['fftreal',['FFTreal',['../class_f_f_treal.html',1,'']]]
+  ['gnuplot',['Gnuplot',['../class_gnuplot.html',1,'']]],
+  ['gnuplotexception',['GnuplotException',['../class_gnuplot_exception.html',1,'']]]
 ];

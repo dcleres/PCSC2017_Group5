@@ -1,3 +1,28 @@
+/*! \mainpage Data Approximation
+ *
+ * This project helps user to approximate data that he can her-/himself plug into the program using the data.dat file.
+ * Currently two types of shapes can be drawn:
+ * - \subpage LagrangePolynomial Functions "How to use the Lagrange method?"
+ *
+ * - \subpage FourierTransforms "How to does the Fourier Approximation works?"
+ *
+ */
+
+/*! \page LagrangePolynomial How to use the Lagrange method?
+ *
+ * Lorem ipsum dolor sit amet
+ *
+ */
+
+/*! \page FourierTransforms How to does the Fourier Approximation works?
+ *
+ * This page is about how to draw a circle.
+ * Following sections describe circle:
+ * - \ref groupCircleDefinition "Definition of Circle"
+ * - \ref groupCircleClass "Circle Class"
+ */
+
+
 /**
  * \file main.cpp
  * \brief This is the function to call to run the script of the project
@@ -33,6 +58,7 @@ int main() {
     readFile.show(data);
 
     Data data_original = data;
+
     /*
     //Least Squares
     Polynomial poly;
@@ -155,8 +181,6 @@ int main() {
     sleep(2);
     g1.plot_xy(data_original.heights,approx,"Fourier");
     sleep(20);
-
-    //delete a_ptr, b_ptr;
 
     return 0;
 }

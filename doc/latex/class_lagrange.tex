@@ -4,66 +4,32 @@
 
 {\ttfamily \#include $<$Lagrange.\+h$>$}
 
+Inheritance diagram for Lagrange\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lagrange}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{class_lagrange_a800ccde577cdf59701d99ac505f087c4}{solve\+\_\+lagrange}} (\mbox{\hyperlink{struct_data}{Data}} data, int degre)
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_polynomial}{Polynomial}} approximation by the \mbox{\hyperlink{class_lagrange}{Lagrange}} algorithm. \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{class_lagrange_a22e6ca4f6b778698472094238063538f}{getmax}} (vector$<$ double $>$x)
-\item 
-double \mbox{\hyperlink{class_lagrange_a7eb566fad6ddd9fa7968b3936327ae7c}{getmin}} (vector$<$ double $>$x)
-\item 
-virtual \mbox{\hyperlink{class_lagrange_afda6181d4464826597b34bc495b49984}{$\sim$lagrange}} ()
-\end{DoxyCompactItemize}
+double \mbox{\hyperlink{class_lagrange_ae594d62255b52ff05d874d9cc887ef34}{solve}} (\mbox{\hyperlink{struct_data}{Data}} data, double xi)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_polynomial}{Polynomial}} approximation by the \mbox{\hyperlink{class_lagrange}{Lagrange}} algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Lagrane\+\_\+coeffs generate the polynomials coefficients of the lagrange interpolation polynomial for the given points The polynomial is such that for all i P(x\+\_\+i) = y\+\_\+i. This program works in O(\+N$^\wedge$3) where N is the number of input points. ~\newline
-Poly eval take a vector containing polynomial coefficient, and evaluates the polynomial function at the points given on standard input. 
-
-Definition at line 29 of file Lagrange.\+h.
 
 
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_lagrange_afda6181d4464826597b34bc495b49984}\label{class_lagrange_afda6181d4464826597b34bc495b49984}} 
-\index{Lagrange@{Lagrange}!````~lagrange@{$\sim$lagrange}}
-\index{````~lagrange@{$\sim$lagrange}!Lagrange@{Lagrange}}
-\subsubsection{\texorpdfstring{$\sim$lagrange()}{~lagrange()}}
-{\footnotesize\ttfamily Lagrange\+::$\sim$lagrange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Definition at line 24 of file Lagrange.\+cpp.
+Definition at line 20 of file Lagrange.\+h.
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_lagrange_a22e6ca4f6b778698472094238063538f}\label{class_lagrange_a22e6ca4f6b778698472094238063538f}} 
-\index{Lagrange@{Lagrange}!getmax@{getmax}}
-\index{getmax@{getmax}!Lagrange@{Lagrange}}
-\subsubsection{\texorpdfstring{getmax()}{getmax()}}
-{\footnotesize\ttfamily double Lagrange\+::getmax (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{x }\end{DoxyParamCaption})}
-
-
-
-Definition at line 89 of file Lagrange.\+cpp.
-
-\mbox{\Hypertarget{class_lagrange_a7eb566fad6ddd9fa7968b3936327ae7c}\label{class_lagrange_a7eb566fad6ddd9fa7968b3936327ae7c}} 
-\index{Lagrange@{Lagrange}!getmin@{getmin}}
-\index{getmin@{getmin}!Lagrange@{Lagrange}}
-\subsubsection{\texorpdfstring{getmin()}{getmin()}}
-{\footnotesize\ttfamily double Lagrange\+::getmin (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{x }\end{DoxyParamCaption})}
-
-
-
-Definition at line 99 of file Lagrange.\+cpp.
-
-\mbox{\Hypertarget{class_lagrange_a800ccde577cdf59701d99ac505f087c4}\label{class_lagrange_a800ccde577cdf59701d99ac505f087c4}} 
-\index{Lagrange@{Lagrange}!solve\+\_\+lagrange@{solve\+\_\+lagrange}}
-\index{solve\+\_\+lagrange@{solve\+\_\+lagrange}!Lagrange@{Lagrange}}
-\subsubsection{\texorpdfstring{solve\+\_\+lagrange()}{solve\_lagrange()}}
-{\footnotesize\ttfamily vector$<$ vector$<$ double $>$ $>$ Lagrange\+::solve\+\_\+lagrange (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}}}]{data,  }\item[{int}]{degre }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_lagrange_ae594d62255b52ff05d874d9cc887ef34}\label{class_lagrange_ae594d62255b52ff05d874d9cc887ef34}} 
+\index{Lagrange@{Lagrange}!solve@{solve}}
+\index{solve@{solve}!Lagrange@{Lagrange}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily double Lagrange\+::solve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}}}]{data,  }\item[{double}]{xi }\end{DoxyParamCaption})}
 
 
 
@@ -71,7 +37,7 @@ Definition at line 99 of file Lagrange.\+cpp.
 
 
 
-Definition at line 27 of file Lagrange.\+cpp.
+Definition at line 25 of file Lagrange.\+cpp.
 
 
 

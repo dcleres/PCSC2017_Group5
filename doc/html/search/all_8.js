@@ -4,10 +4,5 @@ var searchData=
   ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
   ['maintest',['mainTest',['../_f_f_ttest_8cpp.html#a5b01202976131167e75c121f25eab7d8',1,'FFTtest.cpp']]],
   ['male',['MALE',['../read_file_8h.html#a3667e3c5ec056737c8789615a989324fa6e81fe1ef694726dd6f7246cfb42369f',1,'readFile.h']]],
-  ['matrice',['Matrice',['../_div_mat_8h.html#a5cd1306cd22bb9a4a8d8b6ead3f49a08',1,'Matrice():&#160;DivMat.h'],['../_mult_mat_8h.html#a5cd1306cd22bb9a4a8d8b6ead3f49a08',1,'Matrice():&#160;MultMat.h']]],
-  ['maxlogerror',['maxLogError',['../_f_f_ttest_8cpp.html#a3e093b6a6bbecec906e3006325df4b58',1,'FFTtest.cpp']]],
-  ['multiplication',['multiplication',['../class_mult_mat.html#af4fd2724c38c3c8b97c228fee10375d5',1,'MultMat']]],
-  ['multmat',['MultMat',['../class_mult_mat.html',1,'MultMat'],['../class_mult_mat.html#a30f8a55b7d59db1c29f74eba10be8594',1,'MultMat::MultMat()']]],
-  ['multmat_2ecpp',['MultMat.cpp',['../_mult_mat_8cpp.html',1,'']]],
-  ['multmat_2eh',['MultMat.h',['../_mult_mat_8h.html',1,'']]]
+  ['maxlogerror',['maxLogError',['../_f_f_ttest_8cpp.html#a3e093b6a6bbecec906e3006325df4b58',1,'FFTtest.cpp']]]
 ];

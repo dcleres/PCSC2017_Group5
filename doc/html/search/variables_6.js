@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['val',['val',['../struct_vector.html#adc995472c3e3bd817a76e705f2eddc90',1,'Vector']]],
-  ['var',['var',['../class_super_cool_class.html#a0264bf7dc5bfe0057907102b2b5b767d',1,'SuperCoolClass']]]
+  ['x',['x',['../structpoint__t.html#acf7556ca44360564040f5c86257b55b1',1,'point_t']]]
 ];

@@ -63,7 +63,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">/Users/davidcleres/CLionProjects/PCSC2017_Group5/main.cpp File Reference</div>  </div>
@@ -72,21 +71,24 @@ $(function() {
 
 <p>This is the function to call to run the script of the project.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;complex&gt;</code><br />
 <code>#include &quot;<a class="el" href="read_file_8h_source.html">readFile.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_mult_mat_8h_source.html">MultMat.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_f_f_t_8h_source.html">FFT.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gnuplot__i_8hpp_source.html">gnuplot_i.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_polynomial_8h_source.html">Polynomial.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_lagrange_8h_source.html">Lagrange.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_least_square_8h_source.html">LeastSquare.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_piece_wise___continue___polynomial_8h_source.html">PieceWise_Continue_Polynomial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_f_f_treal_8h_source.html">FFTreal.h</a>&quot;</code><br />
 </div>
 <p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:af34256656c310a43a0bf64e4908e7aba"><td class="memItemLeft" align="right" valign="top">typedef complex&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#af34256656c310a43a0bf64e4908e7aba">cx</a></td></tr>
-<tr class="separator:af34256656c310a43a0bf64e4908e7aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -96,24 +98,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>This is the function to call to run the script of the project. </p>
 
 <p class="definition">Definition in file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="af34256656c310a43a0bf64e4908e7aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af34256656c310a43a0bf64e4908e7aba">&#9670;&nbsp;</a></span>cx</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef complex&lt;double&gt; <a class="el" href="main_8cpp.html#af34256656c310a43a0bf64e4908e7aba">cx</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00015">15</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -129,7 +114,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00053">53</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00049">49</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>

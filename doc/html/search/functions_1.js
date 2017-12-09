@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['cmd',['cmd',['../class_gnuplot.html#a6f299285af0a0ee2cf1722c469aa1a57',1,'Gnuplot']]],
-  ['computedft',['computeDFT',['../class_d_f_t.html#a4cf25344c21c7f521a67108dab346464',1,'DFT']]],
-  ['convolve',['convolve',['../class_f_f_t.html#a19baf6312ad6da440464f9831c4f2342',1,'FFT::convolve()'],['../class_f_f_treal.html#a8c7ae7505d1c80b4471a30585801d64b',1,'FFTreal::convolve(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, std::vector&lt; double &gt; &amp;out)'],['../class_f_f_treal.html#a375983c9725f461611341061dbdcc92f',1,'FFTreal::convolve(const std::vector&lt; double &gt; &amp;xreal, const std::vector&lt; double &gt; &amp;ximag, const std::vector&lt; double &gt; &amp;yreal, const std::vector&lt; double &gt; &amp;yimag, std::vector&lt; double &gt; &amp;outreal, std::vector&lt; double &gt; &amp;outimag)']]]
+  ['gaussianelimination',['GaussianElimination',['../class_abstract_numerical_approximation.html#aed569247300dcb9eb54c6117903d2583',1,'AbstractNumericalApproximation']]],
+  ['getfilename',['getFilename',['../class_read_file.html#a9835264c9ec95cfdbc1349573402fc01',1,'ReadFile']]],
+  ['gnuplot',['Gnuplot',['../class_gnuplot.html#a936d27de7b6f57d1f3d61491dc70f1ae',1,'Gnuplot::Gnuplot()'],['../class_gnuplot.html#a4acdc327a6a9eb3c4ab3f37814dce26e',1,'Gnuplot::Gnuplot(const string &amp;)'],['../class_gnuplot.html#ab777a09e0527b64f3980788f73400257',1,'Gnuplot::Gnuplot(const string &amp;, const string &amp;, const string &amp;, const string &amp;, vector&lt; double &gt; const &amp;, vector&lt; double &gt; const &amp;)'],['../class_gnuplot.html#a7c87a9e55a3cdc5c559d07744d9856f8',1,'Gnuplot::Gnuplot(const string &amp;, const string &amp;, const string &amp;, const string &amp;, vector&lt; double &gt; const &amp;)']]],
+  ['gnuplotexception',['GnuplotException',['../class_gnuplot_exception.html#a81fc74a5c019556a4d0ba2a042a63448',1,'GnuplotException']]]
 ];
