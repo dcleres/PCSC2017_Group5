@@ -40,8 +40,11 @@
 #include "Polynomial.h"
 #include "Lagrange.h"
 #include "Graph.h"
+#include "FFTreal.h"
 
 using namespace std;
+
+enum ApproxiamtionMethod {LEASTSQUARES, FOURIER, LAGRANGE,PIECEWISELEASTSQUARE,PIECEWISELAGRANGE};
 
 int main() {
     std::string fname("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
@@ -54,9 +57,11 @@ int main() {
     readFile.loadFromFile(data);
     readFile.show(data);
 
+    //Makes a copy of the input data since it is taken by reference in the rest of the program
     Data data_original = data;
-
-    Graph graph(data);
+    int degree;
+    int intervalle;
+    Graph graph(data); // use to make all the graph
     ////////////////////////////////////////////Least Square/////////////////////////////////////////////////
     //graph.make_graph_least_square(data,7);
     ///////////////////////////////////PieceWise Least Square////////////////////////////////////////////////
@@ -69,109 +74,77 @@ int main() {
 
 
 
-   /* FFTreal fft;
-    fft.transform(data.heights, data.weights);
-    for (auto element : data.weights)
-    {
-        cout << element << endl;
-    }
-    data.heights = data_original.heights;
-    fft.inverseTransform(data.heights, data.weights);
-    cout << "WORD" << endl;/*
-    /*for (auto& element : data.weights)
-    {
-        element /= 10; //(2*M_PI); //F = 1/(2*PI) * F-¹
-    }
-    for (auto element : data.heights)
-    {
-        cout << element << endl;
-    }*/
-    /*
+    int choice;
+    cout << "Welcome to David Cleres and Nicolas Lesimple data approximation tool. YOu have the choice between using three";
+    cout << " different approximation method which are:" << endl;
+    cout << "1. Least Squares approximation" << endl;
+    cout << "2. Fourier Approximation" << endl;
+    cout << "3. Lagrange polynomial approximation" << endl;
+    cout << "4. PieceWise Least Square approximation" << endl;
+    cout << "5. PieceWise Lagrange approximation" << endl;
+    cout << endl;
+    cout << "Please select your approximation method by typing a number between 1 and 5" << endl;
+    cout << "your choice is: " << flush;
+    cin >> choice;
 
 
-    //////////////////////// COMPUTE THE FFT /////////////////////////////////////////////////
-    FFTreal fft;
-    vector<double> imaginary_part(data.heights.size(), 0.0);
-    fft.transform(data.weights, imaginary_part);
+    ApproxiamtionMethod usersApproxChoice;
 
-    //data.heights = data_original.heights;
+    try {
+        //Convert the given Number to enum type
+        switch(choice)
+        {
+            case 1: usersApproxChoice = LEASTSQUARES;
+                break;
+            case 2: usersApproxChoice = FOURIER;
+                break;
+            case 3: usersApproxChoice = LAGRANGE;
+                break;
+            case 4: usersApproxChoice = PIECEWISELEASTSQUARE;
+                break;
+            case 5: usersApproxChoice = PIECEWISELAGRANGE;
+                break;
 
-    vector<double> ifft(data.weights);
-    fft.inverseTransform(ifft, imaginary_part);
-
-
-    //////////////////////// COMPUTE THE FOURIER APPROXIMATION ////////////////////////////////
-    size_t nbK(data.weights.size()); //number of ak and bk to compute
-    vector<double> an(nbK, 0.0);
-    vector<double> bn(nbK, 0.0);
-
-    //we used cos(pi*x which has a period of 2
-    fft.transformCoefs(data_original.weights, an, bn, 2);
-    vector<double> approx (fft.transformApproximation(an,bn,2,data_original.weights));
-*/
-    //cout << "WORD" << endl;
-    /*for (auto& element : data.weights)
-    {
-        element /= 10; //(2*M_PI); //F = 1/(2*PI) * F-¹
-    }*/
-    /*for (auto element : data.heights)
-    {
-        cout << element << endl;
-    }*/
-
-    /*FourierApproximation approx;
-    int n (10);
-    vector<double> v = approx.fourierCoefficients(f1, n);
-
-    vector<double> weightsApprox(data.heights.size());
-    for(size_t i(0); i < weightsApprox.size(); i++)
-    {
-        weightsApprox[i] = approx.fourierApproximation(v, data.heights[i], n);
-    }*/
-
-    //FAIRE AVEC DES COSINUS ET SINUS ET PUIS PAS DES COMPLEXES ET C'EST CHILL
-
-    /*double a(0);
-    double b(0);
-
-    double* a_ptr(&a);
-    double* b_ptr(&b);
-
-    double t1(0);
-    double t2(2*M_PI);
-
-    vector<double> ans(5);
-    vector<double> bns(5);
-
-    for (int n(0); n < 6; n++)
-    {
-        AnalyticFourierHn(t1,t2, n, a_ptr, b_ptr);
-        ans[n] = *a_ptr;
-        bns[n] = *b_ptr;
+            default: throw string("ERREUR: The user did not specified a number in the given boundaries");
+        }
+    } catch (string const& e) {
+        usersApproxChoice = FOURIER;
+        cout << "The approximation method has been set to: Fourier Approximation";
     }
 
-    vector<double> results(data.heights.size());
-    for (int i(0); i < data.heights.size(); i++)
-    {
-        results[i] = approxFunction (data.heights[i], ans, bns);
-    }*/
-/*
-    for (auto& element : ifft) {
-        element /= ifft.size();
+    switch(usersApproxChoice) {
+        case LEASTSQUARES: {
+            cout << "LEAST SQUARES" << endl;
+            cout << "Choose the degree of approximation you want. It must be an integer :  " <<flush;
+            cin>>degree;
+            graph.make_graph_least_square(data,degree);
+        } break;
+
+        case LAGRANGE: {
+            cout << "LAGRANGE" << endl;
+            graph.make_graph_lagrange(data);
+        } break;
+
+        case FOURIER: {
+            cout << "FOURIER" << endl;
+            graph.make_graph_FFT(data,data_original);
+        }   break;
+        case PIECEWISELEASTSQUARE: {
+            cout << "PIECEWISE LEAST SQUARE" << endl;
+            cout << "Choose the degree of approximation you want. It must be an integer :  " <<flush;
+            cin>>degree;
+            cout << "Choose the number of interval for your approximation you want. It must be an even integer :  " <<flush;
+            cin>>intervalle;
+            graph.make_graph_piece_wise_least_squares(data,degree,intervalle);
+        }   break;
+        case PIECEWISELAGRANGE: {
+            cout << "PIECEWISE LAGRANGE" << endl;
+            cout << "Choose the number of interval for your approximation you want. It must be an even integer :  " <<flush;
+            cin>>intervalle;
+            graph.make_graph_piece_wise_lagrange(data,intervalle);
+        }   break;
+
     }
 
-
-    //on doit plotter data_copy où on a changé les valeurs des x associée aux y.
-    Gnuplot g1 = Gnuplot("lines");
-    g1.set_style("points");
-    g1.plot_xy(data_original.heights,data.weights,"Approximation");
-    sleep(2);
-    g1.plot_xy(data_original.heights,ifft,"Inverse FFT");
-    sleep(2);
-    g1.plot_xy(data_original.heights,data_original.weights,"Default points");
-    sleep(2);
-    g1.plot_xy(data_original.heights,approx,"Fourier");
-    sleep(20);
-
-    return 0;*/
+    return 0;
 }

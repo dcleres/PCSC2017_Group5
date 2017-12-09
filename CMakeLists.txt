@@ -3,7 +3,7 @@ project(PCSC2017_Group5)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES main.cpp readFile.h readFile.cpp FFTtest.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h Polynomial.cpp Polynomial.h PieceWise_Continue_Polynomial.cpp PieceWise_Continue_Polynomial.h Point.cpp Point.h Point.h Graph.cpp Graph.cpp Graph.h)
+set(SOURCE_FILES main.cpp readFile.h readFile.cpp FFTtest.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h Polynomial.cpp Polynomial.h PieceWise_Continue_Polynomial.cpp PieceWise_Continue_Polynomial.h Point.cpp Point.h Point.h Graph.cpp Graph.h)
 
 find_package(Doxygen)
 option(BUILD_DOCUMENTATION "Create and install the HTML based API

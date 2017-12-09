@@ -34,6 +34,7 @@ std::default_random_engine randGen((std::random_device())());
 */
 
 /*---- Main and test functions ----*/
+
 /*
 int mainTest() {
     // Test power-of-2 size FFTs
@@ -99,6 +100,7 @@ static void testConvolution(int n) {
 */
 
 /*---- Naive reference computation functions ----*/
+
 /*
 static vector<complex<double> > naiveDft(const vector<complex<double> > &input, bool inverse) {
     int n = static_cast<int>(input.size());
@@ -131,6 +133,7 @@ static vector<complex<double> > naiveConvolve(
 */
 
 /*---- Utility functions ----*/
+
 /*
 static double log10RmsErr(const vector<complex<double> > &xvec, const vector<complex<double> > &yvec) {
     int n = static_cast<int>(xvec.size());

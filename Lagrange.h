@@ -20,7 +20,7 @@ class Lagrange{
 
 
 public:
-    //Lagrange return directly some points correspondint to the argument xi
+    //Lagrange return directly the point corresponding to the argument xi
     double solve(vector<double> const& data_x,vector<double> const& data_y,double xi);
 
 private:
