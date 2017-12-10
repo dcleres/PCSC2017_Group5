@@ -75,14 +75,19 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae297f0539380fc9b703a1bceda2ce820"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#ae297f0539380fc9b703a1bceda2ce820">ReadFile</a> (std::string const &amp;filename)</td></tr>
+<tr class="memdesc:ae297f0539380fc9b703a1bceda2ce820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ae297f0539380fc9b703a1bceda2ce820">More...</a><br /></td></tr>
 <tr class="separator:ae297f0539380fc9b703a1bceda2ce820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a232df426223b84e4dbb3f964ee4c3177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#a232df426223b84e4dbb3f964ee4c3177">loadFromFile</a> (<a class="el" href="struct_data.html">Data</a> &amp;data)</td></tr>
+<tr class="memdesc:a232df426223b84e4dbb3f964ee4c3177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads in the file and save the data in the data variable.  <a href="#a232df426223b84e4dbb3f964ee4c3177">More...</a><br /></td></tr>
 <tr class="separator:a232df426223b84e4dbb3f964ee4c3177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9835264c9ec95cfdbc1349573402fc01"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#a9835264c9ec95cfdbc1349573402fc01">getFilename</a> ()</td></tr>
+<tr class="memdesc:a9835264c9ec95cfdbc1349573402fc01"><td class="mdescLeft">&#160;</td><td class="mdescRight">gives the name of the file to open  <a href="#a9835264c9ec95cfdbc1349573402fc01">More...</a><br /></td></tr>
 <tr class="separator:a9835264c9ec95cfdbc1349573402fc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5efc41b900510ae038dafc23a2563300"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#a5efc41b900510ae038dafc23a2563300">show</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data)</td></tr>
+<tr class="memdesc:a5efc41b900510ae038dafc23a2563300"><td class="mdescLeft">&#160;</td><td class="mdescRight">diplay all the read values in the terminal  <a href="#a5efc41b900510ae038dafc23a2563300">More...</a><br /></td></tr>
 <tr class="separator:a5efc41b900510ae038dafc23a2563300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11779a3630a2c1d62ab4566abb4034a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_read_file.html#ac11779a3630a2c1d62ab4566abb4034a">writeFile</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data)</td></tr>
+<tr class="memdesc:ac11779a3630a2c1d62ab4566abb4034a"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes in a file  <a href="#ac11779a3630a2c1d62ab4566abb4034a">More...</a><br /></td></tr>
 <tr class="separator:ac11779a3630a2c1d62ab4566abb4034a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -113,7 +118,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>is the name and path of the file to open </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00054">54</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 
@@ -135,7 +146,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>gives the name of the file to open </p>
 
 <p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00058">58</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 
@@ -157,7 +168,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Reads in the file and save the data in the data variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>is taken by reference to contain all the values in the file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00013">13</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 
@@ -179,7 +196,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>diplay all the read values in the terminal </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>contains the values to display </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00062">62</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 
@@ -201,7 +224,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>writes in a file </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data to write in a file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="read_file_8cpp_source.html#l00069">69</a> of file <a class="el" href="read_file_8cpp_source.html">readFile.cpp</a>.</p>
 

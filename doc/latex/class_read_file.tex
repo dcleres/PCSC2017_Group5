@@ -8,15 +8,15 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_read_file_ae297f0539380fc9b703a1bceda2ce820}{Read\+File}} (std\+::string const \&filename)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_read_file_a232df426223b84e4dbb3f964ee4c3177}{load\+From\+File}} (\mbox{\hyperlink{struct_data}{Data}} \&data)
-\item 
+\begin{DoxyCompactList}\small\item\em Reads in the file and save the data in the data variable. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_read_file_a9835264c9ec95cfdbc1349573402fc01}{get\+Filename}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em gives the name of the file to open \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_read_file_a5efc41b900510ae038dafc23a2563300}{show}} (\mbox{\hyperlink{struct_data}{Data}} const \&data)
-\item 
+\begin{DoxyCompactList}\small\item\em diplay all the read values in the terminal \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_read_file_ac11779a3630a2c1d62ab4566abb4034a}{write\+File}} (\mbox{\hyperlink{struct_data}{Data}} const \&data)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em writes in a file \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -35,8 +35,13 @@ Definition at line 32 of file read\+File.\+h.
 
 
 
+Constructor. 
 
 
+\begin{DoxyParams}{Parameters}
+{\em filename} & is the name and path of the file to open \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 54 of file read\+File.\+cpp.
@@ -52,7 +57,7 @@ Definition at line 54 of file read\+File.\+cpp.
 
 
 
-
+gives the name of the file to open 
 
 
 
@@ -66,8 +71,13 @@ Definition at line 58 of file read\+File.\+cpp.
 
 
 
+Reads in the file and save the data in the data variable. 
 
 
+\begin{DoxyParams}{Parameters}
+{\em data} & is taken by reference to contain all the values in the file \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 13 of file read\+File.\+cpp.
@@ -80,8 +90,13 @@ Definition at line 13 of file read\+File.\+cpp.
 
 
 
+diplay all the read values in the terminal 
 
 
+\begin{DoxyParams}{Parameters}
+{\em data} & contains the values to display \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 62 of file read\+File.\+cpp.
@@ -94,8 +109,13 @@ Definition at line 62 of file read\+File.\+cpp.
 
 
 
+writes in a file 
 
 
+\begin{DoxyParams}{Parameters}
+{\em data} & data to write in a file \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 69 of file read\+File.\+cpp.

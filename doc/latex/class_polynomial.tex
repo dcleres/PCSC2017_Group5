@@ -8,13 +8,13 @@
 \begin{DoxyCompactItemize}
 \item 
 vector$<$ double $>$ \mbox{\hyperlink{class_polynomial_ae67730df0a2e45a87c9cb244fe03ad6b}{solve}} (vector$<$ double $>$ const \&data, vector$<$ double $>$ const \&data\+\_\+y, size\+\_\+t const \&degree)
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_polynomial}{Polynomial}} approximation of the given points using a single polynome. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em solve the linear equation \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+(Note, this needs exactly one 
 
-
-Definition at line 13 of file Polynomial.\+h.
+Definition at line 32 of file Polynomial.\+h.
 
 
 
@@ -27,8 +27,19 @@ Definition at line 13 of file Polynomial.\+h.
 
 
 
-\mbox{\hyperlink{class_polynomial}{Polynomial}} approximation of the given points using a single polynome. 
+solve the linear equation 
 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} approximation of the given points using a single polynome.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & is a vector with the values of approximate (x-\/axis) \\
+\hline
+{\em degree} & is the degree of the polynome \\
+\hline
+{\em data\+\_\+y} & is a vector with the values of approximate (y-\/axis) \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 12 of file Polynomial.\+cpp.
