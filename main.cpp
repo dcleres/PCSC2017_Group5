@@ -51,11 +51,21 @@ int main()
     std::string fname("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
     ReadFile readFile(fname);
 
+    std::string fnameTest("/home/pcsc/Desktop/PCSC2017_Group5/data/testData.dat");
+    ReadFile readFileTest(fnameTest);
+
+    //TRAINING VALUES
     vector<double> xs;
     vector<double> ys;
     Data data = {xs, ys};
-
     readFile.loadFromFile(data);
+    //readFile.show(data); //SHOWS THE IMPORTED DATA
+
+    //TEST VALUES
+    vector<double> xsTest;
+    vector<double> ysTest;
+    Data dataTest = {xsTest, ysTest};
+    readFileTest.loadFromFileTest(dataTest);
     //readFile.show(data); //SHOWS THE IMPORTED DATA
 
     //Makes a copy of the input data since it is taken by reference in the rest of the program
@@ -125,7 +135,7 @@ int main()
 
         case FOURIER: {
             cout << "FOURIER" << endl;
-            graph.make_graph_FFT(data_original);
+            graph.make_graph_FFT(dataTest);
         }   break;
 
         case PIECEWISELEASTSQUARE: {
