@@ -113,6 +113,7 @@ void Graph :: make_graph_piece_wise_lagrange(int const& intervalle)
 
 void Graph :: make_graph_FFT(Data data_original)
 {
+    Data tmp = mData;
     //////////////////////// COMPUTE THE FFT /////////////////////////////////////////////////
     FFTreal fft;
     vector<double> imaginary_part(mData.heights.size(), 0.0);
@@ -127,7 +128,7 @@ void Graph :: make_graph_FFT(Data data_original)
     vector<double> bn(nbK, 0.0);
 
     //we used cos(pi*x which has a period of 2
-    fft.transformCoefs(data_original.weights, an, bn, 2);
+    fft.transformCoefs(tmp.weights, an, bn, 2);
     vector<double> approx(fft.transformApproximation(an, bn, 2, data_original.weights));
 
     for (auto &element : ifft) {
@@ -137,12 +138,12 @@ void Graph :: make_graph_FFT(Data data_original)
     //on doit plotter data_copy où on a changé les valeurs des x associée aux y.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(data_original.heights, mData.weights, "Approximation");
+    g1.plot_xy(tmp.heights, mData.weights, "Approximation");
     sleep(2);
-    g1.plot_xy(data_original.heights, ifft, "Inverse FFT");
+    g1.plot_xy(tmp.heights, ifft, "Inverse FFT");
     sleep(2);
-    g1.plot_xy(data_original.heights, data_original.weights, "Default points");
+    g1.plot_xy(tmp.heights, tmp.weights, "Default points");
     sleep(2);
-    g1.plot_xy(data_original.heights, approx, "Fourier");
+    g1.plot_xy(data_original.weights, approx, "Fourier");
     sleep(20);
 }

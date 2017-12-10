@@ -41,20 +41,25 @@ public:
     /** \brief Reads in the file and save the data in the data variable
      * \param data is taken by reference to contain all the values in the file
      */
-    void loadFromFile(Data& data);
+    void loadFromFile(Data& data) const;
+
+    /** \brief Reads in the file and save the data in the data variable
+     * \param data is taken by reference to contain all the values in the file
+     */
+    void loadFromFileTest(Data& data) const;
 
     /** \brief gives the name of the file to open
      */
-    std::string getFilename();
+    std::string getFilename() const;
 
     /** \brief diplay all the read values in the terminal
      * \param data contains the values to display
      */
-    void show(Data const& data);
+    void show(Data const& data) const;
 
     /** \brief writes in a file
      * \param data data to write in a file
-     */    void writeFile(Data const& data);
+     */    void writeFile(Data const& data) const;
 
 private:
     std::string mFilename;
