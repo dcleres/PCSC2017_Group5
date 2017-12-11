@@ -36,17 +36,17 @@ public:
     /** \brief plots the graph for the least square regression
      * \param degree is a positive integer that represents the degree of the fitted polynome
      */
-    void make_graph_least_square(size_t const& degree) const;
+    void make_graph_least_square(size_t const& degree);
 
     /** \brief plots the graph for the lagrange polynoma regression
      */
-    void make_graph_lagrange() const;
+    void make_graph_lagrange();
 
     /** \brief Plots the graph for the least square regression
      * \param degree is a positive integer that represents the degree of the fitted polynome
      * \param intervalle is the intervall for the the leat square method
      */
-    void make_graph_piece_wise_least_squares(size_t const& degree, int const& intervalle) const;
+    void make_graph_piece_wise_least_squares(size_t const& degree, int const& intervalle);
 
     /** \brief Plots the graph for the lagrange regression
     * \param intervalle is the intervall for the the leat square method
@@ -57,6 +57,8 @@ public:
      * \param data_original is the data as it is in the file
      */
     void make_graph_FFT(Data data_original);
+
+    vector<double> make_x_points();
 
 private:
     Data mData;

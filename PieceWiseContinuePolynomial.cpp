@@ -84,6 +84,58 @@ vector<double> PieceWiseContinuePolynomial::solve_lagrange(int const& Intervalle
     return Y_return;
 }
 
+vector<double> PieceWiseContinuePolynomial::solve_lagrange_degree(int const& degree, vector<double> const& x_plot) const
+{
+    size_t N  (mData.heights.size());
+    size_t nb_intervalle (degree+1);
+    size_t Intervalle(N/(degree+1));
+    vector<vector<double>> x((Intervalle), vector<double>(nb_intervalle));                                      //We declare the matrix that we will need to store in each line each point of just one interval.
+    vector<vector<double>> y((Intervalle), vector<double>(nb_intervalle));                                      //Each line correspond to one interval and each colunm in one line correspond to one point in the interval
+    if (N%(degree+1)  == 0) {                                                                                       //If the number of interval choosen is even we separate the data in that way
+        for (size_t i(1); i <= Intervalle; ++i) {
+            for (size_t j((nb_intervalle) * (i - 1)); j < (nb_intervalle * i); ++j) {
+                x[i - 1][j - ((i - 1) * nb_intervalle)] = mData.heights[j];
+                y[i - 1][j - ((i - 1) * nb_intervalle)] = mData.weights[j];
+            }
+        }
+    } else {                                                                                                    //If the number of interval is odd we need to adjust index
+        ///////////////////A implementer !!!!!!!
+        cout << "Le nombre d'intervalle doit être pair" << endl;
+    }
+
+    vector<double> Y_return(x_plot.size());
+    Polynomial polynomial;
+    vector<double> tmpx(nb_intervalle+1);
+    vector<double> tmpy(nb_intervalle+1);
+    for (int i = 1; i <= Intervalle; i++) {
+        for (int j = 0; j <= (nb_intervalle); ++j) {                                                             //With the for loop, we select the points of one interval and we put it on a vector tmp.
+            tmpx[j] = x[i - 1][j];
+            tmpy[j] = y[i - 1][j];
+        }
+
+        Lagrange lagrange;
+        for (size_t k = (x_plot.size() / Intervalle) * (i - 1); k < ((x_plot.size() / Intervalle) * i); ++k) {                 //We apply Least Square method on the data of the interval.
+            Y_return[k]= lagrange.solve(tmpx,tmpy,x_plot[k]);
+        }
+    }
+    return Y_return;
+}
+
+
 PieceWiseContinuePolynomial::PieceWiseContinuePolynomial(Data const &data)
 :mData(data)
 {}
+/*
+void PieceWiseContinuePolynomial :: create_interval(vector<vector<double>>& x,vector<vector<double>>& y, int const) {
+    if (Intervalle % 2 == 0) {                                                                                  //If the number of interval choosen is even we separate the data in that way
+        for (size_t i(1); i <= Intervalle; ++i) {
+            for (size_t j((nb_intervalle) * (i - 1)); j < (nb_intervalle * i); ++j) {
+                x[i - 1][j - ((i - 1) * nb_intervalle)] = mData.heights[j];
+                y[i - 1][j - ((i - 1) * nb_intervalle)] = mData.weights[j];
+            }
+        }
+    } else {                                                                                                    //If the number of interval is odd we need to adjust index
+        ///////////////////A implementer !!!!!!!
+        cout << "Le nombre d'intervalle doit être pair" << endl;
+    }
+}*/

@@ -62,7 +62,7 @@ vector<double> Polynomial::solve(vector<double> const& data,vector<double> const
         a[i]=B[i][n];                //make the variable to be calculated equal to the rhs of the last equation
         for (size_t j(0); j < n;j++)
         {
-            if (j != i) {           //then subtract all the lhs values except the coefficient of the variable whose value                                   is being calculated
+            if (j != i) {           //then subtract all the lhs values except the coefficient of the variable whose value is being calculated
                 a[i] = a[i] - B[i][j] * a[j];
             }
         }

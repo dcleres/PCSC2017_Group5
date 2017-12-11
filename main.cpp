@@ -83,6 +83,8 @@ int main()
     //////////////////////////////////PieceWise Lagrange////////////////////////////////////////////////////
     //graph.make_graph_piece_wise_lagrange(data,10);
 
+
+
     int choice;
     cout << "Welcome to David Cleres and Nicolas Lesimple data approximation tool. YOu have the choice between using three";
     cout << " different approximation method which are:" << endl;

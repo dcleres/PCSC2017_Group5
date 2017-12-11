@@ -15,7 +15,7 @@ double result = 0; // Initialize result                                         
         double term = data_y[i];                                                            // Compute individual terms of above formula
         for (size_t j = 0; j < n; j++) {
             if (j != i)
-                term = term * (xi - data_x[j]) / double(data_x[i] - data_x[j]);
+                term = term * (xi - data_x[j]) / (data_x[i] - data_x[j]);
         }
         result += term;                                                                      // Add current term to result
     }
