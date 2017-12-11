@@ -50,7 +50,6 @@ void Graph :: make_graph_lagrange()
     {
         y[j]+=lagrange.solve(mData.heights,mData.weights,x[j]);                           //we apply the lagrange formula to each augmented set of x points.
     }
-
     ///Plot///
     PieceWiseContinuePolynomial piece (mData);
     Gnuplot g1 = Gnuplot("lines");
@@ -66,11 +65,11 @@ void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, int cons
 
     vector<double>x(make_x_points());
     PieceWiseContinuePolynomial piece (mData);
-    vector<double>y(piece.solve_least_square(degree, Intervalle,x));                //We apply piece wise least square method.
+    vector<double>y(piece.solve_least_square(degree, Intervalle,x)); //We apply piece wise least square method.
     ///Plot///
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(x,y,"Approximation");
+    g1.plot_xy(x,remove_error(y),"Approximation");
     sleep(2);
     g1.plot_xy(mData.heights,mData.weights,"Default points");
     sleep(20);
@@ -81,10 +80,10 @@ void Graph :: make_graph_piece_wise_lagrange(int const& intervalle)
 {
     vector<double>x(make_x_points());
     PieceWiseContinuePolynomial piece (mData);
-    vector<double>y(piece.solve_lagrange_degree(intervalle, x));                           //We apply piece wise Lagrange method.
+    vector <vector<double>> approx(piece.solve_lagrange_degree(intervalle, x));//We apply piece wise Lagrange method.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(x,y,"Approximation");
+    g1.plot_xy(approx[0],approx[1],"Approximation");
     sleep(2);
     g1.plot_xy(mData.heights, mData.weights,"Default points");
     sleep(20);
@@ -110,6 +109,7 @@ void Graph :: make_graph_FFT(Data data_original)
     fft.transformCoefs(tmp.weights, an, bn, 2);
     vector<double> approx(fft.transformApproximation(an, bn, 2, data_original.weights));
 
+
     for (auto &element : ifft) {
         element /= ifft.size();
     }
@@ -121,18 +121,28 @@ void Graph :: make_graph_FFT(Data data_original)
     sleep(2);
     g1.plot_xy(tmp.heights, ifft, "Inverse FFT");
     sleep(2);
-    g1.plot_xy(tmp.heights, tmp.weights, "Default points");
-    sleep(2);
+    //g1.plot_xy(tmp.heights, tmp.weights, "Default points"); //LOADS THE POINTS OF THE DATA SET
+    //sleep(2);
     g1.plot_xy(data_original.weights, approx, "Fourier");
     sleep(20);
 }
 
 vector<double> Graph :: make_x_points(){
-    vector<double>x(10*mData.heights.size());                                            //The for loop help us to augment the number of point on which we will apply our approximation
+    vector<double>x(10*(mData.heights.size()-1));                                            //The for loop help us to augment the number of point on which we will apply our approximation
     for(size_t count(0);count< (mData.heights.size()-1);++count) {
         for (size_t d(0); d <= 10; ++d) {
             x[count*10+d] = (((mData.heights[count+1]-mData.heights[count])/ 10) * d) + mData.heights[count];
         }
     }
     return x;
+}
+
+//remove error value approximation
+vector<double> Graph :: remove_error(vector<double>& y){
+    for (size_t i; i<y.size();++i){
+        if (y[i]>2 or y[i]<-2){
+            y[i]=y[i-1];
+        }
+    }
+    return y;
 }

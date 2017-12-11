@@ -48,10 +48,59 @@ enum ApproxiamtionMethod {LEASTSQUARES, FOURIER, LAGRANGE,PIECEWISELEASTSQUARE,P
 
 int main()
 {
-    std::string fname("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
-    ReadFile readFile(fname);
+    int choice_input;
+    cout << "Welcome to David Cleres and Nicolas Lesimple data approximation tool. You have the choice between using a";
+    cout << "config file or entering all the values by hand" << endl;
+    cout << "1. Manual Entry" << endl;
+    cout << "2. Read from config file" << endl;
+    cout << "your choice is: " << flush;
+    cin >> choice_input;
 
-    std::string fnameTest("/home/pcsc/Desktop/PCSC2017_Group5/data/testData.dat");
+    size_t choice, choiceFunction;
+    //Makes a copy of the input data since it is taken by reference in the rest of the program
+    size_t degree;
+    size_t intervalle;
+
+    if (choice_input == 1)
+    {
+        cout << "Welcome to David Cleres and Nicolas Lesimple data approximation tool. You have the choice between using three";
+        cout << " different approximation method which are:" << endl;
+        cout << "1. Least Squares approximation" << endl;
+        cout << "2. Fourier Approximation" << endl;
+        cout << "3. Lagrange polynomial approximation" << endl;
+        cout << "4. PieceWise Least Square approximation" << endl;
+        cout << "5. PieceWise Lagrange approximation" << endl;
+        cout << endl;
+        cout << "Please select your approximation method by typing a number between 1 and 5" << endl;
+        cout << "your choice is: " << flush;
+        cin >> choice;
+
+        cout << "Which function to you want to interpolate?" << endl;
+        cout << "1. sin(x)" << endl;
+        cout << "2. sin(x) + cos(3x)" << endl;
+        cout << "your choice is: " << flush;
+        cin >> choiceFunction;
+    }
+    else {
+        std::string fnameConfig("/home/pcsc/Desktop/PCSC2017_Group5/data/config.dat");
+        ReadFile readFileConfig(fnameConfig);
+        vector<size_t> givenValues(readFileConfig.loadFromFileConfig());
+        choice = givenValues[0];
+        choiceFunction = givenValues[1];
+        degree = givenValues[2];
+        intervalle = givenValues[3];
+    }
+
+    std::string fname, fnameTest;
+    if (choiceFunction == 1){ //the choice is sin(X)
+        fname = ("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
+        fnameTest = ("/home/pcsc/Desktop/PCSC2017_Group5/data/testData.dat");
+    } else { //The choice is for sinx+cos3x
+        fname = ("/home/pcsc/Desktop/PCSC2017_Group5/data/datasinxcos3x.dat");
+        fnameTest = ("/home/pcsc/Desktop/PCSC2017_Group5/data/interpolationDataX.dat");
+    }
+
+    ReadFile readFile(fname);
     ReadFile readFileTest(fnameTest);
 
     //TRAINING VALUES
@@ -68,35 +117,9 @@ int main()
     readFileTest.loadFromFileTest(dataTest);
     //readFile.show(data); //SHOWS THE IMPORTED DATA
 
-    //Makes a copy of the input data since it is taken by reference in the rest of the program
     Data data_original = data;
-    size_t degree;
-    int intervalle;
 
     Graph graph(data); // use to make all the graph
-    ////////////////////////////////////////////Least Square/////////////////////////////////////////////////
-    //graph.make_graph_least_square(data,7);
-    ///////////////////////////////////PieceWise Least Square////////////////////////////////////////////////
-    //graph.make_graph_piece_wise_least_squares(data,2,4);
-    /////////////////////////////////////Lagrange///////////////////////////////////////////////////////////
-    //graph.make_graph_lagrange(data);
-    //////////////////////////////////PieceWise Lagrange////////////////////////////////////////////////////
-    //graph.make_graph_piece_wise_lagrange(data,10);
-
-
-
-    int choice;
-    cout << "Welcome to David Cleres and Nicolas Lesimple data approximation tool. YOu have the choice between using three";
-    cout << " different approximation method which are:" << endl;
-    cout << "1. Least Squares approximation" << endl;
-    cout << "2. Fourier Approximation" << endl;
-    cout << "3. Lagrange polynomial approximation" << endl;
-    cout << "4. PieceWise Least Square approximation" << endl;
-    cout << "5. PieceWise Lagrange approximation" << endl;
-    cout << endl;
-    cout << "Please select your approximation method by typing a number between 1 and 5" << endl;
-    cout << "your choice is: " << flush;
-    cin >> choice;
 
     ApproxiamtionMethod usersApproxChoice;
 
@@ -125,8 +148,10 @@ int main()
     switch(usersApproxChoice) {
         case LEASTSQUARES: {
             cout << "LEAST SQUARES" << endl;
-            cout << "Choose the degree of approximation you want. It must be an integer :  " <<flush;
-            cin>> degree;
+            if (choice_input == 1) {
+                cout << "Choose the degree of approximation you want. It must be an integer :  " << flush;
+                cin >> degree;
+            }
             graph.make_graph_least_square(degree);
         } break;
 
@@ -142,20 +167,25 @@ int main()
 
         case PIECEWISELEASTSQUARE: {
             cout << "PIECEWISE LEAST SQUARE" << endl;
-            cout << "Choose the degree of approximation you want. It must be an integer :  " <<flush;
-            cin>> degree;
-            cout << "Choose the number of interval for your approximation you want. It must be an even integer :  " <<flush;
-            cin>>intervalle;
+            if (choice_input == 1) {
+                cout << "Choose the degree of approximation you want. It must be an integer :  " << flush;
+                cin >> degree;
+                cout << "Choose the number of interval for your approximation you want. It must be an even integer :  "
+                     << flush;
+                cin >> intervalle;
+            }
             graph.make_graph_piece_wise_least_squares(degree,intervalle);
         }   break;
 
         case PIECEWISELAGRANGE: {
             cout << "PIECEWISE LAGRANGE" << endl;
-            cout << "Choose the number of interval for your approximation you want. It must be an even integer :  " <<flush;
-            cin>>intervalle;
+            if (choice_input == 1) {
+                cout << "Choose the number of interval for your approximation you want. It must be an even integer :  "
+                     << flush;
+                cin >> intervalle;
+            }
             graph.make_graph_piece_wise_lagrange(intervalle);
         }   break;
-
     }
     return 0;
 }

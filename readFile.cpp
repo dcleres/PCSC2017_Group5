@@ -113,3 +113,40 @@ void ReadFile::writeFile(Data const& data) const {
     myfile.close();
 }
 
+std::vector<size_t> ReadFile::loadFromFileConfig() const {
+    vector<size_t > configData;
+
+    std::cerr << "Reloading world from file <" << mFilename << ">" << std::endl;
+    std::ifstream in (mFilename);
+
+    assert(in.is_open());
+
+    if (!in)
+        throw std::runtime_error("Couldn't open file <" + mFilename + ">");
+
+    while (!in.eof())
+    {
+        string x;
+        size_t bufferRegressionType, BufferChosenFunction, bufferAdditionnalData, bufferAdditionnalData2;
+        in >> x >> x >> bufferRegressionType;
+        in >> x >> x >> BufferChosenFunction;
+        in >> x >> x >> bufferAdditionnalData;
+        in >> x >> x >> bufferAdditionnalData2;
+
+        configData.push_back(bufferRegressionType);
+        configData.push_back(BufferChosenFunction);
+        configData.push_back(bufferAdditionnalData);
+        configData.push_back(bufferAdditionnalData2);
+    }
+
+    if (!in.eof()) {
+        throw std::runtime_error("Failed to load values from file <" + mFilename + ">");
+    }
+    else {
+        std::cerr << "Loaded all values from file <" << mFilename << ">" << std::endl << std::flush;
+    }
+    in.close();
+    return configData;
+}
+
+

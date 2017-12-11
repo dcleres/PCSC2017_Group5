@@ -53,9 +53,8 @@ public:
      * \param Intervalle
      * \param x_plot gives the x axis values of the plot
      */
-    vector<double> solve_lagrange(int const& Intervalle, vector<double> const& x_plot) const;
 
-    vector<double> solve_lagrange_degree(int const& Intervalle, vector<double> const& x_plot) const;
+    vector<vector<double>> solve_lagrange_degree(int const& Intervalle, vector<double> const& x_plot) const;
 
     //void create_interval(vector<vector<double>>& x,vector<vector<double>>& y,int const& Intervalle,size_t nb_intervalle);
 

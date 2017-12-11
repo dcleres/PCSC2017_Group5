@@ -60,6 +60,8 @@ public:
 
     vector<double> make_x_points();
 
+    vector<double> remove_error(vector<double>& x);
+
 private:
     Data mData;
 };
