@@ -142,8 +142,8 @@ void Graph :: make_graph_FFT(Data data_original)
     sleep(2);
     g1.plot_xy(tmp.heights, ifft, "Inverse FFT");
     sleep(2);
-    g1.plot_xy(tmp.heights, tmp.weights, "Default points");
-    sleep(2);
+    //g1.plot_xy(tmp.heights, tmp.weights, "Default points"); //LOADS THE POINTS OF THE DATA SET
+    //sleep(2);
     g1.plot_xy(data_original.weights, approx, "Fourier");
     sleep(20);
 }

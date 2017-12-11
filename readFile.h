@@ -48,6 +48,10 @@ public:
      */
     void loadFromFileTest(Data& data) const;
 
+    /** \brief Reads in the file and save the data in the data variable for the config file
+     */
+    std::vector<size_t> loadFromFileConfig() const;
+
     /** \brief gives the name of the file to open
      */
     std::string getFilename() const;
@@ -59,7 +63,8 @@ public:
 
     /** \brief writes in a file
      * \param data data to write in a file
-     */    void writeFile(Data const& data) const;
+     */
+    void writeFile(Data const& data) const;
 
 private:
     std::string mFilename;
