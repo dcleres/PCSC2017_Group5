@@ -127,11 +127,16 @@ std::vector<size_t> ReadFile::loadFromFileConfig() const {
     while (!in.eof())
     {
         string x;
-        size_t bufferRegressionType, bufferAdditionnalData;
+        size_t bufferRegressionType, BufferChosenFunction, bufferAdditionnalData, bufferAdditionnalData2;
         in >> x >> x >> bufferRegressionType;
+        in >> x >> x >> BufferChosenFunction;
         in >> x >> x >> bufferAdditionnalData;
+        in >> x >> x >> bufferAdditionnalData2;
+
         configData.push_back(bufferRegressionType);
+        configData.push_back(BufferChosenFunction);
         configData.push_back(bufferAdditionnalData);
+        configData.push_back(bufferAdditionnalData2);
     }
 
     if (!in.eof()) {
