@@ -47,7 +47,7 @@ public:
      * \param Intervale
      * \param x_plot gives the x axis values of the plot
      */
-    vector<double> solve_least_square(size_t const& degree, int const& Intervale,vector<double> const& x_plot) const;
+    vector<vector<double>> solve_least_square_degree(size_t const& degree,int const& Intervalle,vector<double> const& x_plot) const;
 
     /**\brief solves by using lagrange
      * \param Intervalle

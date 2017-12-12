@@ -65,11 +65,11 @@ void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, int cons
 
     vector<double>x(make_x_points());
     PieceWiseContinuePolynomial piece (mData);
-    vector<double>y(piece.solve_least_square(degree, Intervalle,x)); //We apply piece wise least square method.
+    vector<vector<double>>point(piece.solve_least_square_degree(degree, Intervalle,x)); //We apply piece wise least square method.
     ///Plot///
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(x,remove_error(y),"Approximation");
+    g1.plot_xy(point[0],point[1],"Approximation");
     sleep(2);
     g1.plot_xy(mData.heights,mData.weights,"Default points");
     sleep(20);
