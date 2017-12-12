@@ -90,9 +90,6 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Graph.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
@@ -121,6 +118,12 @@
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Test.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Test.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.cpp">

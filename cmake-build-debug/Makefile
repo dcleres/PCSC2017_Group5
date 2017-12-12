@@ -150,33 +150,6 @@ FFTreal.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.s
 .PHONY : FFTreal.cpp.s
 
-FFTtest.o: FFTtest.cpp.o
-
-.PHONY : FFTtest.o
-
-# target to build an object file
-FFTtest.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o
-.PHONY : FFTtest.cpp.o
-
-FFTtest.i: FFTtest.cpp.i
-
-.PHONY : FFTtest.i
-
-# target to preprocess a source file
-FFTtest.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.i
-.PHONY : FFTtest.cpp.i
-
-FFTtest.s: FFTtest.cpp.s
-
-.PHONY : FFTtest.s
-
-# target to generate assembly for a file
-FFTtest.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.s
-.PHONY : FFTtest.cpp.s
-
 Graph.o: Graph.cpp.o
 
 .PHONY : Graph.o
@@ -312,6 +285,33 @@ Polynomial.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.s
 .PHONY : Polynomial.cpp.s
 
+Test.o: Test.cpp.o
+
+.PHONY : Test.o
+
+# target to build an object file
+Test.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o
+.PHONY : Test.cpp.o
+
+Test.i: Test.cpp.i
+
+.PHONY : Test.i
+
+# target to preprocess a source file
+Test.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Test.cpp.i
+.PHONY : Test.cpp.i
+
+Test.s: Test.cpp.s
+
+.PHONY : Test.s
+
+# target to generate assembly for a file
+Test.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Test.cpp.s
+.PHONY : Test.cpp.s
+
 gnuplot_i.o: gnuplot_i.cpp.o
 
 .PHONY : gnuplot_i.o
@@ -405,9 +405,6 @@ help:
 	@echo "... FFTreal.o"
 	@echo "... FFTreal.i"
 	@echo "... FFTreal.s"
-	@echo "... FFTtest.o"
-	@echo "... FFTtest.i"
-	@echo "... FFTtest.s"
 	@echo "... Graph.o"
 	@echo "... Graph.i"
 	@echo "... Graph.s"
@@ -423,6 +420,9 @@ help:
 	@echo "... Polynomial.o"
 	@echo "... Polynomial.i"
 	@echo "... Polynomial.s"
+	@echo "... Test.o"
+	@echo "... Test.i"
+	@echo "... Test.s"
 	@echo "... gnuplot_i.o"
 	@echo "... gnuplot_i.i"
 	@echo "... gnuplot_i.s"

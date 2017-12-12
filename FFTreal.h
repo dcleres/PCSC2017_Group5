@@ -80,7 +80,6 @@ public:
             const std::vector<double> &yreal, const std::vector<double> &yimag,
             std::vector<double> &outreal, std::vector<double> &outimag);
 
-
     /** \brief Computes the fourier coefficients.
      * \param real is a vector with the values read from the data.dat file
      * \param an is a vector with the values of the an fourier series coefficients

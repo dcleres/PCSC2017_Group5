@@ -138,7 +138,7 @@ void Graph :: make_graph_FFT(Data data_original)
     //on doit plotter data_copy où on a changé les valeurs des x associée aux y.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(tmp.heights, mData.weights, "Approximation");
+    g1.plot_xy(tmp.heights, mData.weights, "FFT");
     sleep(2);
     g1.plot_xy(tmp.heights, ifft, "Inverse FFT");
     sleep(2);

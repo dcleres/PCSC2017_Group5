@@ -18,7 +18,6 @@ void ReadFile::loadFromFile(Data& data) const
     assert(in.is_open());
 
     vector<point_t> Points;
-
     if (!in)
         throw std::runtime_error("Couldn't open file <" + mFilename + ">");
 

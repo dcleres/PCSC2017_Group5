@@ -41,6 +41,7 @@
 #include "Lagrange.h"
 #include "Graph.h"
 #include "FFTreal.h"
+#include "Test.h"
 
 using namespace std;
 
@@ -187,5 +188,12 @@ int main()
             graph.make_graph_piece_wise_lagrange(intervalle);
         }   break;
     }
+
+    //TESTING
+    Test test;
+    //test.testFourier();
+    test.testLeatSquares();
+
+
     return 0;
 }

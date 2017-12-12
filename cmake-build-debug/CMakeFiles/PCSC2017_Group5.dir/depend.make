@@ -4,8 +4,6 @@
 CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: ../FFTreal.cpp
 CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o: ../FFTreal.h
 
-CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o: ../FFTtest.cpp
-
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../FFTreal.h
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../Graph.cpp
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../Graph.h
@@ -32,13 +30,24 @@ CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../Polynomial.cpp
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../readFile.h
 
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../FFTreal.h
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../Lagrange.h
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../PieceWiseContinuePolynomial.h
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../Polynomial.h
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../Test.cpp
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../Test.h
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../gnuplot_i.hpp
+CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../readFile.h
+
 CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o: ../gnuplot_i.cpp
 CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o: ../gnuplot_i.hpp
 
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../FFTreal.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../Graph.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../Lagrange.h
+CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../PieceWiseContinuePolynomial.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../Polynomial.h
+CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../Test.h
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../gnuplot_i.hpp
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../main.cpp
 CMakeFiles/PCSC2017_Group5.dir/main.cpp.o: ../readFile.h
