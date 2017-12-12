@@ -56,8 +56,6 @@ public:
 
     vector<vector<double>> solve_lagrange_degree(int const& Intervalle, vector<double> const& x_plot) const;
 
-    //void create_interval(vector<vector<double>>& x,vector<vector<double>>& y,int const& Intervalle,size_t nb_intervalle);
-
 private:
     Data mData;
 

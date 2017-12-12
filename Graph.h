@@ -58,9 +58,15 @@ public:
      */
     void make_graph_FFT(Data data_original);
 
+    /** \brief Create augmented x data set.
+     * \param no parameters
+     */
     vector<double> make_x_points();
 
-    vector<double> remove_error(vector<double>& x);
+    /** \brief Create the plot with the library
+     * \param x and y which are the vector of values we want to plot.
+     */
+    void make_graph(vector<double> const& x , vector<double> const& y);
 
 private:
     Data mData;
