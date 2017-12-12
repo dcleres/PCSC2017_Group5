@@ -3,7 +3,7 @@ project(PCSC2017_Group5)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES main.cpp readFile.h readFile.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h Polynomial.cpp Polynomial.h PieceWiseContinuePolynomial.cpp PieceWiseContinuePolynomial.h Point.cpp Point.h Point.h Graph.cpp Graph.h Test.cpp Test.h)
+set(SOURCE_FILES main.cpp readFile.h readFile.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h Polynomial.cpp Polynomial.h PieceWiseContinuePolynomial.cpp PieceWiseContinuePolynomial.h Graph.cpp Graph.h Test.cpp Test.h)
 
 find_package(Doxygen)
 option(BUILD_DOCUMENTATION "Create and install the HTML based API
@@ -31,4 +31,4 @@ if(BUILD_DOCUMENTATION)
 
 endif()
 
-add_executable(PCSC2017_Group5 ${SOURCE_FILES} readFile.h readFile.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h Polynomial.cpp Polynomial.h PieceWiseContinuePolynomial.cpp PieceWiseContinuePolynomial.h Point.cpp Point.h Graph.cpp Graph.h Test.cpp Test.h)
+add_executable(PCSC2017_Group5 ${SOURCE_FILES} readFile.h readFile.cpp FFTreal.cpp FFTreal.h gnuplot_i.hpp gnuplot_i.cpp Lagrange.cpp Lagrange.h Polynomial.cpp Polynomial.h PieceWiseContinuePolynomial.cpp PieceWiseContinuePolynomial.h Graph.cpp Graph.h Test.cpp Test.h)
