@@ -9,20 +9,24 @@
 \item 
 \mbox{\hyperlink{class_read_file_ae297f0539380fc9b703a1bceda2ce820}{Read\+File}} (std\+::string const \&filename)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_read_file_a232df426223b84e4dbb3f964ee4c3177}{load\+From\+File}} (\mbox{\hyperlink{struct_data}{Data}} \&data)
+void \mbox{\hyperlink{class_read_file_ad801fc147cb2522536db3da40735724b}{load\+From\+File}} (\mbox{\hyperlink{struct_data}{Data}} \&data) const
 \begin{DoxyCompactList}\small\item\em Reads in the file and save the data in the data variable. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{class_read_file_a9835264c9ec95cfdbc1349573402fc01}{get\+Filename}} ()
+void \mbox{\hyperlink{class_read_file_ac629f612ecfb04a6ef4414d5feb995bd}{load\+From\+File\+Test}} (\mbox{\hyperlink{struct_data}{Data}} \&data) const
+\begin{DoxyCompactList}\small\item\em Reads in the file and save the data in the data variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{class_read_file_acae54464293fba0c2f0adcd9d878a176}{load\+From\+File\+Config}} () const
+\begin{DoxyCompactList}\small\item\em Reads in the file and save the data in the data variable for the config file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_read_file_a494ba4e13b3619ff95bb0889f77b95aa}{get\+Filename}} () const
 \begin{DoxyCompactList}\small\item\em gives the name of the file to open \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_read_file_a5efc41b900510ae038dafc23a2563300}{show}} (\mbox{\hyperlink{struct_data}{Data}} const \&data)
+void \mbox{\hyperlink{class_read_file_a0ac546e0980ee76612480df922728880}{show}} (\mbox{\hyperlink{struct_data}{Data}} const \&data) const
 \begin{DoxyCompactList}\small\item\em diplay all the read values in the terminal \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_read_file_ac11779a3630a2c1d62ab4566abb4034a}{write\+File}} (\mbox{\hyperlink{struct_data}{Data}} const \&data)
+void \mbox{\hyperlink{class_read_file_ab66909fd861779f01fde0e11aef0b77b}{write\+File}} (\mbox{\hyperlink{struct_data}{Data}} const \&data) const
 \begin{DoxyCompactList}\small\item\em writes in a file \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 32 of file read\+File.\+h.
+Definition at line 30 of file read\+File.\+h.
 
 
 
@@ -44,16 +48,16 @@ Constructor.
 \end{DoxyParams}
 
 
-Definition at line 54 of file read\+File.\+cpp.
+Definition at line 53 of file read\+File.\+cpp.
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_read_file_a9835264c9ec95cfdbc1349573402fc01}\label{class_read_file_a9835264c9ec95cfdbc1349573402fc01}} 
+\mbox{\Hypertarget{class_read_file_a494ba4e13b3619ff95bb0889f77b95aa}\label{class_read_file_a494ba4e13b3619ff95bb0889f77b95aa}} 
 \index{Read\+File@{Read\+File}!get\+Filename@{get\+Filename}}
 \index{get\+Filename@{get\+Filename}!Read\+File@{Read\+File}}
 \subsubsection{\texorpdfstring{get\+Filename()}{getFilename()}}
-{\footnotesize\ttfamily std\+::string Read\+File\+::get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::string Read\+File\+::get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -61,13 +65,13 @@ gives the name of the file to open
 
 
 
-Definition at line 58 of file read\+File.\+cpp.
+Definition at line 93 of file read\+File.\+cpp.
 
-\mbox{\Hypertarget{class_read_file_a232df426223b84e4dbb3f964ee4c3177}\label{class_read_file_a232df426223b84e4dbb3f964ee4c3177}} 
+\mbox{\Hypertarget{class_read_file_ad801fc147cb2522536db3da40735724b}\label{class_read_file_ad801fc147cb2522536db3da40735724b}} 
 \index{Read\+File@{Read\+File}!load\+From\+File@{load\+From\+File}}
 \index{load\+From\+File@{load\+From\+File}!Read\+File@{Read\+File}}
 \subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
-{\footnotesize\ttfamily void Read\+File\+::load\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} \&}]{data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Read\+File\+::load\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} \&}]{data }\end{DoxyParamCaption}) const}
 
 
 
@@ -82,11 +86,44 @@ Reads in the file and save the data in the data variable.
 
 Definition at line 13 of file read\+File.\+cpp.
 
-\mbox{\Hypertarget{class_read_file_a5efc41b900510ae038dafc23a2563300}\label{class_read_file_a5efc41b900510ae038dafc23a2563300}} 
+\mbox{\Hypertarget{class_read_file_acae54464293fba0c2f0adcd9d878a176}\label{class_read_file_acae54464293fba0c2f0adcd9d878a176}} 
+\index{Read\+File@{Read\+File}!load\+From\+File\+Config@{load\+From\+File\+Config}}
+\index{load\+From\+File\+Config@{load\+From\+File\+Config}!Read\+File@{Read\+File}}
+\subsubsection{\texorpdfstring{load\+From\+File\+Config()}{loadFromFileConfig()}}
+{\footnotesize\ttfamily std\+::vector$<$ size\+\_\+t $>$ Read\+File\+::load\+From\+File\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Reads in the file and save the data in the data variable for the config file. 
+
+
+
+Definition at line 115 of file read\+File.\+cpp.
+
+\mbox{\Hypertarget{class_read_file_ac629f612ecfb04a6ef4414d5feb995bd}\label{class_read_file_ac629f612ecfb04a6ef4414d5feb995bd}} 
+\index{Read\+File@{Read\+File}!load\+From\+File\+Test@{load\+From\+File\+Test}}
+\index{load\+From\+File\+Test@{load\+From\+File\+Test}!Read\+File@{Read\+File}}
+\subsubsection{\texorpdfstring{load\+From\+File\+Test()}{loadFromFileTest()}}
+{\footnotesize\ttfamily void Read\+File\+::load\+From\+File\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+Reads in the file and save the data in the data variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & is taken by reference to contain all the values in the file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file read\+File.\+cpp.
+
+\mbox{\Hypertarget{class_read_file_a0ac546e0980ee76612480df922728880}\label{class_read_file_a0ac546e0980ee76612480df922728880}} 
 \index{Read\+File@{Read\+File}!show@{show}}
 \index{show@{show}!Read\+File@{Read\+File}}
 \subsubsection{\texorpdfstring{show()}{show()}}
-{\footnotesize\ttfamily void Read\+File\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} const \&}]{data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Read\+File\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} const \&}]{data }\end{DoxyParamCaption}) const}
 
 
 
@@ -99,13 +136,13 @@ diplay all the read values in the terminal
 \end{DoxyParams}
 
 
-Definition at line 62 of file read\+File.\+cpp.
+Definition at line 97 of file read\+File.\+cpp.
 
-\mbox{\Hypertarget{class_read_file_ac11779a3630a2c1d62ab4566abb4034a}\label{class_read_file_ac11779a3630a2c1d62ab4566abb4034a}} 
+\mbox{\Hypertarget{class_read_file_ab66909fd861779f01fde0e11aef0b77b}\label{class_read_file_ab66909fd861779f01fde0e11aef0b77b}} 
 \index{Read\+File@{Read\+File}!write\+File@{write\+File}}
 \index{write\+File@{write\+File}!Read\+File@{Read\+File}}
 \subsubsection{\texorpdfstring{write\+File()}{writeFile()}}
-{\footnotesize\ttfamily void Read\+File\+::write\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} const \&}]{data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Read\+File\+::write\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} const \&}]{data }\end{DoxyParamCaption}) const}
 
 
 
@@ -118,7 +155,7 @@ writes in a file
 \end{DoxyParams}
 
 
-Definition at line 69 of file read\+File.\+cpp.
+Definition at line 104 of file read\+File.\+cpp.
 
 
 

@@ -43,18 +43,22 @@ void Graph :: make_graph_least_square(size_t const& degree)
 /////////////////////////Lagrange/////////////////////////////
 void Graph :: make_graph_lagrange()
 {
-    vector<double>x(make_x_points());
+    vector<double>x(10*mData.heights.size());
+    for(size_t count(0);count< (mData.heights.size()-1);++count) {                          //The for loop help us to augment the number of point on which we will apply our approximation
+        for (size_t d(0); d < 10; ++d) {
+            x[count*10+d] = (((mData.heights[count]-mData.heights[count+1])/ 10) * d) + mData.heights[count];
+        }
+    }
     vector<double>y(10*mData.heights.size());                                            //y is the vector where we keep the approximation of each points
     Lagrange lagrange;
     for (size_t j(0); j<10*mData.heights.size(); ++j)
     {
-        y[j]+=lagrange.solve(mData.heights,mData.weights,x[j]);                           //we apply the lagrange formula to each augmented set of x points.
-    }
-    ///Plot///
-    PieceWiseContinuePolynomial piece (mData);
+        y[j]+=lagrange.solve(mData.heights,mData.weights,x[j]);} //we apply the lagrange formula to each augmented set of x points.
+
+        ///Plot///
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(x,y,"Approximation");
+    g1.plot_xy(x,remove_error(y),"Approximation");
     sleep(2);
     g1.plot_xy(mData.heights,mData.weights,"Default points");
     sleep(20);
@@ -117,7 +121,7 @@ void Graph :: make_graph_FFT(Data data_original)
     //on doit plotter data_copy où on a changé les valeurs des x associée aux y.
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
-    g1.plot_xy(tmp.heights, mData.weights, "Approximation");
+    g1.plot_xy(tmp.heights, mData.weights, "FFT");
     sleep(2);
     g1.plot_xy(tmp.heights, ifft, "Inverse FFT");
     sleep(2);

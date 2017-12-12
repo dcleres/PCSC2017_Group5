@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PCSC2017_Group5.dir/main.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o"
-  "CMakeFiles/PCSC2017_Group5.dir/FFTtest.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
@@ -9,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"
   "PCSC2017_Group5.pdb"
   "PCSC2017_Group5"
 )

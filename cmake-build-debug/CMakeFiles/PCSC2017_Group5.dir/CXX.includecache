@@ -24,26 +24,6 @@ FFTreal.h
 vector
 -
 
-/home/pcsc/Desktop/PCSC2017_Group5/FFTtest.cpp
-algorithm
--
-cmath
--
-complex
--
-cstdlib
--
-iomanip
--
-iostream
--
-random
--
-vector
--
-FFT.h
-/home/pcsc/Desktop/PCSC2017_Group5/FFT.h
-
 /home/pcsc/Desktop/PCSC2017_Group5/Graph.cpp
 iostream
 -
@@ -134,6 +114,22 @@ Polynomial.h
 array
 -
 
+/home/pcsc/Desktop/PCSC2017_Group5/Test.cpp
+Test.h
+/home/pcsc/Desktop/PCSC2017_Group5/Test.h
+gnuplot_i.hpp
+/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
+
+/home/pcsc/Desktop/PCSC2017_Group5/Test.h
+FFTreal.h
+/home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
+Polynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+PieceWiseContinuePolynomial.h
+/home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.h
+Lagrange.h
+/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
+
 /home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.cpp
 gnuplot_i.hpp
 /home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
@@ -191,6 +187,8 @@ Graph.h
 /home/pcsc/Desktop/PCSC2017_Group5/Graph.h
 FFTreal.h
 /home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
+Test.h
+/home/pcsc/Desktop/PCSC2017_Group5/Test.h
 
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.cpp
 stdexcept
