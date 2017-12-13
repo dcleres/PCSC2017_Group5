@@ -6,7 +6,7 @@
 #include <cmath>
 #include <iostream>
 #include "readFile.h"
-#include "Polynomial.h"
+#include "LeastSquare.h"
 
 /// Polynomial approximation of the given points using a single polynome
 vector<double> Polynomial::solve(vector<double> const& data,vector<double> const& data_y, size_t const& degree)

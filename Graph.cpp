@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "Graph.h"
-#include "Polynomial.h"
+#include "LeastSquare.h"
 #include "gnuplot_i.hpp"
 #include "PieceWiseContinuePolynomial.h"
 #include "Lagrange.h"

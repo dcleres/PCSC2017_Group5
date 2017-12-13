@@ -73,7 +73,7 @@
 #include <complex>
 #include "readFile.h"
 #include "gnuplot_i.hpp"
-#include "Polynomial.h"
+#include "LeastSquare.h"
 #include "Lagrange.h"
 #include "Graph.h"
 #include "FFTreal.h"

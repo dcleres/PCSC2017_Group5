@@ -2,7 +2,7 @@
 #include <cmath>
 #include "readFile.h"
 #include "PieceWiseContinuePolynomial.h"
-#include "Polynomial.h"
+#include "LeastSquare.h"
 #include "Lagrange.h"
 
 using namespace std ;

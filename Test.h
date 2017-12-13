@@ -23,7 +23,7 @@
 
 
 #include "FFTreal.h"
-#include "Polynomial.h"
+#include "LeastSquare.h"
 #include "PieceWiseContinuePolynomial.h"
 #include "Lagrange.h"
 
