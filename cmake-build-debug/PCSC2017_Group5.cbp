@@ -108,12 +108,6 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Point.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Point.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>

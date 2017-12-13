@@ -12,24 +12,19 @@ Graph :: Graph(Data const& data)
 {}
 
 ////////////////LeastSquare//////////////////////////////
-void Graph :: make_graph_least_square(size_t const& degree) const
+void Graph :: make_graph_least_square(size_t const& degree)
 {
     Polynomial poly;
     vector <double> a (poly.solve(mData.heights,mData.weights, degree));                  // we found the coefficient by the least square method minimizibg the loss. a is a vector with the coefficients searched.
-    vector<double>y(10*mData.heights.size());                                            //y will have the polynomial approximation thanks to the coefficients we found
+    vector<double>x(make_x_points());
+    vector<double>y(x.size());
 
     cout<< "The interpolation polynome is : ";
     for (size_t i(0); i < (degree+1);i++){
         cout<<" + ("<<a[i]<<")"<<"x^"<<i;
     }
-    cout<<endl;
-    vector<double>x(10*mData.heights.size());                                            //We choose to put 10 points of approximation between each point we have in the data set
-    for(size_t count(0); count < (mData.heights.size()-1); ++count)
-    {                          //The for loop help us to augment the number of point on which we will apply our approximation
-        for (size_t d(0); d < 10; ++d) {
-            x[count*10+d] = (((mData.heights[count]-mData.heights[count+1])/ 10) * d) + mData.heights[count];
-        }
-    }
+
+
     for (size_t j(0); j<10*mData.heights.size(); ++j)
     {
         for (size_t i(0); i < (degree+1); i++)
@@ -38,79 +33,42 @@ void Graph :: make_graph_least_square(size_t const& degree) const
         }
     }
     ///Plot///
-    Gnuplot g1 = Gnuplot("lines");
-    g1.set_style("points");
-    g1.plot_xy(x,y,"Approximation");
-    sleep(2);
-    g1.plot_xy(mData.heights,mData.weights,"Default points");
-    sleep(20);
+    make_graph(x,y);
 }
-
 
 /////////////////////////Lagrange/////////////////////////////
-void Graph :: make_graph_lagrange() const
-{
-    vector<double>x(10*mData.heights.size());
-    for(size_t count(0);count< (mData.heights.size()-1);++count) {                          //The for loop help us to augment the number of point on which we will apply our approximation
-        for (size_t d(0); d < 10; ++d) {
-            x[count*10+d] = (((mData.heights[count]-mData.heights[count+1])/ 10) * d) + mData.heights[count];
-        }
-    }
-    vector<double>y(10*mData.heights.size());                                            //y is the vector where we keep the approximation of each points
+void Graph :: make_graph_lagrange() {
+    vector<double> x(make_x_points());
+    vector<double> y(x.size());
     Lagrange lagrange;
-    for (size_t j(0); j<10*mData.heights.size(); ++j)
-    {
-        y[j]+=lagrange.solve(mData.heights,mData.weights,x[j]);                           //we apply the lagrange formula to each augmented set of x points.
+    for (size_t j(0); j < x.size(); ++j) {
+        y[j] = lagrange.solve(mData.heights, mData.weights, x[j]);                  //we apply the lagrange formula to each augmented set of x points.
     }
 
     ///Plot///
-    PieceWiseContinuePolynomial piece (mData);
-    Gnuplot g1 = Gnuplot("lines");
-    g1.set_style("points");
-    g1.plot_xy(x,y,"Approximation");
-    sleep(2);
-    g1.plot_xy(mData.heights,mData.weights,"Default points");
-    sleep(20);
+    make_graph(x,y);
 }
-
-void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, int const& Intervalle) const
+/////////////////////////PieceWise Least Square/////////////////////////////
+void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, int const& Intervalle)
 {
-    vector<double>x(10*mData.heights.size());                                            //The for loop help us to augment the number of point on which we will apply our approximation
-    for(size_t count(0);count< (mData.heights.size()-1);++count) {
-        for (size_t d(0); d < 10; ++d) {
-            x[count*10+d] = (((mData.heights[count]-mData.heights[count+1])/ 10) * d) + mData.heights[count];
-        }
-    }
+
+    vector<double>x(make_x_points());
     PieceWiseContinuePolynomial piece (mData);
-    vector<double>y(piece.solve_least_square(degree, Intervalle,x));                //We apply piece wise least square method.
+    vector<vector<double>>point(piece.solve_least_square_degree(degree, Intervalle,x));         //We apply piece wise least square method.
     ///Plot///
-    Gnuplot g1 = Gnuplot("lines");
-    g1.set_style("points");
-    g1.plot_xy(x,y,"Approximation");
-    sleep(2);
-    g1.plot_xy(mData.heights,mData.weights,"Default points");
-    sleep(20);
+    make_graph(point[0],point[1]);
 
 }
-
+/////////////////////////Piece Wise Lagrange/////////////////////////////
 void Graph :: make_graph_piece_wise_lagrange(int const& intervalle)
 {
-    vector<double>x(10*mData.heights.size());                                            //The for loop help us to augment the number of point on which we will apply our approximation
-    for(int count(0);count< (mData.heights.size()-1);++count) {
-        for (size_t d(0); d < 10; ++d) {
-            x[count*10+d] = (((mData.heights[count] - mData.heights[count+1])/ 10) * d) + mData.heights[count];
-        }
-    }
+    vector<double>x(make_x_points());
     PieceWiseContinuePolynomial piece (mData);
-    vector<double>y(piece.solve_lagrange(intervalle, x));                           //We apply piece wise Lagrange method.
-    Gnuplot g1 = Gnuplot("lines");
-    g1.set_style("points");
-    g1.plot_xy(x,y,"Approximation");
-    sleep(2);
-    g1.plot_xy(mData.heights, mData.weights,"Default points");
-    sleep(20);
+    vector <vector<double>> approx(piece.solve_lagrange_degree(intervalle, x));     //We apply piece wise Lagrange method.
+    ///Plot///
+    make_graph(approx[0],approx[1]);
 }
-
+/////////////////////////FOURIER/////////////////////////////
 void Graph :: make_graph_FFT(Data data_original)
 {
     Data tmp = mData;
@@ -131,6 +89,7 @@ void Graph :: make_graph_FFT(Data data_original)
     fft.transformCoefs(tmp.weights, an, bn, 2);
     vector<double> approx(fft.transformApproximation(an, bn, 2, data_original.weights));
 
+
     for (auto &element : ifft) {
         element /= ifft.size();
     }
@@ -145,5 +104,24 @@ void Graph :: make_graph_FFT(Data data_original)
     //g1.plot_xy(tmp.heights, tmp.weights, "Default points"); //LOADS THE POINTS OF THE DATA SET
     //sleep(2);
     g1.plot_xy(data_original.weights, approx, "Fourier");
+    sleep(20);
+}
+
+vector<double> Graph :: make_x_points(){
+    vector<double>x(10*(mData.heights.size()-1));                                            //The for loop help us to augment the number of point on which we will apply our approximation
+    for(size_t count(0);count< (mData.heights.size()-1);++count) {
+        for (size_t d(0); d < 10; ++d) {
+            x[count*10+d] = (((mData.heights[count+1]-mData.heights[count])/ 10) * d) + mData.heights[count];
+        }
+    }
+    return x;
+}
+
+void Graph::make_graph(vector<double> const& x, vector<double>const& y){
+    Gnuplot g1 = Gnuplot("lines");
+    g1.set_style("points");
+    g1.plot_xy(x,y,"Approximation");
+    sleep(2);
+    g1.plot_xy(mData.heights, mData.weights,"Default points");
     sleep(20);
 }

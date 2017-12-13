@@ -6,7 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o"
-  "CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"
   "PCSC2017_Group5.pdb"

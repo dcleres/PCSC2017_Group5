@@ -225,33 +225,9 @@ CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o.provides: CMake
 CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o
 
 
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/Point.cpp
-
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Desktop/PCSC2017_Group5/Point.cpp > CMakeFiles/PCSC2017_Group5.dir/Point.cpp.i
-
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Desktop/PCSC2017_Group5/Point.cpp -o CMakeFiles/PCSC2017_Group5.dir/Point.cpp.s
-
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.requires:
-
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.requires
-
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.provides
-
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o
-
-
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o: ../Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/Graph.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.i: cmake_force
@@ -275,7 +251,7 @@ CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o.provides.build: CMakeFiles/PCSC2017_G
 
 CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
 CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o: ../Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/Test.cpp
 
 CMakeFiles/PCSC2017_Group5.dir/Test.cpp.i: cmake_force
@@ -306,7 +282,6 @@ PCSC2017_Group5_OBJECTS = \
 "CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"
 
@@ -320,12 +295,11 @@ PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/build.make
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable PCSC2017_Group5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable PCSC2017_Group5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PCSC2017_Group5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -340,7 +314,6 @@ CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/gnuplot_
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o.requires
 

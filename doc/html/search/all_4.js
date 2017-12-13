@@ -3,7 +3,7 @@ var searchData=
   ['gender',['Gender',['../read_file_8h.html#a3667e3c5ec056737c8789615a989324f',1,'readFile.h']]],
   ['get_5fx',['get_x',['../class_point.html#a0badc8959ee9db08740cf22abcb8d8db',1,'Point']]],
   ['get_5fy',['get_y',['../class_point.html#a5d9ab69bfb09db813d543a8cd2fb24c7',1,'Point']]],
-  ['getfilename',['getFilename',['../class_read_file.html#a9835264c9ec95cfdbc1349573402fc01',1,'ReadFile']]],
+  ['getfilename',['getFilename',['../class_read_file.html#a494ba4e13b3619ff95bb0889f77b95aa',1,'ReadFile']]],
   ['gnuplot',['Gnuplot',['../class_gnuplot.html',1,'Gnuplot'],['../class_gnuplot.html#a936d27de7b6f57d1f3d61491dc70f1ae',1,'Gnuplot::Gnuplot()'],['../class_gnuplot.html#a4acdc327a6a9eb3c4ab3f37814dce26e',1,'Gnuplot::Gnuplot(const string &amp;)'],['../class_gnuplot.html#ab777a09e0527b64f3980788f73400257',1,'Gnuplot::Gnuplot(const string &amp;, const string &amp;, const string &amp;, const string &amp;, vector&lt; double &gt; const &amp;, vector&lt; double &gt; const &amp;)'],['../class_gnuplot.html#a7c87a9e55a3cdc5c559d07744d9856f8',1,'Gnuplot::Gnuplot(const string &amp;, const string &amp;, const string &amp;, const string &amp;, vector&lt; double &gt; const &amp;)']]],
   ['gnuplot_5fi_2ecpp',['gnuplot_i.cpp',['../gnuplot__i_8cpp.html',1,'']]],
   ['gnuplot_5fi_2ehpp',['gnuplot_i.hpp',['../gnuplot__i_8hpp.html',1,'']]],

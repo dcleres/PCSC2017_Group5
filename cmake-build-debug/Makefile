@@ -231,33 +231,6 @@ PieceWiseContinuePolynomial.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.s
 .PHONY : PieceWiseContinuePolynomial.cpp.s
 
-Point.o: Point.cpp.o
-
-.PHONY : Point.o
-
-# target to build an object file
-Point.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o
-.PHONY : Point.cpp.o
-
-Point.i: Point.cpp.i
-
-.PHONY : Point.i
-
-# target to preprocess a source file
-Point.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Point.cpp.i
-.PHONY : Point.cpp.i
-
-Point.s: Point.cpp.s
-
-.PHONY : Point.s
-
-# target to generate assembly for a file
-Point.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Point.cpp.s
-.PHONY : Point.cpp.s
-
 Polynomial.o: Polynomial.cpp.o
 
 .PHONY : Polynomial.o
@@ -414,9 +387,6 @@ help:
 	@echo "... PieceWiseContinuePolynomial.o"
 	@echo "... PieceWiseContinuePolynomial.i"
 	@echo "... PieceWiseContinuePolynomial.s"
-	@echo "... Point.o"
-	@echo "... Point.i"
-	@echo "... Point.s"
 	@echo "... Polynomial.o"
 	@echo "... Polynomial.i"
 	@echo "... Polynomial.s"

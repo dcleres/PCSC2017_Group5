@@ -90,16 +90,6 @@ cmath
 readFile.h
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Point.cpp
-assert.h
--
-Point.h
-/home/pcsc/Desktop/PCSC2017_Group5/Point.h
-
-/home/pcsc/Desktop/PCSC2017_Group5/Point.h
-vector
--
-
 /home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp
 cmath
 -

@@ -23,9 +23,6 @@ CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../PieceWiseCo
 CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: ../readFile.h
 
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o: ../Point.cpp
-CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o: ../Point.h
-
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../Polynomial.cpp
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../Polynomial.h
 CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../readFile.h

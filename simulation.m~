@@ -1,0 +1,21 @@
+clear all 
+close all 
+clc 
+
+x = linspace(-2*pi, 2*pi, 200)
+
+Y = sin(pi*x)+cos(3*pi*x)
+
+answ = fft(sin(pi*x)+cos(3*pi*x), 500)
+
+%plot(x, ans')
+
+ans_ = ifft(answ)
+
+%plot(x, answ)
+%hold on
+plot(x, ans_)
+
+x = x'
+Y = Y'
+

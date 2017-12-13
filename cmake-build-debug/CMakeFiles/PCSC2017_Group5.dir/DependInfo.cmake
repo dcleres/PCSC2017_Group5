@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pcsc/Desktop/PCSC2017_Group5/Graph.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o"
-  "/home/pcsc/Desktop/PCSC2017_Group5/Point.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/Point.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/Test.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"
   "/home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.cpp" "/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o"
