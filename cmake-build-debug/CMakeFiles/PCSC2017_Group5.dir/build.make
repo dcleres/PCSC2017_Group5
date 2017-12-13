@@ -177,28 +177,28 @@ CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.provides: CMakeFiles/PCSC2017_Grou
 CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
 
 
-CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
-CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o: ../Polynomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp
+CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
+CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o: ../LeastSquare.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o -c /home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp
 
-CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp > CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.i
+CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp > CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i
 
-CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp -o CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.s
+CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp -o CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
 
-CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.requires:
+CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires:
 
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.requires
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires
 
-CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.requires
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.provides.build
-.PHONY : CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.provides
+CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides.build
+.PHONY : CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides
 
-CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o
+CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.provides.build: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
 
 
 CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o: CMakeFiles/PCSC2017_Group5.dir/flags.make
@@ -280,7 +280,7 @@ PCSC2017_Group5_OBJECTS = \
 "CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o" \
-"CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o" \
+"CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o" \
 "CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"
@@ -293,7 +293,7 @@ PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/readFile.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o
-PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o
+PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o
 PCSC2017_Group5: CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o
@@ -312,7 +312,7 @@ CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/readFile
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o.requires
-CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o.requires
+CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o.requires
 CMakeFiles/PCSC2017_Group5.dir/requires: CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o.requires

@@ -1,11 +1,6 @@
-//
-// Created by pcsc on 12/11/17.
-//
-
-
 #include "Test.h"
 #include "gnuplot_i.hpp"
-
+#include "Graph.h"
 
 
 double Test::testFourier() {
@@ -50,6 +45,7 @@ Test::Test()
     mApproxData = data;
     mRealData = data;
     mDataToApproximate = data;
+
     //INIT THE VECTORS
     string filenameApprox("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
     string filenameReal("/home/pcsc/Desktop/PCSC2017_Group5/data/realDataSin.dat");
@@ -61,44 +57,71 @@ Test::Test()
     readFileReal.loadFromFile(mRealData);               //Actual Data
     readFileTest.loadFromFileTest(mDataToApproximate);  //data to interpolate
 
-    //PieceWiseContinuePolynomial piecewise(mRealData);
-    //mPiecewise = piecewise;
 }
 
 double Test::testLeastSquares() {
 
+    Graph graph(mApproxData);
     Polynomial poly;
-    vector<double> a(poly.solve(mApproxData.heights, mApproxData.weights,
-                                mDegree));                  // we found the coefficient by the least square method minimizibg the loss. a is a vector with the coefficients searched.
-    vector<double> y(10 *
-                     mApproxData.heights.size());                                            //y will have the polynomial approximation thanks to the coefficients we found
+    vector <double> a (poly.solve(mApproxData.heights,mApproxData.weights, mDegree_leastsquare));                  // we found the coefficient by the least square method minimizibg the loss. a is a vector with the coefficients searched.
+    vector<double>x(graph.make_x_points());
+    vector<double>y(x.size());
 
-    cout << "The interpolation polynome is : ";
-    for (size_t i(0); i < (mDegree + 1); i++) {
-        cout << " + (" << a[i] << ")" << "x^" << i;
+    cout<< "The interpolation polynome is : ";
+    for (size_t i(0); i < (mDegree_leastsquare+1);i++){
+        cout<<" + ("<<a[i]<<")"<<"x^"<<i;
     }
-    cout << endl;
-    vector<double> x(10 *
-                     mApproxData.heights.size());                                            //We choose to put 10 points of approximation between each point we have in the data set
-    for (size_t count(0); count < (mApproxData.heights.size() -
-                                   1); ++count) {                          //The for loop help us to augment the number of point on which we will apply our approximation
-        for (size_t d(0); d < 10; ++d) {
-            x[count * 10 + d] = (((mApproxData.heights[count] - mApproxData.heights[count + 1]) / 10) * d) +
-                                mApproxData.heights[count];
-        }
-    }
-    for (size_t j(0); j < 10 * mApproxData.heights.size(); ++j) {
-        for (size_t i(0); i < (mDegree + 1); i++) {
-            y[j] += pow(x[j], i) *
-                    a[i];                                                     //we apply the least square coefficient to find the approimation
+    for (size_t j(0); j<x.size(); ++j)
+    {
+        for (size_t i(0); i < (mDegree_leastsquare+1); i++)
+        {
+            y[j]+=pow(x[j],i)*a[i];                                                     //we apply the least square coefficient to find the approimation
         }
     }
 
+    double accuracy(generate_test(x,y));
+}
+
+double Test::testLagrange() {
+    Graph graph(mApproxData);
+    vector<double> x(graph.make_x_points());
+    vector<double> y(x.size());
+    Lagrange lagrange;
+    for (size_t j(0); j < x.size(); ++j) {
+        y[j] = lagrange.solve(mApproxData.heights, mApproxData.weights, x[j]);                  //we apply the lagrange formula to each augmented set of x points.
+    }
+    double acccuracy(generate_test(x,y));
+}
+
+double Test::testLeastSquaresPieceWise() {
+    Graph graph(mApproxData);
+    vector<double>x(graph.make_x_points());
+    PieceWiseContinuePolynomial piece (mApproxData);
+    vector<vector<double>>point(piece.solve_least_square_degree(mDegree_PW_leastsquare, Intervalle,x));
+    double acccuracy(generate_test(point[0],point[1]));
+}
+
+double Test::testLagrangePiecewise() {
+    Graph graph(mApproxData);
+    vector<double>x(graph.make_x_points());
+    PieceWiseContinuePolynomial piece (mApproxData);
+    vector <vector<double>> approx(piece.solve_lagrange_degree(Intervalle, x));
+    double acccuracy(generate_test(approx[0],approx[1]));
+}
+
+bool Test::CompareDoubles2 (double const& A, double const& B) const
+{
+    double const EPSILON = 0.5;
+    double diff (A - B);
+    return (diff < EPSILON) && (-diff < EPSILON);
+}
+
+double Test::generate_test(vector<double>x,vector<double>y){
     //GENERATE THE CONTROL VALUES
     vector<double> controlY;
     for (auto const& element : x)
     {
-        controlY.push_back(sin(element));
+        controlY.push_back(cos(M_PI*element));
     }
 
     ///Plot///
@@ -112,8 +135,8 @@ double Test::testLeastSquares() {
 
     size_t counter(0);
 
-    for (size_t i(0); i < mRealData.weights.size(); i++) {
-        if (CompareDoubles2(y[i], mRealData.weights[i])) {
+    for (size_t i(0); i < controlY.size(); i++) {
+        if (CompareDoubles2(y[i], controlY[i])) {
             counter++;
         }
         cout << "input" << x[i] << " " << x[i] << endl;
@@ -122,23 +145,4 @@ double Test::testLeastSquares() {
 
     cout << counter << " " << x.size();
     return counter / x.size();
-}
-
-bool Test::CompareDoubles2 (double const& A, double const& B) const
-{
-    double const EPSILON = 0.5;
-    double diff (A - B);
-    return (diff < EPSILON) && (-diff < EPSILON);
-}
-
-double Test::testLagrange() {
-    return 0;
-}
-
-double Test::testLeastSquaresPieceWise() {
-    return 0;
-}
-
-double Test::testLagrangePiecewise() {
-    return 0;
 }

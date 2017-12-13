@@ -25,7 +25,7 @@ void Graph :: make_graph_least_square(size_t const& degree)
     }
 
 
-    for (size_t j(0); j<10*mData.heights.size(); ++j)
+    for (size_t j(0); j<x.size(); ++j)
     {
         for (size_t i(0); i < (degree+1); i++)
         {

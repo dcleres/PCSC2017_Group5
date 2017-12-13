@@ -102,16 +102,16 @@
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
+		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h">
+			<Option target="PCSC2017_Group5"/>
+		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.cpp">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.h">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp">
-			<Option target="PCSC2017_Group5"/>
-		</Unit>
-		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h">
 			<Option target="PCSC2017_Group5"/>
 		</Unit>
 		<Unit filename="/home/pcsc/Desktop/PCSC2017_Group5/Test.cpp">

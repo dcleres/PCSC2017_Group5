@@ -31,8 +31,8 @@ cmath
 -
 Graph.h
 /home/pcsc/Desktop/PCSC2017_Group5/Graph.h
-Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+LeastSquare.h
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
 gnuplot_i.hpp
 /home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
 PieceWiseContinuePolynomial.h
@@ -66,6 +66,20 @@ algorithm
 readFile.h
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.cpp
+cmath
+-
+iostream
+-
+readFile.h
+/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
+LeastSquare.h
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
+
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
+array
+-
+
 /home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.cpp
 iostream
 -
@@ -75,8 +89,8 @@ readFile.h
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 PieceWiseContinuePolynomial.h
 /home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.h
-Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+LeastSquare.h
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
 Lagrange.h
 /home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
 
@@ -90,31 +104,19 @@ cmath
 readFile.h
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.cpp
-cmath
--
-iostream
--
-readFile.h
-/home/pcsc/Desktop/PCSC2017_Group5/readFile.h
-Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
-
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
-array
--
-
 /home/pcsc/Desktop/PCSC2017_Group5/Test.cpp
 Test.h
 /home/pcsc/Desktop/PCSC2017_Group5/Test.h
 gnuplot_i.hpp
 /home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
+Graph.h
+/home/pcsc/Desktop/PCSC2017_Group5/Graph.h
 
 /home/pcsc/Desktop/PCSC2017_Group5/Test.h
 FFTreal.h
 /home/pcsc/Desktop/PCSC2017_Group5/FFTreal.h
-Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+LeastSquare.h
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
 PieceWiseContinuePolynomial.h
 /home/pcsc/Desktop/PCSC2017_Group5/PieceWiseContinuePolynomial.h
 Lagrange.h
@@ -169,8 +171,8 @@ readFile.h
 /home/pcsc/Desktop/PCSC2017_Group5/readFile.h
 gnuplot_i.hpp
 /home/pcsc/Desktop/PCSC2017_Group5/gnuplot_i.hpp
-Polynomial.h
-/home/pcsc/Desktop/PCSC2017_Group5/Polynomial.h
+LeastSquare.h
+/home/pcsc/Desktop/PCSC2017_Group5/LeastSquare.h
 Lagrange.h
 /home/pcsc/Desktop/PCSC2017_Group5/Lagrange.h
 Graph.h

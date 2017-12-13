@@ -71,11 +71,16 @@ public:
      */
     bool CompareDoubles2 (double const& A, double const& B) const;
 
+    double generate_test(vector<double>x,vector<double>y);
+
 private:
     Data mDataToApproximate;
     Data mApproxData;
     Data mRealData;
     size_t mDegree = 50;
+    size_t mDegree_leastsquare = 8;
+    size_t Intervalle = 6;
+    size_t mDegree_PW_leastsquare = 1;
 };
 
 #endif //PCSC2017_GROUP5_TEST_H

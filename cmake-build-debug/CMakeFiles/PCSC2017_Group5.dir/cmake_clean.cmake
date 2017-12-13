@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PCSC2017_Group5.dir/FFTreal.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/gnuplot_i.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.o"
-  "CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o"
+  "CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Graph.cpp.o"
   "CMakeFiles/PCSC2017_Group5.dir/Test.cpp.o"

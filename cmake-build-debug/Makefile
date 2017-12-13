@@ -204,6 +204,33 @@ Lagrange.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Lagrange.cpp.s
 .PHONY : Lagrange.cpp.s
 
+LeastSquare.o: LeastSquare.cpp.o
+
+.PHONY : LeastSquare.o
+
+# target to build an object file
+LeastSquare.cpp.o:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.o
+.PHONY : LeastSquare.cpp.o
+
+LeastSquare.i: LeastSquare.cpp.i
+
+.PHONY : LeastSquare.i
+
+# target to preprocess a source file
+LeastSquare.cpp.i:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.i
+.PHONY : LeastSquare.cpp.i
+
+LeastSquare.s: LeastSquare.cpp.s
+
+.PHONY : LeastSquare.s
+
+# target to generate assembly for a file
+LeastSquare.cpp.s:
+	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/LeastSquare.cpp.s
+.PHONY : LeastSquare.cpp.s
+
 PieceWiseContinuePolynomial.o: PieceWiseContinuePolynomial.cpp.o
 
 .PHONY : PieceWiseContinuePolynomial.o
@@ -230,33 +257,6 @@ PieceWiseContinuePolynomial.s: PieceWiseContinuePolynomial.cpp.s
 PieceWiseContinuePolynomial.cpp.s:
 	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/PieceWiseContinuePolynomial.cpp.s
 .PHONY : PieceWiseContinuePolynomial.cpp.s
-
-Polynomial.o: Polynomial.cpp.o
-
-.PHONY : Polynomial.o
-
-# target to build an object file
-Polynomial.cpp.o:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.o
-.PHONY : Polynomial.cpp.o
-
-Polynomial.i: Polynomial.cpp.i
-
-.PHONY : Polynomial.i
-
-# target to preprocess a source file
-Polynomial.cpp.i:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.i
-.PHONY : Polynomial.cpp.i
-
-Polynomial.s: Polynomial.cpp.s
-
-.PHONY : Polynomial.s
-
-# target to generate assembly for a file
-Polynomial.cpp.s:
-	$(MAKE) -f CMakeFiles/PCSC2017_Group5.dir/build.make CMakeFiles/PCSC2017_Group5.dir/Polynomial.cpp.s
-.PHONY : Polynomial.cpp.s
 
 Test.o: Test.cpp.o
 
@@ -384,12 +384,12 @@ help:
 	@echo "... Lagrange.o"
 	@echo "... Lagrange.i"
 	@echo "... Lagrange.s"
+	@echo "... LeastSquare.o"
+	@echo "... LeastSquare.i"
+	@echo "... LeastSquare.s"
 	@echo "... PieceWiseContinuePolynomial.o"
 	@echo "... PieceWiseContinuePolynomial.i"
 	@echo "... PieceWiseContinuePolynomial.s"
-	@echo "... Polynomial.o"
-	@echo "... Polynomial.i"
-	@echo "... Polynomial.s"
 	@echo "... Test.o"
 	@echo "... Test.i"
 	@echo "... Test.s"

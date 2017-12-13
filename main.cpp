@@ -228,7 +228,10 @@ int main()
     //TESTING
     Test test;
     //test.testFourier();
-    test.testLeastSquares();
+    //test.testLeastSquares();
+    //test.testLagrange();
+    //test.testLeastSquaresPieceWise();
+    test.testLagrangePiecewise();
 
     return 0;
 }
