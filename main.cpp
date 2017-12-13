@@ -1,6 +1,7 @@
 /*! \mainpage Data Approximation
  *
  * This project helps user to approximate data that he can her-/himself plug into the program using the data.dat file.
+ * 
  * Currently two types of shapes can be drawn:
  * - \subpage LagrangePolynomial Functions "How to use the Lagrange method?"
  *
