@@ -51,9 +51,9 @@ Test::Test()
     mRealData = data;
     mDataToApproximate = data;
     //INIT THE VECTORS
-    string filenameApprox("/home/pcsc/Desktop/PCSC2017_Group5/data/datasinxcos3x.dat");
-    string filenameReal("/home/pcsc/Desktop/PCSC2017_Group5/data/realData.dat");  //METTRE NOM ICI !!!!!!
-    string filenameTest("/home/pcsc/Desktop/PCSC2017_Group5/data/interpolationDataX.dat");
+    string filenameApprox("/home/pcsc/Desktop/PCSC2017_Group5/data/data.dat");
+    string filenameReal("/home/pcsc/Desktop/PCSC2017_Group5/data/realDataSin.dat");
+    string filenameTest("/home/pcsc/Desktop/PCSC2017_Group5/data/dataInterpolationX.dat");
     ReadFile readFileApprox(filenameApprox);
     ReadFile readFileReal(filenameReal);
     ReadFile readFileTest(filenameTest);
@@ -65,7 +65,7 @@ Test::Test()
     //mPiecewise = piecewise;
 }
 
-double Test::testLeatSquares() {
+double Test::testLeastSquares() {
 
     Polynomial poly;
     vector<double> a(poly.solve(mApproxData.heights, mApproxData.weights,
@@ -93,13 +93,22 @@ double Test::testLeatSquares() {
                     a[i];                                                     //we apply the least square coefficient to find the approimation
         }
     }
+
+    //GENERATE THE CONTROL VALUES
+    vector<double> controlY;
+    for (auto const& element : x)
+    {
+        controlY.push_back(sin(element));
+    }
+
     ///Plot///
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
     g1.plot_xy(x, y, "Approximation");
     sleep(2);
-    g1.plot_xy(mRealData.heights, mRealData.weights, "Default points");
+    g1.plot_xy(x, controlY, "Default points");
     sleep(20);
+
 
     size_t counter(0);
 
@@ -107,17 +116,29 @@ double Test::testLeatSquares() {
         if (CompareDoubles2(y[i], mRealData.weights[i])) {
             counter++;
         }
-        cout << "input" << x[i] << " " << mRealData.heights[i] << endl;
-        cout << "output" << y[i] << " " << mRealData.weights[i] << endl;
+        cout << "input" << x[i] << " " << x[i] << endl;
+        cout << "output" << y[i] << " " << controlY[i] << endl;
     }
 
-    cout << counter << " " << mRealData.weights.size();
-    return counter / mRealData.weights.size();
+    cout << counter << " " << x.size();
+    return counter / x.size();
 }
 
-bool Test::CompareDoubles2 (double const& A, double const& B)
+bool Test::CompareDoubles2 (double const& A, double const& B) const
 {
     double const EPSILON = 0.5;
     double diff (A - B);
     return (diff < EPSILON) && (-diff < EPSILON);
+}
+
+double Test::testLagrange() {
+    return 0;
+}
+
+double Test::testLeastSquaresPieceWise() {
+    return 0;
+}
+
+double Test::testLagrangePiecewise() {
+    return 0;
 }

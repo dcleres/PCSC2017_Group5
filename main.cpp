@@ -226,9 +226,9 @@ int main()
     }
 
     //TESTING
-    //Test test;
+    Test test;
     //test.testFourier();
-    //test.testLeatSquares();
+    test.testLeastSquares();
 
     return 0;
 }
