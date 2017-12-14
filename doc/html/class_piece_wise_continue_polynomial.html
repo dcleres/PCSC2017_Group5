@@ -77,16 +77,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f3e40054d55cacc9079084683e259e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece_wise_continue_polynomial.html#a1f3e40054d55cacc9079084683e259e7">PieceWiseContinuePolynomial</a> (<a class="el" href="struct_data.html">Data</a> const &amp;data)</td></tr>
 <tr class="memdesc:a1f3e40054d55cacc9079084683e259e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a1f3e40054d55cacc9079084683e259e7">More...</a><br /></td></tr>
 <tr class="separator:a1f3e40054d55cacc9079084683e259e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39966b5bfa4d0ca686eb4fa191dbfa7c"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece_wise_continue_polynomial.html#a39966b5bfa4d0ca686eb4fa191dbfa7c">solve_least_square</a> (size_t const &amp;degree, int const &amp;Intervale, vector&lt; double &gt; const &amp;x_plot) const</td></tr>
-<tr class="separator:a39966b5bfa4d0ca686eb4fa191dbfa7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19731122369c27f68802687e7d64aaf5"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece_wise_continue_polynomial.html#a19731122369c27f68802687e7d64aaf5">solve_lagrange</a> (int const &amp;Intervalle, vector&lt; double &gt; const &amp;x_plot) const</td></tr>
-<tr class="memdesc:a19731122369c27f68802687e7d64aaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">solves by using lagrange  <a href="#a19731122369c27f68802687e7d64aaf5">More...</a><br /></td></tr>
-<tr class="separator:a19731122369c27f68802687e7d64aaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f2d2cb02806e8866ea6b8c36434200"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece_wise_continue_polynomial.html#ac0f2d2cb02806e8866ea6b8c36434200">solve_least_square_degree</a> (size_t const &amp;degree, size_t const &amp;Intervalle, vector&lt; double &gt; const &amp;x_plot) const</td></tr>
+<tr class="separator:ac0f2d2cb02806e8866ea6b8c36434200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d69630f929742ccc6f1a411cf5d9c15"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece_wise_continue_polynomial.html#a8d69630f929742ccc6f1a411cf5d9c15">solve_lagrange_degree</a> (size_t const &amp;Intervalle, vector&lt; double &gt; const &amp;x_plot) const</td></tr>
+<tr class="memdesc:a8d69630f929742ccc6f1a411cf5d9c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">solves by using lagrange  <a href="#a8d69630f929742ccc6f1a411cf5d9c15">More...</a><br /></td></tr>
+<tr class="separator:a8d69630f929742ccc6f1a411cf5d9c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>(Note, this needs exactly one </p>
 
-<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8h_source.html#l00036">36</a> of file <a class="el" href="_piece_wise_continue_polynomial_8h_source.html">PieceWiseContinuePolynomial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8h_source.html#l00034">34</a> of file <a class="el" href="_piece_wise_continue_polynomial_8h_source.html">PieceWiseContinuePolynomial.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1f3e40054d55cacc9079084683e259e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f3e40054d55cacc9079084683e259e7">&#9670;&nbsp;</a></span>PieceWiseContinuePolynomial()</h2>
@@ -120,21 +120,21 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html#l00087">87</a> of file <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html">PieceWiseContinuePolynomial.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html#l00116">116</a> of file <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html">PieceWiseContinuePolynomial.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a19731122369c27f68802687e7d64aaf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19731122369c27f68802687e7d64aaf5">&#9670;&nbsp;</a></span>solve_lagrange()</h2>
+<a id="a8d69630f929742ccc6f1a411cf5d9c15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d69630f929742ccc6f1a411cf5d9c15">&#9670;&nbsp;</a></span>solve_lagrange_degree()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; double &gt; PieceWiseContinuePolynomial::solve_lagrange </td>
+          <td class="memname">vector&lt; vector&lt; double &gt; &gt; PieceWiseContinuePolynomial::solve_lagrange_degree </td>
           <td>(</td>
-          <td class="paramtype">int const &amp;&#160;</td>
+          <td class="paramtype">size_t const &amp;&#160;</td>
           <td class="paramname"><em>Intervalle</em>, </td>
         </tr>
         <tr>
@@ -159,19 +159,20 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>matrix containing the solved linear system </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html#l00051">51</a> of file <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html">PieceWiseContinuePolynomial.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html#l00010">10</a> of file <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html">PieceWiseContinuePolynomial.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a39966b5bfa4d0ca686eb4fa191dbfa7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39966b5bfa4d0ca686eb4fa191dbfa7c">&#9670;&nbsp;</a></span>solve_least_square()</h2>
+<a id="ac0f2d2cb02806e8866ea6b8c36434200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f2d2cb02806e8866ea6b8c36434200">&#9670;&nbsp;</a></span>solve_least_square_degree()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; double &gt; PieceWiseContinuePolynomial::solve_least_square </td>
+          <td class="memname">vector&lt; vector&lt; double &gt; &gt; PieceWiseContinuePolynomial::solve_least_square_degree </td>
           <td>(</td>
           <td class="paramtype">size_t const &amp;&#160;</td>
           <td class="paramname"><em>degree</em>, </td>
@@ -179,8 +180,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int const &amp;&#160;</td>
-          <td class="paramname"><em>Intervale</em>, </td>
+          <td class="paramtype">size_t const &amp;&#160;</td>
+          <td class="paramname"><em>Intervalle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,8 +204,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>matrix containing the solved linear system </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html#l00011">11</a> of file <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html">PieceWiseContinuePolynomial.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html#l00060">60</a> of file <a class="el" href="_piece_wise_continue_polynomial_8cpp_source.html">PieceWiseContinuePolynomial.cpp</a>.</p>
 
 </div>
 </div>
