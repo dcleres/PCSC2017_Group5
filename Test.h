@@ -21,7 +21,6 @@
 #ifndef PCSC2017_GROUP5_TEST_H
 #define PCSC2017_GROUP5_TEST_H
 
-
 #include "FFTreal.h"
 #include "LeastSquare.h"
 #include "PieceWiseContinuePolynomial.h"
@@ -29,8 +28,8 @@
 
 class Test {
 public:
-    /** \brief Computes the discrete Fourier transform (DFT) of the given complex vector, storing the result back into the vector.
-     * The vector can have any length. This is a wrapper function
+
+    /** \brief Constructor of the class. Defines the values of all the class attributes.
      */
     Test();
 
@@ -71,7 +70,13 @@ public:
      */
     bool CompareDoubles2 (double const& A, double const& B) const;
 
-    double generate_test(vector<double>x,vector<double>y);
+    /**\brief returns a the fraction of correct interpolations performed by the code. During the execution of the code
+     * all the framework necessary to perform the test is also implemented.
+    * \param x is a vector containing the interpolated data
+    * \param y is a vector containing the control data
+    * \return fraction of correct interpolated data.
+    */
+    double generate_test(vector<double> const& x,vector<double> const& y) const;
 
 private:
     Data mDataToApproximate;

@@ -36,37 +36,37 @@ public:
     /** \brief plots the graph for the least square regression
      * \param degree is a positive integer that represents the degree of the fitted polynome
      */
-    void make_graph_least_square(size_t const& degree);
+    void make_graph_least_square(size_t const& degree) const;
 
     /** \brief plots the graph for the lagrange polynoma regression
      */
-    void make_graph_lagrange();
+    void make_graph_lagrange() const;
 
     /** \brief Plots the graph for the least square regression
      * \param degree is a positive integer that represents the degree of the fitted polynome
      * \param intervalle is the intervall for the the leat square method
      */
-    void make_graph_piece_wise_least_squares(size_t const& degree, int const& intervalle);
+    void make_graph_piece_wise_least_squares(size_t const& degree, size_t const& intervalle) const;
 
     /** \brief Plots the graph for the lagrange regression
     * \param intervalle is the intervall for the the leat square method
     */
-    void make_graph_piece_wise_lagrange(int const& intervalle);
+    void make_graph_piece_wise_lagrange(size_t const& intervalle) const;
 
     /** \brief Plots the graph for fourier approximation
      * \param data_original is the data as it is in the file
      */
-    void make_graph_FFT(Data data_original);
+    void make_graph_FFT(Data data_original) const;
 
     /** \brief Create augmented x data set.
      * \param no parameters
      */
-    vector<double> make_x_points();
+    vector<double> make_x_points() const;
 
     /** \brief Create the plot with the library
      * \param x and y which are the vector of values we want to plot.
      */
-    void make_graph(vector<double> const& x , vector<double> const& y);
+    void make_graph(vector<double> const& x , vector<double> const& y) const;
 
 private:
     Data mData;

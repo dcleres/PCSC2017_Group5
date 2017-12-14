@@ -94,6 +94,7 @@ int main()
     cin >> choice_input;
 
     size_t choice, choiceFunction;
+
     //Makes a copy of the input data since it is taken by reference in the rest of the program
     size_t degree;
     size_t intervalle;
@@ -226,12 +227,16 @@ int main()
     }
 
     //TESTING
+    cout << "Testing Starts ..." << endl;
     Test test;
-    //test.testFourier();
-    //test.testLeastSquares();
-    //test.testLagrange();
-    //test.testLeastSquaresPieceWise();
-    test.testLagrangePiecewise();
+
+    cout << "==================== TEST RESULTS ===============================" << endl;
+    cout << "FOURIER: The fraction of correctly interpolated values is: " << test.testFourier() << endl;
+    cout << "LEAST SQUARES: The fraction of correctly interpolated values is: " << test.testLeastSquares() << endl;
+    cout << "LAGRANGE: The fraction of correctly interpolated values is: " << test.testLagrange() << endl;
+    cout << "LEAST SQUARES PIECEWISE: The fraction of correctly interpolated values is: " << test.testLeastSquaresPieceWise() << endl;
+    cout << "LAGRANGE PIECEWISE: The fraction of correctly interpolated values is: " << test.testLagrangePiecewise() << endl;
+    cout << "==================== TEST FINISHED ==============================" << endl;
 
     return 0;
 }

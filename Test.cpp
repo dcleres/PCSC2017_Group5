@@ -56,14 +56,13 @@ Test::Test()
     readFileApprox.loadFromFile(mApproxData);           //Data to train the model
     readFileReal.loadFromFile(mRealData);               //Actual Data
     readFileTest.loadFromFileTest(mDataToApproximate);  //data to interpolate
-
 }
 
-double Test::testLeastSquares() {
-
+double Test::testLeastSquares()
+{
     Graph graph(mApproxData);
     Polynomial poly;
-    vector <double> a (poly.solve(mApproxData.heights,mApproxData.weights, mDegree_leastsquare));                  // we found the coefficient by the least square method minimizibg the loss. a is a vector with the coefficients searched.
+    vector <double> a (poly.solve(mApproxData.heights,mApproxData.weights, mDegree_leastsquare));     // we found the coefficient by the least square method minimizibg the loss. a is a vector with the coefficients searched.
     vector<double>x(graph.make_x_points());
     vector<double>y(x.size());
 
@@ -75,25 +74,27 @@ double Test::testLeastSquares() {
     {
         for (size_t i(0); i < (mDegree_leastsquare+1); i++)
         {
-            y[j]+=pow(x[j],i)*a[i];                                                     //we apply the least square coefficient to find the approimation
+            y[j]+=pow(x[j],i)*a[i];                                              //we apply the least square coefficient to find the approimation
         }
     }
 
     double accuracy(generate_test(x,y));
 }
 
-double Test::testLagrange() {
+double Test::testLagrange()
+{
     Graph graph(mApproxData);
     vector<double> x(graph.make_x_points());
     vector<double> y(x.size());
     Lagrange lagrange;
     for (size_t j(0); j < x.size(); ++j) {
-        y[j] = lagrange.solve(mApproxData.heights, mApproxData.weights, x[j]);                  //we apply the lagrange formula to each augmented set of x points.
+        y[j] = lagrange.solve(mApproxData.heights, mApproxData.weights, x[j]);      //we apply the lagrange formula to each augmented set of x points.
     }
     double acccuracy(generate_test(x,y));
 }
 
-double Test::testLeastSquaresPieceWise() {
+double Test::testLeastSquaresPieceWise()
+{
     Graph graph(mApproxData);
     vector<double>x(graph.make_x_points());
     PieceWiseContinuePolynomial piece (mApproxData);
@@ -101,7 +102,8 @@ double Test::testLeastSquaresPieceWise() {
     double acccuracy(generate_test(point[0],point[1]));
 }
 
-double Test::testLagrangePiecewise() {
+double Test::testLagrangePiecewise()
+{
     Graph graph(mApproxData);
     vector<double>x(graph.make_x_points());
     PieceWiseContinuePolynomial piece (mApproxData);
@@ -116,7 +118,8 @@ bool Test::CompareDoubles2 (double const& A, double const& B) const
     return (diff < EPSILON) && (-diff < EPSILON);
 }
 
-double Test::generate_test(vector<double>x,vector<double>y){
+double Test::generate_test(vector<double> const& x,vector<double> const& y) const
+{
     //GENERATE THE CONTROL VALUES
     vector<double> controlY;
     for (auto const& element : x)
@@ -131,7 +134,6 @@ double Test::generate_test(vector<double>x,vector<double>y){
     sleep(2);
     g1.plot_xy(x, controlY, "Default points");
     sleep(20);
-
 
     size_t counter(0);
 

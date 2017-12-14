@@ -1,7 +1,21 @@
 /**
- * \file readFile.h
- * \class Reafile
- * \brief This is a simple positions accessor
+ * \class ReadFile
+ *
+ * \ingroup PackageName
+ * (Note, this needs exactly one \defgroup somewhere)
+ *
+ * \brief This is the class that is able to read and to write in files.
+ *
+ * \note Mandatory Part of the project
+ *
+ * \author (last to touch it) $Author: DC & NL$
+ *
+ * \version $Revision: 1.0 $
+ *
+ * \date $Date: 2017.12.11 $
+ *
+ * Contact: david.cleres@epfl.ch & nicolas.lesimple@epfl.ch
+ *
  */
 
 #ifndef PCSC2017_GROUP5_READFILE_H
@@ -25,7 +39,6 @@ typedef struct {
     double x;
     double y;
 } point_t;
-
 
 class ReadFile
 {

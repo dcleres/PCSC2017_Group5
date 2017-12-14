@@ -4,8 +4,7 @@
  * \ingroup PackageName
  * (Note, this needs exactly one \defgroup somewhere)
  *
- * \brief This is the function to call to perform the FFT of a given set of values but also to implement the data
- * approximation by computing the fourier series coefficients.
+ * \brief This is the function to call to perform the Least Square Regression by pieces  of a given set of values
  *
  * \file PieceWiseContinuePolynomial.h
  *
@@ -23,7 +22,6 @@
 
 #ifndef PROJECT_PIECEWISE_CONTINUE_POLYNOMIAL_H
 #define PROJECT_PIECEWISE_CONTINUE_POLYNOMIAL_H
-
 
 #include <iostream>
 #include <cassert>
@@ -46,19 +44,19 @@ public:
      * \param degree degree of the polynome
      * \param Intervale
      * \param x_plot gives the x axis values of the plot
+     * \return matrix containing the solved linear system
      */
-    vector<vector<double>> solve_least_square_degree(size_t const& degree,int const& Intervalle,vector<double> const& x_plot) const;
+    vector<vector<double>> solve_least_square_degree(size_t const& degree, size_t const& Intervalle, vector<double> const& x_plot) const;
 
     /**\brief solves by using lagrange
      * \param Intervalle
      * \param x_plot gives the x axis values of the plot
+     * \return matrix containing the solved linear system
      */
-
-    vector<vector<double>> solve_lagrange_degree(int const& Intervalle, vector<double> const& x_plot) const;
+    vector<vector<double>> solve_lagrange_degree(size_t const& Intervalle, vector<double> const& x_plot) const;
 
 private:
     Data mData;
-
 };
 
 #endif //PROJECT_PIECEWISE_CONTINUE_POLYNOMIAL_H

@@ -1,3 +1,4 @@
-/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir
+/Users/davidcleres/CLionProjects/PCSC2017_Group5/cmake-build-debug/CMakeFiles/doc.dir

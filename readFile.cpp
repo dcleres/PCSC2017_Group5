@@ -21,9 +21,6 @@ void ReadFile::loadFromFile(Data& data) const
     if (!in)
         throw std::runtime_error("Couldn't open file <" + mFilename + ">");
 
-    //string firstline("");
-    //getline(in, firstline);
-    //cout << firstline << endl;
     while (!in.eof())
     {
         std::string bufferGender;
@@ -54,7 +51,8 @@ ReadFile::ReadFile (std::string const& filename)
     : mFilename(filename)
     {}
 
-void ReadFile::loadFromFileTest(Data &data) const {
+void ReadFile::loadFromFileTest(Data &data) const
+{
     std::cerr << "Reloading world from file <" << mFilename << ">" << std::endl;
     std::ifstream in (mFilename);
 
@@ -65,9 +63,6 @@ void ReadFile::loadFromFileTest(Data &data) const {
     if (!in)
         throw std::runtime_error("Couldn't open file <" + mFilename + ">");
 
-    //string firstline("");
-    //getline(in, firstline);
-    //cout << firstline << endl;
     while (!in.eof())
     {
         std::string bufferGender;
@@ -90,18 +85,21 @@ void ReadFile::loadFromFileTest(Data &data) const {
     in.close();
 }
 
-std::string ReadFile::getFilename() const {
+std::string ReadFile::getFilename() const
+{
     return mFilename;
 }
 
-void ReadFile::show(Data const& data) const {
+void ReadFile::show(Data const& data) const
+{
     for (size_t i(0); i < data.heights.size(); i++) {
         cout << "Height: " << data.heights[i] << "\t";
         cout << "Weight:" << data.weights[i] << endl;
     }
 }
 
-void ReadFile::writeFile(Data const& data) const {
+void ReadFile::writeFile(Data const& data) const
+{
     ofstream myfile;
     myfile.open ("output.txt");
 
@@ -112,7 +110,8 @@ void ReadFile::writeFile(Data const& data) const {
     myfile.close();
 }
 
-std::vector<size_t> ReadFile::loadFromFileConfig() const {
+std::vector<size_t> ReadFile::loadFromFileConfig() const
+{
     vector<size_t > configData;
 
     std::cerr << "Reloading world from file <" << mFilename << ">" << std::endl;

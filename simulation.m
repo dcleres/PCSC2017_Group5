@@ -2,11 +2,11 @@ clear all
 close all 
 clc 
 
-x = linspace(-pi, pi, 20)
+x = linspace(-pi, pi, 15)
 
 Y = cos(pi*x)
 
-answ = fft(cos(pi*x), 20)
+answ = fft(cos(pi*x), 15)
 
 %plot(x, ans')
 

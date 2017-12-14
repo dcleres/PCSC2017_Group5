@@ -7,7 +7,7 @@
 
 using namespace std ;
 
-vector<vector<double>> PieceWiseContinuePolynomial::solve_lagrange_degree(int const& degree, vector<double> const& x_plot) const
+vector<vector<double>> PieceWiseContinuePolynomial::solve_lagrange_degree(size_t const& degree, vector<double> const& x_plot) const
 {
     size_t N  (mData.heights.size());
     size_t nb_intervalle (degree+1);
@@ -16,18 +16,17 @@ vector<vector<double>> PieceWiseContinuePolynomial::solve_lagrange_degree(int co
     vector<vector<double>> x(Intervalle, vector<double>(0));                                     //We declare the matrix that we will need to store in each line each point of just one interval.
     vector<vector<double>> y(Intervalle, vector<double>(0));                                    //Each line correspond to one interval and each colunm in one line correspond to one point in the interval
     for (size_t i(1); i <= Intervalle; ++i) {
-
-            for (size_t j((nb_intervalle) * (i - 1)); j <= (nb_intervalle * i); ++j) {          //We use push back to avoid problem with index and thus we enter the points of one interval in each line
-                x[i - 1].push_back(mData.heights[j]);
-                y[i - 1].push_back(mData.weights[j]);
-                if (i == Intervalle and reste != 0 and j==nb_intervalle*Intervalle) {        //We have separate the data in a number of intervals by using the degree and the number of points in the dataset
-                    for (size_t z(1); z < reste; z++) {                                      //It's possible that the division is not perfect and thus we need to take into account the residue.
-                        x[i - 1].push_back(mData.heights[j + z]);                            //The residue correspond to some points that we will put in the last interval as you can see on this for loop with the condition.
-                        y[i - 1].push_back(mData.weights[j + z]);                            //These conditions make us know that we are on the last interval and that there is a residue.
-                    }
+        for (size_t j((nb_intervalle) * (i - 1)); j <= (nb_intervalle * i); ++j) {          //We use push back to avoid problem with index and thus we enter the points of one interval in each line
+            x[i - 1].push_back(mData.heights[j]);
+            y[i - 1].push_back(mData.weights[j]);
+            if (i == Intervalle and reste != 0 and j==nb_intervalle*Intervalle) {        //We have separate the data in a number of intervals by using the degree and the number of points in the dataset
+                for (size_t z(1); z < reste; z++) {                                      //It's possible that the division is not perfect and thus we need to take into account the residue.
+                    x[i - 1].push_back(mData.heights[j + z]);                            //The residue correspond to some points that we will put in the last interval as you can see on this for loop with the condition.
+                    y[i - 1].push_back(mData.weights[j + z]);                            //These conditions make us know that we are on the last interval and that there is a residue.
                 }
             }
         }
+    }
     vector<vector<double>> approx(2,vector<double>(0));                                      //We declare the matrix that we will return. It's a matrix with two line where the first line correspond to the x and the second line to the y
     for (int i(1); i <= Intervalle; i++) {
         vector<double> tmpx(0);                                                              //We will use vector to take each line of the matrix x and y to then apply it on the lagrange function.
@@ -58,7 +57,7 @@ vector<vector<double>> PieceWiseContinuePolynomial::solve_lagrange_degree(int co
 }
 
 
-vector<vector<double>> PieceWiseContinuePolynomial::solve_least_square_degree(size_t const& degree,int const& Intervalle,vector<double> const& x_plot) const
+vector<vector<double>> PieceWiseContinuePolynomial::solve_least_square_degree(size_t const& degree, size_t const& Intervalle,vector<double> const& x_plot) const
 {
     size_t N  (mData.heights.size());
     size_t nb_intervalle (N / Intervalle);

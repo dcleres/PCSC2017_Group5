@@ -12,7 +12,7 @@ Graph :: Graph(Data const& data)
 {}
 
 ////////////////LeastSquare//////////////////////////////
-void Graph :: make_graph_least_square(size_t const& degree)
+void Graph :: make_graph_least_square(size_t const& degree) const
 {
     Polynomial poly;
     vector <double> a (poly.solve(mData.heights,mData.weights, degree));                  // we found the coefficient by the least square method minimizibg the loss. a is a vector with the coefficients searched.
@@ -23,7 +23,6 @@ void Graph :: make_graph_least_square(size_t const& degree)
     for (size_t i(0); i < (degree+1);i++){
         cout<<" + ("<<a[i]<<")"<<"x^"<<i;
     }
-
 
     for (size_t j(0); j<x.size(); ++j)
     {
@@ -37,7 +36,7 @@ void Graph :: make_graph_least_square(size_t const& degree)
 }
 
 /////////////////////////Lagrange/////////////////////////////
-void Graph :: make_graph_lagrange() {
+void Graph :: make_graph_lagrange() const {
     vector<double> x(make_x_points());
     vector<double> y(x.size());
     Lagrange lagrange;
@@ -49,18 +48,16 @@ void Graph :: make_graph_lagrange() {
     make_graph(x,y);
 }
 /////////////////////////PieceWise Least Square/////////////////////////////
-void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, int const& Intervalle)
+void Graph :: make_graph_piece_wise_least_squares(size_t const& degree, size_t const& Intervalle) const
 {
-
     vector<double>x(make_x_points());
     PieceWiseContinuePolynomial piece (mData);
     vector<vector<double>>point(piece.solve_least_square_degree(degree, Intervalle,x));         //We apply piece wise least square method.
     ///Plot///
     make_graph(point[0],point[1]);
-
 }
 /////////////////////////Piece Wise Lagrange/////////////////////////////
-void Graph :: make_graph_piece_wise_lagrange(int const& intervalle)
+void Graph :: make_graph_piece_wise_lagrange(size_t const& intervalle) const
 {
     vector<double>x(make_x_points());
     PieceWiseContinuePolynomial piece (mData);
@@ -69,7 +66,7 @@ void Graph :: make_graph_piece_wise_lagrange(int const& intervalle)
     make_graph(approx[0],approx[1]);
 }
 /////////////////////////FOURIER/////////////////////////////
-void Graph :: make_graph_FFT(Data data_original)
+void Graph :: make_graph_FFT(Data data_original) const
 {
     Data tmp = mData;
     //////////////////////// COMPUTE THE FFT /////////////////////////////////////////////////
@@ -89,7 +86,6 @@ void Graph :: make_graph_FFT(Data data_original)
     fft.transformCoefs(tmp.weights, an, bn, 2);
     vector<double> approx(fft.transformApproximation(an, bn, 2, data_original.weights));
 
-
     for (auto &element : ifft) {
         element /= ifft.size();
     }
@@ -107,7 +103,7 @@ void Graph :: make_graph_FFT(Data data_original)
     sleep(20);
 }
 
-vector<double> Graph :: make_x_points(){
+vector<double> Graph :: make_x_points() const{
     vector<double>x(10*(mData.heights.size()-1));                                            //The for loop help us to augment the number of point on which we will apply our approximation
     for(size_t count(0);count< (mData.heights.size()-1);++count) {
         for (size_t d(0); d < 10; ++d) {
@@ -117,7 +113,7 @@ vector<double> Graph :: make_x_points(){
     return x;
 }
 
-void Graph::make_graph(vector<double> const& x, vector<double>const& y){
+void Graph::make_graph(vector<double> const& x, vector<double>const& y) const {
     Gnuplot g1 = Gnuplot("lines");
     g1.set_style("points");
     g1.plot_xy(x,y,"Approximation");
