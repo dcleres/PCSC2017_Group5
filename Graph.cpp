@@ -66,7 +66,7 @@ void Graph :: make_graph_piece_wise_lagrange(size_t const& intervalle) const
     make_graph(approx[0],approx[1]);
 }
 /////////////////////////FOURIER/////////////////////////////
-void Graph :: make_graph_FFT(Data data_original) const
+void Graph :: make_graph_FFT(Data data_original)
 {
     Data tmp = mData;
     //////////////////////// COMPUTE THE FFT /////////////////////////////////////////////////

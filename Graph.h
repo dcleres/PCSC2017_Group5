@@ -6,7 +6,6 @@
  *
  * \brief This is class that enables us to plot the approximated data.
  *
- *
  * \note Mandatory part of the project
  *
  * \author (last to touch it) $Author: DC & NL$
@@ -56,7 +55,7 @@ public:
     /** \brief Plots the graph for fourier approximation
      * \param data_original is the data as it is in the file
      */
-    void make_graph_FFT(Data data_original) const;
+    void make_graph_FFT(Data data_original);
 
     /** \brief Create augmented x data set.
      * \param no parameters

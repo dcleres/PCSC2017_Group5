@@ -4,7 +4,6 @@
 
 
 double Test::testFourier() {
-
     FFTreal fft;
     size_t nbK(mApproxData.weights.size()); //number of ak and bk to compute
     vector<double> an(nbK, 0.0);
@@ -19,8 +18,6 @@ double Test::testFourier() {
         if (mDataToApproximate.heights[i] == mRealData.weights[i]) {
             counter++;
         }
-        cout << "input" << mDataToApproximate.weights[i] << " " << mRealData.heights[i] << endl;
-        cout << "output" << mDataToApproximate.heights[i] << " " << mRealData.weights[i] << endl;
     }
 
     //on doit plotter data_copy où on a changé les valeurs des x associée aux y.
@@ -29,9 +26,8 @@ double Test::testFourier() {
     g1.plot_xy(mDataToApproximate.weights, mDataToApproximate.heights, "Approximation");
     sleep(2);
     g1.plot_xy(mRealData.heights, mRealData.weights, "Real Data");
-    sleep(20);
+    sleep(5);
 
-    cout << counter << " " << mDataToApproximate.weights.size();
     return counter / mDataToApproximate.weights.size();
 }
 
@@ -70,15 +66,13 @@ double Test::testLeastSquares()
     for (size_t i(0); i < (mDegree_leastsquare+1);i++){
         cout<<" + ("<<a[i]<<")"<<"x^"<<i;
     }
-    for (size_t j(0); j<x.size(); ++j)
-    {
-        for (size_t i(0); i < (mDegree_leastsquare+1); i++)
-        {
-            y[j]+=pow(x[j],i)*a[i];                                              //we apply the least square coefficient to find the approimation
+    for (size_t j(0); j<x.size(); ++j) {
+        for (size_t i(0); i < (mDegree_leastsquare + 1); i++) {
+            y[j] += pow(x[j], i) *
+                    a[i];                                              //we apply the least square coefficient to find the approimation
         }
     }
-
-    double accuracy(generate_test(x,y));
+    return generate_test(x,y);
 }
 
 double Test::testLagrange()
@@ -90,7 +84,7 @@ double Test::testLagrange()
     for (size_t j(0); j < x.size(); ++j) {
         y[j] = lagrange.solve(mApproxData.heights, mApproxData.weights, x[j]);      //we apply the lagrange formula to each augmented set of x points.
     }
-    double acccuracy(generate_test(x,y));
+    return generate_test(x,y);
 }
 
 double Test::testLeastSquaresPieceWise()
@@ -99,7 +93,7 @@ double Test::testLeastSquaresPieceWise()
     vector<double>x(graph.make_x_points());
     PieceWiseContinuePolynomial piece (mApproxData);
     vector<vector<double>>point(piece.solve_least_square_degree(mDegree_PW_leastsquare, Intervalle,x));
-    double acccuracy(generate_test(point[0],point[1]));
+    return generate_test(point[0],point[1]);
 }
 
 double Test::testLagrangePiecewise()
@@ -108,7 +102,7 @@ double Test::testLagrangePiecewise()
     vector<double>x(graph.make_x_points());
     PieceWiseContinuePolynomial piece (mApproxData);
     vector <vector<double>> approx(piece.solve_lagrange_degree(Intervalle, x));
-    double acccuracy(generate_test(approx[0],approx[1]));
+    return generate_test(approx[0],approx[1]);
 }
 
 bool Test::CompareDoubles2 (double const& A, double const& B) const
@@ -133,7 +127,7 @@ double Test::generate_test(vector<double> const& x,vector<double> const& y) cons
     g1.plot_xy(x, y, "Approximation");
     sleep(2);
     g1.plot_xy(x, controlY, "Default points");
-    sleep(20);
+    sleep(5);
 
     size_t counter(0);
 
@@ -141,10 +135,6 @@ double Test::generate_test(vector<double> const& x,vector<double> const& y) cons
         if (CompareDoubles2(y[i], controlY[i])) {
             counter++;
         }
-        cout << "input" << x[i] << " " << x[i] << endl;
-        cout << "output" << y[i] << " " << controlY[i] << endl;
     }
-
-    cout << counter << " " << x.size();
     return counter / x.size();
 }
