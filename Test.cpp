@@ -107,7 +107,7 @@ double Test::testLagrangePiecewise()
 
 bool Test::CompareDoubles2 (double const& A, double const& B) const
 {
-    double const EPSILON = 0.5;
+    double const EPSILON = 0.2;
     double diff (A - B);
     return (diff < EPSILON) && (-diff < EPSILON);
 }
