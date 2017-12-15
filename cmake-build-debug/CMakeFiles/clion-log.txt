@@ -1,4 +1,4 @@
-/opt/clion-2017.2.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pcsc/Desktop/PCSC2017_Group5
+/opt/clion-2017.2.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pcsc/Documents/pcsc/PCSC2017_Group5
 -- The C compiler identification is GNU 7.2.0
 -- The CXX compiler identification is GNU 7.2.0
 -- Check for working C compiler: /usr/bin/cc
@@ -16,4 +16,4 @@
 -- Could NOT find Doxygen (missing:  DOXYGEN_EXECUTABLE) 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/pcsc/Desktop/PCSC2017_Group5/cmake-build-debug
+-- Build files have been written to: /home/pcsc/Documents/pcsc/PCSC2017_Group5/cmake-build-debug

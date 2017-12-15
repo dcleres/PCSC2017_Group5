@@ -28,7 +28,9 @@ double Test::testFourier() {
     g1.plot_xy(mRealData.heights, mRealData.weights, "Real Data");
     sleep(5);
 
-    return counter / mDataToApproximate.weights.size();
+    double counterDouble(counter);
+
+    return counterDouble / mDataToApproximate.weights.size();
 }
 
 Test::Test()
@@ -54,7 +56,7 @@ Test::Test()
     readFileTest.loadFromFileTest(mDataToApproximate);  //data to interpolate
 }
 
-double Test::testLeastSquares()
+double Test::testLeastSquares() const
 {
     Graph graph(mApproxData);
     Polynomial poly;
@@ -75,7 +77,7 @@ double Test::testLeastSquares()
     return generate_test(x,y);
 }
 
-double Test::testLagrange()
+double Test::testLagrange() const
 {
     Graph graph(mApproxData);
     vector<double> x(graph.make_x_points());
@@ -87,7 +89,7 @@ double Test::testLagrange()
     return generate_test(x,y);
 }
 
-double Test::testLeastSquaresPieceWise()
+double Test::testLeastSquaresPieceWise() const
 {
     Graph graph(mApproxData);
     vector<double>x(graph.make_x_points());
@@ -96,7 +98,7 @@ double Test::testLeastSquaresPieceWise()
     return generate_test(point[0],point[1]);
 }
 
-double Test::testLagrangePiecewise()
+double Test::testLagrangePiecewise() const
 {
     Graph graph(mApproxData);
     vector<double>x(graph.make_x_points());
@@ -136,5 +138,8 @@ double Test::generate_test(vector<double> const& x,vector<double> const& y) cons
             counter++;
         }
     }
-    return counter / x.size();
+
+    double counterDouble(counter);
+
+    return counterDouble / x.size();
 }

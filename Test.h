@@ -43,25 +43,25 @@ public:
      * real value for the Fourrier approximation
      * \return Fraction of accurately predicted
      */
-    double testLeastSquares();
+    double testLeastSquares() const;
 
     /**\brief Computes Fraction of accurately predicted values while comparing the values between predicted output and
      * real value for the Lagrange interpolation
      * \return Fraction of accurately predicted
      */
-    double testLagrange();
+    double testLagrange() const;
 
     /**\brief Computes Fraction of accurately predicted values while comparing the values between predicted output and
      * real value for the PieceWise Lagrange approximation
      * \return Fraction of accurately predicted
      */
-    double testLagrangePiecewise();
+    double testLagrangePiecewise() const;
 
     /**\brief Computes Fraction of accurately predicted values while comparing the values between predicted output and
      * real value PieceWise Least Square approximation
      * \return Fraction of accurately predicted
      */
-    double testLeastSquaresPieceWise();
+    double testLeastSquaresPieceWise() const;
 
     /**\brief returns a boolean values about if 2 given numbers are equal taking in account a certain margin
      * \param double number 1 to compare
